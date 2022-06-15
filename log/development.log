@@ -2049,3 +2049,2796 @@ Processing by PagesController#index as HTML
 Completed 200 OK in 29ms (Views: 26.0ms | ActiveRecord: 0.0ms | Allocations: 7153)
 
 
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:19:54 -0400
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 3.7ms | Allocations: 739)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 232.8ms | Allocations: 52416)
+Completed 200 OK in 259ms (Views: 242.1ms | ActiveRecord: 0.0ms | Allocations: 55650)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:19:59 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.9ms | Allocations: 417)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 7202)
+Completed 200 OK in 28ms (Views: 24.4ms | ActiveRecord: 0.0ms | Allocations: 7631)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 01:19:59 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.7ms | Allocations: 364)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 7046)
+Completed 200 OK in 28ms (Views: 24.8ms | ActiveRecord: 0.0ms | Allocations: 7401)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-06-15 01:20:00 -0400
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.9ms | Allocations: 364)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 26.2ms | Allocations: 7041)
+Completed 200 OK in 31ms (Views: 27.2ms | ActiveRecord: 0.0ms | Allocations: 7394)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:20:00 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 6851)
+Completed 200 OK in 28ms (Views: 25.4ms | ActiveRecord: 0.0ms | Allocations: 7148)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:21:18 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.3ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 6854)
+Completed 200 OK in 28ms (Views: 25.7ms | ActiveRecord: 0.0ms | Allocations: 7151)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 01:21:19 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | Allocations: 6839)
+Completed 200 OK in 28ms (Views: 25.3ms | ActiveRecord: 0.0ms | Allocations: 7132)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-06-15 01:21:19 -0400
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.2ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 6848)
+Completed 200 OK in 27ms (Views: 24.4ms | ActiveRecord: 0.0ms | Allocations: 7141)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:21:20 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 36.8ms | Allocations: 6848)
+Completed 200 OK in 40ms (Views: 37.7ms | ActiveRecord: 0.0ms | Allocations: 7141)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:21:20 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.5ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 66.6ms | Allocations: 6843)
+Completed 200 OK in 70ms (Views: 67.6ms | ActiveRecord: 0.0ms | Allocations: 7136)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 01:21:21 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 25.4ms | Allocations: 6891)
+Completed 200 OK in 29ms (Views: 26.4ms | ActiveRecord: 0.0ms | Allocations: 7184)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-06-15 01:21:21 -0400
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.5ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 26.6ms | Allocations: 6842)
+Completed 200 OK in 31ms (Views: 27.9ms | ActiveRecord: 0.0ms | Allocations: 7135)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:21:22 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 27.3ms | Allocations: 6848)
+Completed 200 OK in 31ms (Views: 28.4ms | ActiveRecord: 0.0ms | Allocations: 7141)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:25:08 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 1.0ms | Allocations: 452)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 103)
+  Rendered layout layouts/application.html.erb (Duration: 26.2ms | Allocations: 7743)
+Completed 200 OK in 34ms (Views: 30.5ms | ActiveRecord: 0.0ms | Allocations: 8560)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:25:09 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.6ms | Allocations: 367)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 27.2ms | Allocations: 7023)
+Completed 200 OK in 39ms (Views: 34.8ms | ActiveRecord: 0.0ms | Allocations: 7389)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:25:10 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 6845)
+Completed 200 OK in 29ms (Views: 26.8ms | ActiveRecord: 0.0ms | Allocations: 7135)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:27:55 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 413)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 102)
+  Rendered layout layouts/application.html.erb (Duration: 24.9ms | Allocations: 7683)
+Completed 200 OK in 33ms (Views: 29.4ms | Allocations: 8490)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:29:24 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 147)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1916.9ms | Allocations: 39806)
+Completed 200 OK in 1920ms (Views: 1917.8ms | Allocations: 40111)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:29:28 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.7ms | Allocations: 368)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 7051)
+Completed 200 OK in 28ms (Views: 24.7ms | Allocations: 7395)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:29:48 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.3ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.8ms | Allocations: 6860)
+Completed 200 OK in 28ms (Views: 25.8ms | Allocations: 7150)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:30:37 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 147)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 150.9ms | Allocations: 55677)
+Completed 200 OK in 155ms (Views: 152.1ms | Allocations: 55964)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:30:57 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 696)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 148.2ms | Allocations: 52441)
+Completed 200 OK in 169ms (Views: 155.6ms | ActiveRecord: 0.0ms | Allocations: 55675)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:31:05 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 177)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 33.4ms | Allocations: 7019)
+Completed 200 OK in 37ms (Views: 34.6ms | ActiveRecord: 0.0ms | Allocations: 7375)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:32:02 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 147)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 217.0ms | Allocations: 25806)
+Completed 200 OK in 221ms (Views: 218.0ms | ActiveRecord: 0.0ms | Allocations: 26103)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:32:17 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 147)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 81.2ms | Allocations: 22975)
+Completed 200 OK in 86ms (Views: 82.3ms | ActiveRecord: 0.0ms | Allocations: 23265)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:32:55 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 147)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 107.6ms | Allocations: 23107)
+Completed 200 OK in 112ms (Views: 108.6ms | ActiveRecord: 0.0ms | Allocations: 23398)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:33:34 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 36.4ms | Allocations: 147)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 111.9ms | Allocations: 21762)
+Completed 200 OK in 121ms (Views: 116.4ms | ActiveRecord: 0.0ms | Allocations: 22052)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:34:18 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 147)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1757.7ms | Allocations: 37321)
+Completed 200 OK in 1761ms (Views: 1758.8ms | ActiveRecord: 0.0ms | Allocations: 37612)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:34:21 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 147)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.2ms | Allocations: 6915)
+Completed 200 OK in 26ms (Views: 23.4ms | ActiveRecord: 0.0ms | Allocations: 7210)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:34:28 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 1.1ms | Allocations: 391)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 31.2ms | Allocations: 7068)
+Completed 200 OK in 36ms (Views: 32.3ms | ActiveRecord: 0.0ms | Allocations: 7438)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:34:30 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.4ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 6854)
+Completed 200 OK in 30ms (Views: 26.9ms | ActiveRecord: 0.0ms | Allocations: 7147)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:34:30 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 147)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 27.1ms | Allocations: 6824)
+Completed 200 OK in 31ms (Views: 28.1ms | ActiveRecord: 0.0ms | Allocations: 7117)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-06-15 01:34:31 -0400
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 1.1ms | Allocations: 364)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 27.4ms | Allocations: 7037)
+Completed 200 OK in 33ms (Views: 28.8ms | ActiveRecord: 0.0ms | Allocations: 7389)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:34:32 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 147)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 26.9ms | Allocations: 6806)
+Completed 200 OK in 31ms (Views: 28.1ms | ActiveRecord: 0.0ms | Allocations: 7099)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 01:34:32 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 1.0ms | Allocations: 363)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 26.0ms | Allocations: 7028)
+Completed 200 OK in 30ms (Views: 27.0ms | ActiveRecord: 0.0ms | Allocations: 7375)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:34:33 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 147)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 6833)
+Completed 200 OK in 29ms (Views: 25.8ms | ActiveRecord: 0.0ms | Allocations: 7126)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 01:34:43 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 2.1ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 41.5ms | Allocations: 6842)
+Completed 200 OK in 45ms (Views: 42.6ms | ActiveRecord: 0.0ms | Allocations: 7135)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:34:46 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 147)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 58.4ms | Allocations: 6822)
+Completed 200 OK in 67ms (Views: 59.4ms | ActiveRecord: 0.0ms | Allocations: 7115)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:35:31 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 147)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1366.9ms | Allocations: 36836)
+Completed 200 OK in 1370ms (Views: 1367.9ms | ActiveRecord: 0.0ms | Allocations: 37126)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:35:35 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.2ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 32.9ms | Allocations: 6858)
+Completed 200 OK in 36ms (Views: 33.9ms | ActiveRecord: 0.0ms | Allocations: 7152)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:35:36 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 147)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 29.2ms | Allocations: 6827)
+Completed 200 OK in 33ms (Views: 30.4ms | ActiveRecord: 0.0ms | Allocations: 7120)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:36:18 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 147)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1363.6ms | Allocations: 36794)
+Completed 200 OK in 1367ms (Views: 1364.7ms | ActiveRecord: 0.0ms | Allocations: 37084)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:37:14 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 147)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1401.9ms | Allocations: 36796)
+Completed 200 OK in 1405ms (Views: 1402.9ms | Allocations: 37083)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:37:17 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.3ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 25.7ms | Allocations: 6851)
+Completed 200 OK in 29ms (Views: 26.7ms | Allocations: 7142)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:37:20 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 147)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 6833)
+Completed 200 OK in 29ms (Views: 26.8ms | Allocations: 7123)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:37:23 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 147)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 6821)
+Completed 200 OK in 26ms (Views: 23.5ms | Allocations: 7108)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:37:44 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 147)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1513.2ms | Allocations: 36950)
+Completed 200 OK in 1517ms (Views: 1514.4ms | Allocations: 37237)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:38:09 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 147)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1371.5ms | Allocations: 36795)
+Completed 200 OK in 1375ms (Views: 1372.7ms | Allocations: 37083)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:39:05 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 147)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1480.5ms | Allocations: 36817)
+Completed 200 OK in 1484ms (Views: 1481.6ms | Allocations: 37104)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:39:12 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.3ms | Allocations: 180)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 28.0ms | Allocations: 6851)
+Completed 200 OK in 33ms (Views: 29.2ms | Allocations: 7142)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:39:14 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 147)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 6809)
+Completed 200 OK in 30ms (Views: 26.9ms | Allocations: 7099)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:39:22 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 147)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 34.9ms | Allocations: 6818)
+Completed 200 OK in 38ms (Views: 35.9ms | Allocations: 7105)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:40:15 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 414)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 102)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 7790)
+Completed 200 OK in 34ms (Views: 29.7ms | Allocations: 8598)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:40:16 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.6ms | Allocations: 319)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 7055)
+Completed 200 OK in 27ms (Views: 23.7ms | Allocations: 7416)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:40:17 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 147)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 6818)
+Completed 200 OK in 25ms (Views: 22.6ms | Allocations: 7108)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:40:55 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 409)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 102)
+  Rendered layout layouts/application.html.erb (Duration: 25.8ms | Allocations: 7682)
+Completed 200 OK in 34ms (Views: 30.3ms | Allocations: 8489)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:40:56 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.6ms | Allocations: 318)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 6989)
+Completed 200 OK in 28ms (Views: 24.7ms | Allocations: 7350)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 01:40:56 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.8ms | Allocations: 319)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 6987)
+Completed 200 OK in 29ms (Views: 25.8ms | Allocations: 7330)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-06-15 01:40:57 -0400
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.6ms | Allocations: 319)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 6990)
+Completed 200 OK in 27ms (Views: 23.6ms | Allocations: 7334)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 01:40:57 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 146)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 6808)
+Completed 200 OK in 26ms (Views: 23.3ms | Allocations: 7098)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:40:58 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.3ms | Allocations: 146)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.2ms | Allocations: 6817)
+Completed 200 OK in 27ms (Views: 25.2ms | Allocations: 7107)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:40:58 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 147)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 6854)
+Completed 200 OK in 25ms (Views: 23.0ms | Allocations: 7145)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:41:11 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 147)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 6905)
+Completed 200 OK in 26ms (Views: 24.2ms | Allocations: 7193)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:41:15 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.6ms | Allocations: 146)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 6918)
+Completed 200 OK in 28ms (Views: 25.3ms | Allocations: 7209)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:41:40 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.4ms | Allocations: 146)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 33.3ms | Allocations: 6829)
+Completed 200 OK in 37ms (Views: 34.5ms | Allocations: 7116)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:42:42 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.4ms | Allocations: 146)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1464.4ms | Allocations: 37015)
+Completed 200 OK in 1469ms (Views: 1465.9ms | Allocations: 37302)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:42:48 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 147)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 32.5ms | Allocations: 6808)
+Completed 200 OK in 39ms (Views: 34.7ms | Allocations: 7099)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:42:52 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 147)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 31.4ms | Allocations: 6902)
+Completed 200 OK in 35ms (Views: 32.3ms | Allocations: 7189)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:42:55 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.2ms | Allocations: 146)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 6817)
+Completed 200 OK in 32ms (Views: 29.5ms | Allocations: 7107)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:42:59 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.3ms | Allocations: 146)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 29.4ms | Allocations: 6817)
+Completed 200 OK in 33ms (Views: 30.4ms | Allocations: 7104)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:43:36 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 2.4ms | Allocations: 452)
+  Rendered layouts/_footer.html.erb (Duration: 0.6ms | Allocations: 102)
+  Rendered layout layouts/application.html.erb (Duration: 55.4ms | Allocations: 7764)
+Completed 200 OK in 77ms (Views: 72.4ms | Allocations: 8571)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:43:37 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 365)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 34.7ms | Allocations: 7039)
+Completed 200 OK in 40ms (Views: 35.8ms | Allocations: 7400)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:43:39 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 38.8ms | Allocations: 6848)
+Completed 200 OK in 72ms (Views: 64.8ms | Allocations: 7138)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:43:41 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 33.2ms | Allocations: 6842)
+Completed 200 OK in 38ms (Views: 35.0ms | Allocations: 7129)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:43:44 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.3ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 28.3ms | Allocations: 6853)
+Completed 200 OK in 32ms (Views: 29.3ms | Allocations: 7143)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:45:30 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.7ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.9ms | Allocations: 6942)
+Completed 200 OK in 28ms (Views: 25.9ms | Allocations: 7230)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:45:34 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 6917)
+Completed 200 OK in 27ms (Views: 24.1ms | Allocations: 7208)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:47:27 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 62.1ms | Allocations: 23223)
+Completed 200 OK in 65ms (Views: 62.9ms | Allocations: 23510)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:47:32 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 6854)
+Completed 200 OK in 26ms (Views: 24.0ms | Allocations: 7141)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:47:45 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 739)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 108)
+  Rendered layout layouts/application.html.erb (Duration: 273.3ms | Allocations: 63323)
+Completed 200 OK in 294ms (Views: 280.7ms | ActiveRecord: 0.0ms | Allocations: 66557)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:47:53 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.7ms | Allocations: 411)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 25.8ms | Allocations: 7250)
+Completed 200 OK in 30ms (Views: 26.9ms | ActiveRecord: 0.0ms | Allocations: 7687)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 01:47:54 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.8ms | Allocations: 360)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 29.6ms | Allocations: 7048)
+Completed 200 OK in 35ms (Views: 31.0ms | ActiveRecord: 0.0ms | Allocations: 7400)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-06-15 01:47:54 -0400
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.9ms | Allocations: 360)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 30.0ms | Allocations: 7028)
+Completed 200 OK in 35ms (Views: 31.0ms | ActiveRecord: 0.0ms | Allocations: 7375)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 01:47:54 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.8ms | Allocations: 6940)
+Completed 200 OK in 29ms (Views: 26.0ms | ActiveRecord: 0.0ms | Allocations: 7234)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:47:55 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 6845)
+Completed 200 OK in 28ms (Views: 25.5ms | ActiveRecord: 0.0ms | Allocations: 7142)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:47:55 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 6826)
+Completed 200 OK in 26ms (Views: 23.7ms | ActiveRecord: 0.0ms | Allocations: 7123)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:48:08 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 58.9ms | Allocations: 23198)
+Completed 200 OK in 62ms (Views: 60.0ms | ActiveRecord: 0.0ms | Allocations: 23490)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:48:11 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 41.8ms | Allocations: 6933)
+Completed 200 OK in 45ms (Views: 42.7ms | ActiveRecord: 0.0ms | Allocations: 7226)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:50:29 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.9ms | Allocations: 447)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 103)
+  Rendered layout layouts/application.html.erb (Duration: 28.8ms | Allocations: 9332)
+Completed 200 OK in 37ms (Views: 33.4ms | ActiveRecord: 0.0ms | Allocations: 10149)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:53:08 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.9ms | Allocations: 444)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 102)
+  Rendered layout layouts/application.html.erb (Duration: 60.0ms | Allocations: 22746)
+Completed 200 OK in 68ms (Views: 64.3ms | ActiveRecord: 0.0ms | Allocations: 23582)
+
+
+Started GET "/javascript/custom/hamburger.js" for 127.0.0.1 at 2022-06-15 01:53:09 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/javascript/custom/hamburger.js"):
+  
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:54:45 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.9ms | Allocations: 452)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 57.2ms | Allocations: 22745)
+Completed 200 OK in 65ms (Views: 61.4ms | Allocations: 23695)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:54:50 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 365)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 7051)
+Completed 200 OK in 28ms (Views: 24.0ms | Allocations: 7411)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:55:21 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 63.0ms | Allocations: 22986)
+Completed 200 OK in 66ms (Views: 64.0ms | Allocations: 23273)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 01:55:26 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.8ms | Allocations: 359)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 28.2ms | Allocations: 7051)
+Completed 200 OK in 33ms (Views: 29.3ms | Allocations: 7394)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-06-15 01:55:31 -0400
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.7ms | Allocations: 359)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 7021)
+Completed 200 OK in 28ms (Views: 25.0ms | Allocations: 7364)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:55:32 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 25.4ms | Allocations: 6833)
+Completed 200 OK in 29ms (Views: 26.3ms | Allocations: 7123)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:56:03 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 59.1ms | Allocations: 23151)
+Completed 200 OK in 62ms (Views: 60.0ms | Allocations: 23439)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:56:06 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 6838)
+Completed 200 OK in 27ms (Views: 23.9ms | Allocations: 7128)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 01:56:07 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 6832)
+Completed 200 OK in 28ms (Views: 25.7ms | Allocations: 7122)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-06-15 01:56:08 -0400
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.3ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 6862)
+Completed 200 OK in 30ms (Views: 27.3ms | Allocations: 7152)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 01:56:08 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 27.3ms | Allocations: 6835)
+Completed 200 OK in 31ms (Views: 28.6ms | Allocations: 7125)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:56:08 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.3ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 26.2ms | Allocations: 6832)
+Completed 200 OK in 30ms (Views: 27.3ms | Allocations: 7122)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:56:09 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 6872)
+Completed 200 OK in 25ms (Views: 23.0ms | Allocations: 7163)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:56:13 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 6927)
+Completed 200 OK in 26ms (Views: 24.0ms | Allocations: 7217)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:58:23 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.3ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 6924)
+Completed 200 OK in 27ms (Views: 24.3ms | Allocations: 7215)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:58:27 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.3ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 6844)
+Completed 200 OK in 27ms (Views: 24.3ms | Allocations: 7131)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:58:29 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 6854)
+Completed 200 OK in 25ms (Views: 23.2ms | Allocations: 7144)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:58:29 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.4ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 6856)
+Completed 200 OK in 25ms (Views: 23.0ms | Allocations: 7146)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 01:58:30 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 6838)
+Completed 200 OK in 25ms (Views: 22.8ms | Allocations: 7128)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-06-15 01:58:30 -0400
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 6823)
+Completed 200 OK in 25ms (Views: 22.9ms | Allocations: 7113)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:58:53 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.9ms | Allocations: 6857)
+Completed 200 OK in 26ms (Views: 24.0ms | Allocations: 7147)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:58:53 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 6881)
+Completed 200 OK in 25ms (Views: 22.6ms | Allocations: 7171)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:59:47 -0400
+  
+SyntaxError (C:/Users/Esteban Barrios/Escritorio/USM/2022-1/FeriaSoftware/feelink-website/config/importmap.rb:4: syntax error, unexpected string literal, expecting `do' or '{' or '('
+pin "@hotwired/turbo-rails", to: "...
+    ^
+C:/Users/Esteban Barrios/Escritorio/USM/2022-1/FeriaSoftware/feelink-website/config/importmap.rb:4: syntax error, unexpected ',', expecting end-of-input
+pin "@hotwired/turbo-rails", to: "turbo.min.js"
+                           ^
+):
+  
+config/importmap.rb:4: syntax error, unexpected string literal, expecting `do' or '{' or '('
+config/importmap.rb:4: syntax error, unexpected ',', expecting end-of-input
+config/importmap.rb:4: syntax error, unexpected string literal, expecting `do' or '{' or '('
+config/importmap.rb:4: syntax error, unexpected ',', expecting end-of-input
+config/importmap.rb:4: syntax error, unexpected string literal, expecting `do' or '{' or '('
+config/importmap.rb:4: syntax error, unexpected ',', expecting end-of-input
+Started GET "/services" for 127.0.0.1 at 2022-06-15 01:59:56 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.4ms | Allocations: 241)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 50.8ms | Allocations: 18930)
+Completed 200 OK in 55ms (Views: 52.1ms | Allocations: 19562)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 01:59:59 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 173)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 6701)
+Completed 200 OK in 26ms (Views: 23.8ms | Allocations: 7008)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:00:23 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 462)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 102)
+  Rendered layout layouts/application.html.erb (Duration: 46.8ms | Allocations: 22626)
+Completed 200 OK in 55ms (Views: 51.2ms | Allocations: 23576)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:00:27 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.6ms | Allocations: 359)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 7029)
+Completed 200 OK in 29ms (Views: 24.8ms | Allocations: 7389)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:02:48 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.5ms | Allocations: 241)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 49.1ms | Allocations: 23174)
+Completed 200 OK in 53ms (Views: 50.4ms | Allocations: 23806)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:02:53 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 173)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 26.7ms | Allocations: 6920)
+Completed 200 OK in 30ms (Views: 27.7ms | Allocations: 7227)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:04:17 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 60.6ms | Allocations: 24209)
+Completed 200 OK in 64ms (Views: 61.8ms | Allocations: 24496)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:04:21 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.3ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 6899)
+Completed 200 OK in 27ms (Views: 24.6ms | Allocations: 7186)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 02:04:24 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.7ms | Allocations: 383)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.9ms | Allocations: 7101)
+Completed 200 OK in 30ms (Views: 26.1ms | Allocations: 7463)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-06-15 02:04:26 -0400
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.6ms | Allocations: 359)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.6ms | Allocations: 7050)
+Completed 200 OK in 28ms (Views: 24.7ms | Allocations: 7390)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:04:28 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 6961)
+Completed 200 OK in 29ms (Views: 26.5ms | Allocations: 7248)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:04:30 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.4ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 6873)
+Completed 200 OK in 31ms (Views: 27.8ms | Allocations: 7160)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 02:04:32 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 6861)
+Completed 200 OK in 29ms (Views: 25.9ms | Allocations: 7148)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-06-15 02:04:34 -0400
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.4ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 25.8ms | Allocations: 6865)
+Completed 200 OK in 29ms (Views: 26.8ms | Allocations: 7152)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 02:04:36 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.6ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 6934)
+Completed 200 OK in 28ms (Views: 25.5ms | Allocations: 7221)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:04:37 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.4ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 26.8ms | Allocations: 6882)
+Completed 200 OK in 31ms (Views: 28.1ms | Allocations: 7169)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:04:37 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 6869)
+Completed 200 OK in 28ms (Views: 25.7ms | Allocations: 7156)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:04:38 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.5ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 6976)
+Completed 200 OK in 27ms (Views: 24.6ms | Allocations: 7263)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 02:04:38 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.0ms | Allocations: 6884)
+Completed 200 OK in 28ms (Views: 25.2ms | Allocations: 7172)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-06-15 02:04:39 -0400
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 6879)
+Completed 200 OK in 27ms (Views: 24.4ms | Allocations: 7166)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:04:40 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.3ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 6868)
+Completed 200 OK in 27ms (Views: 24.5ms | Allocations: 7155)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 02:04:40 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.6ms | Allocations: 6863)
+Completed 200 OK in 28ms (Views: 24.6ms | Allocations: 7150)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:04:41 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 6874)
+Completed 200 OK in 26ms (Views: 24.0ms | Allocations: 7161)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:04:41 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.3ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.1ms | Allocations: 6971)
+Completed 200 OK in 28ms (Views: 25.3ms | Allocations: 7258)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 02:04:42 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 6964)
+Completed 200 OK in 30ms (Views: 27.0ms | Allocations: 7251)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-06-15 02:04:42 -0400
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.3ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 6879)
+Completed 200 OK in 29ms (Views: 27.1ms | Allocations: 7166)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 02:04:43 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 6856)
+Completed 200 OK in 27ms (Views: 24.5ms | Allocations: 7143)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:04:44 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.5ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 26.0ms | Allocations: 6923)
+Completed 200 OK in 29ms (Views: 26.9ms | Allocations: 7210)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:04:44 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 6883)
+Completed 200 OK in 27ms (Views: 24.4ms | Allocations: 7170)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:04:45 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 25.1ms | Allocations: 6943)
+Completed 200 OK in 29ms (Views: 26.4ms | Allocations: 7230)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 02:04:45 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 6961)
+Completed 200 OK in 27ms (Views: 23.7ms | Allocations: 7248)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-06-15 02:04:46 -0400
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 6955)
+Completed 200 OK in 26ms (Views: 23.6ms | Allocations: 7242)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 02:04:46 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 6861)
+Completed 200 OK in 28ms (Views: 25.5ms | Allocations: 7148)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:04:47 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 6936)
+Completed 200 OK in 27ms (Views: 23.9ms | Allocations: 7230)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:04:47 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 6926)
+Completed 200 OK in 27ms (Views: 24.2ms | Allocations: 7213)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:04:52 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.3ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 6882)
+Completed 200 OK in 26ms (Views: 23.8ms | Allocations: 7169)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 02:04:52 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 6939)
+Completed 200 OK in 26ms (Views: 23.7ms | Allocations: 7226)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-06-15 02:04:53 -0400
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.4ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 6956)
+Completed 200 OK in 26ms (Views: 24.1ms | Allocations: 7243)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 02:04:54 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 6914)
+Completed 200 OK in 26ms (Views: 23.2ms | Allocations: 7201)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:04:54 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.3ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 6877)
+Completed 200 OK in 26ms (Views: 24.1ms | Allocations: 7164)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:04:56 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 6873)
+Completed 200 OK in 26ms (Views: 23.4ms | Allocations: 7160)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:04:58 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 21.8ms | Allocations: 6876)
+Completed 200 OK in 25ms (Views: 22.7ms | Allocations: 7163)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 02:04:59 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 6958)
+Completed 200 OK in 26ms (Views: 23.4ms | Allocations: 7245)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-06-15 02:04:59 -0400
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 6939)
+Completed 200 OK in 25ms (Views: 23.3ms | Allocations: 7226)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 02:05:00 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 28.0ms | Allocations: 6968)
+Completed 200 OK in 32ms (Views: 29.2ms | Allocations: 7255)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:05:01 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 6929)
+Completed 200 OK in 25ms (Views: 22.9ms | Allocations: 7216)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:05:55 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.4ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 6872)
+Completed 200 OK in 27ms (Views: 24.2ms | Allocations: 7159)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 02:05:57 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 6948)
+Completed 200 OK in 26ms (Views: 23.5ms | Allocations: 7235)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-06-15 02:05:57 -0400
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 6944)
+Completed 200 OK in 27ms (Views: 24.8ms | Allocations: 7231)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:05:58 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 6954)
+Completed 200 OK in 26ms (Views: 23.1ms | Allocations: 7241)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:05:58 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 6934)
+Completed 200 OK in 27ms (Views: 24.6ms | Allocations: 7221)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:07:45 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 455)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 107)
+  Rendered layout layouts/application.html.erb (Duration: 1793.0ms | Allocations: 38341)
+Completed 200 OK in 1801ms (Views: 1797.1ms | Allocations: 39148)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:08:08 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1375.2ms | Allocations: 36873)
+Completed 200 OK in 1379ms (Views: 1376.2ms | Allocations: 37178)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:08:23 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 6880)
+Completed 200 OK in 26ms (Views: 23.6ms | Allocations: 7167)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:08:24 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 6871)
+Completed 200 OK in 26ms (Views: 23.4ms | Allocations: 7158)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:08:25 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 6865)
+Completed 200 OK in 26ms (Views: 23.7ms | Allocations: 7152)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:08:28 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.8ms | Allocations: 364)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 7049)
+Completed 200 OK in 27ms (Views: 23.7ms | Allocations: 7389)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 02:08:28 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.7ms | Allocations: 359)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 7062)
+Completed 200 OK in 26ms (Views: 23.1ms | Allocations: 7402)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-06-15 02:08:29 -0400
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.7ms | Allocations: 359)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 7056)
+Completed 200 OK in 26ms (Views: 23.3ms | Allocations: 7396)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 02:08:30 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 6870)
+Completed 200 OK in 26ms (Views: 23.6ms | Allocations: 7157)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:08:30 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 6867)
+Completed 200 OK in 27ms (Views: 24.3ms | Allocations: 7154)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:08:31 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 36.8ms | Allocations: 6874)
+Completed 200 OK in 45ms (Views: 42.8ms | Allocations: 7161)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:08:32 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 2.6ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 42.2ms | Allocations: 6875)
+Completed 200 OK in 45ms (Views: 43.1ms | Allocations: 7162)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 02:08:32 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 6875)
+Completed 200 OK in 29ms (Views: 26.6ms | Allocations: 7162)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-06-15 02:08:32 -0400
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.4ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 6864)
+Completed 200 OK in 26ms (Views: 24.1ms | Allocations: 7151)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:08:33 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.3ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 6864)
+Completed 200 OK in 28ms (Views: 25.5ms | Allocations: 7151)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:08:33 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 6859)
+Completed 200 OK in 25ms (Views: 23.3ms | Allocations: 7146)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:09:03 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1319.3ms | Allocations: 36887)
+Completed 200 OK in 1322ms (Views: 1320.2ms | Allocations: 37174)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:09:41 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 29.8ms | Allocations: 6879)
+Completed 200 OK in 33ms (Views: 30.8ms | Allocations: 7166)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:10:26 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 455)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 102)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 7805)
+Completed 200 OK in 33ms (Views: 29.9ms | Allocations: 8612)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:10:32 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 1.0ms | Allocations: 450)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 102)
+  Rendered layout layouts/application.html.erb (Duration: 25.6ms | Allocations: 7754)
+Completed 200 OK in 33ms (Views: 29.8ms | Allocations: 8579)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:10:41 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.6ms | Allocations: 359)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 7056)
+Completed 200 OK in 27ms (Views: 24.1ms | Allocations: 7414)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 02:10:42 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.9ms | Allocations: 359)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 25.9ms | Allocations: 7071)
+Completed 200 OK in 30ms (Views: 27.1ms | Allocations: 7411)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-06-15 02:10:43 -0400
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.7ms | Allocations: 359)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 7071)
+Completed 200 OK in 29ms (Views: 25.8ms | Allocations: 7411)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:10:44 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 41.3ms | Allocations: 6859)
+Completed 200 OK in 47ms (Views: 44.8ms | Allocations: 7146)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:11:04 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 454)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 102)
+  Rendered layout layouts/application.html.erb (Duration: 28.5ms | Allocations: 7921)
+Completed 200 OK in 36ms (Views: 32.7ms | Allocations: 8729)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:11:25 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1372.3ms | Allocations: 37041)
+Completed 200 OK in 1376ms (Views: 1373.3ms | Allocations: 37346)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:11:41 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.7ms | Allocations: 360)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 7054)
+Completed 200 OK in 27ms (Views: 24.2ms | Allocations: 7395)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:11:41 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.2ms | Allocations: 6865)
+Completed 200 OK in 26ms (Views: 24.2ms | Allocations: 7152)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:12:38 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.8ms | Allocations: 451)
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:12:39 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.6ms | Allocations: 390)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 127)
+  Rendered layout layouts/application.html.erb (Duration: 1473.8ms | Allocations: 47051)
+Completed 200 OK in 1481ms (Views: 1477.9ms | Allocations: 47849)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 02:12:40 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.8ms | Allocations: 385)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 30)
+  Rendered layout layouts/application.html.erb (Duration: 23.7ms | Allocations: 7124)
+Completed 200 OK in 28ms (Views: 24.6ms | Allocations: 7476)
+
+
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 1050.6ms | Allocations: 32026)
+Completed 200 OK in 1055ms (Views: 1051.5ms | Allocations: 32400)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:12:40 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.3ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 6871)
+Completed 200 OK in 26ms (Views: 23.3ms | Allocations: 7158)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:12:41 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 21.1ms | Allocations: 6885)
+Completed 200 OK in 24ms (Views: 22.0ms | Allocations: 7172)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:12:42 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 6865)
+Completed 200 OK in 25ms (Views: 22.9ms | Allocations: 7152)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:14:26 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1411.1ms | Allocations: 36864)
+Completed 200 OK in 1415ms (Views: 1412.1ms | Allocations: 37151)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:15:02 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1339.3ms | Allocations: 36877)
+Completed 200 OK in 1343ms (Views: 1340.4ms | Allocations: 37165)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:15:03 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 21.8ms | Allocations: 6953)
+Completed 200 OK in 25ms (Views: 22.9ms | Allocations: 7240)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:15:04 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 6877)
+Completed 200 OK in 27ms (Views: 24.1ms | Allocations: 7164)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:16:25 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1385.5ms | Allocations: 36858)
+Completed 200 OK in 1389ms (Views: 1386.4ms | Allocations: 37145)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:16:28 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 38.4ms | Allocations: 6852)
+Completed 200 OK in 42ms (Views: 39.3ms | Allocations: 7140)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 02:16:28 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 26.3ms | Allocations: 6950)
+Completed 200 OK in 29ms (Views: 27.2ms | Allocations: 7238)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:16:29 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 6958)
+Completed 200 OK in 25ms (Views: 23.0ms | Allocations: 7245)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:16:30 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 6852)
+Completed 200 OK in 25ms (Views: 22.9ms | Allocations: 7139)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 02:16:30 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 6867)
+Completed 200 OK in 25ms (Views: 23.2ms | Allocations: 7154)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-06-15 02:16:32 -0400
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.7ms | Allocations: 364)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 7064)
+Completed 200 OK in 28ms (Views: 25.5ms | Allocations: 7408)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-06-15 02:16:45 -0400
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1354.0ms | Allocations: 36949)
+Completed 200 OK in 1358ms (Views: 1355.0ms | Allocations: 37236)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:16:48 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 6952)
+Completed 200 OK in 27ms (Views: 24.5ms | Allocations: 7240)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:16:48 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.3ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 21.8ms | Allocations: 6870)
+Completed 200 OK in 25ms (Views: 23.0ms | Allocations: 7157)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 02:16:49 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 6864)
+Completed 200 OK in 25ms (Views: 22.9ms | Allocations: 7151)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-06-15 02:16:49 -0400
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.4ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.9ms | Allocations: 6879)
+Completed 200 OK in 29ms (Views: 26.0ms | Allocations: 7166)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:16:50 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 6853)
+Completed 200 OK in 27ms (Views: 24.4ms | Allocations: 7140)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:16:52 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.4ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 6861)
+Completed 200 OK in 26ms (Views: 23.5ms | Allocations: 7148)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:16:54 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 6874)
+Completed 200 OK in 25ms (Views: 23.0ms | Allocations: 7161)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:16:54 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 6966)
+Completed 200 OK in 27ms (Views: 24.5ms | Allocations: 7254)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:17:37 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 455)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 102)
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 7828)
+Completed 200 OK in 32ms (Views: 28.7ms | Allocations: 8636)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:17:40 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.7ms | Allocations: 359)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 7125)
+Completed 200 OK in 27ms (Views: 23.6ms | Allocations: 7484)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 02:17:41 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.6ms | Allocations: 359)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 7047)
+Completed 200 OK in 28ms (Views: 24.8ms | Allocations: 7387)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-06-15 02:17:43 -0400
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.8ms | Allocations: 359)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 7056)
+Completed 200 OK in 29ms (Views: 25.1ms | Allocations: 7396)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:17:43 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 6883)
+Completed 200 OK in 25ms (Views: 23.3ms | Allocations: 7170)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:17:50 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 450)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 102)
+  Rendered layout layouts/application.html.erb (Duration: 26.2ms | Allocations: 7754)
+Completed 200 OK in 34ms (Views: 30.7ms | Allocations: 8561)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:18:19 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 451)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 102)
+  Rendered layout layouts/application.html.erb (Duration: 24.6ms | Allocations: 7748)
+Completed 200 OK in 32ms (Views: 29.0ms | Allocations: 8573)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:19:46 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1353.6ms | Allocations: 37079)
+Completed 200 OK in 1357ms (Views: 1354.5ms | Allocations: 37384)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:20:01 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.8ms | Allocations: 364)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.8ms | Allocations: 7052)
+Completed 200 OK in 27ms (Views: 23.9ms | Allocations: 7393)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 02:20:02 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.8ms | Allocations: 359)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.7ms | Allocations: 7062)
+Completed 200 OK in 29ms (Views: 25.7ms | Allocations: 7402)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-06-15 02:20:03 -0400
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.8ms | Allocations: 359)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.0ms | Allocations: 7057)
+Completed 200 OK in 26ms (Views: 23.0ms | Allocations: 7397)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:20:10 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 6874)
+Completed 200 OK in 26ms (Views: 23.9ms | Allocations: 7161)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:20:10 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.3ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 6867)
+Completed 200 OK in 26ms (Views: 23.1ms | Allocations: 7154)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 02:20:11 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 21.7ms | Allocations: 6861)
+Completed 200 OK in 25ms (Views: 22.6ms | Allocations: 7148)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-06-15 02:20:11 -0400
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.3ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 6870)
+Completed 200 OK in 26ms (Views: 23.3ms | Allocations: 7157)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:20:12 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 21.5ms | Allocations: 6859)
+Completed 200 OK in 25ms (Views: 22.5ms | Allocations: 7146)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:20:13 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.9ms | Allocations: 6870)
+Completed 200 OK in 27ms (Views: 24.9ms | Allocations: 7157)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 02:20:15 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 6871)
+Completed 200 OK in 26ms (Views: 23.7ms | Allocations: 7158)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-06-15 02:20:15 -0400
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.3ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 6859)
+Completed 200 OK in 26ms (Views: 23.5ms | Allocations: 7146)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 02:20:16 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 6886)
+Completed 200 OK in 27ms (Views: 23.7ms | Allocations: 7174)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:20:16 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 6846)
+Completed 200 OK in 25ms (Views: 23.2ms | Allocations: 7133)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:20:17 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.0ms | Allocations: 6865)
+Completed 200 OK in 26ms (Views: 24.2ms | Allocations: 7152)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:21:01 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1355.2ms | Allocations: 36882)
+Completed 200 OK in 1358ms (Views: 1356.2ms | Allocations: 37169)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:21:08 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 171)
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:21:09 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.3ms | Allocations: 184)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 30)
+  Rendered layout layouts/application.html.erb (Duration: 1474.5ms | Allocations: 45411)
+Completed 200 OK in 1478ms (Views: 1475.4ms | Allocations: 45699)
+
+
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 22)
+  Rendered layout layouts/application.html.erb (Duration: 859.8ms | Allocations: 14462)
+Completed 200 OK in 863ms (Views: 860.8ms | Allocations: 14761)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:21:10 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 6943)
+Completed 200 OK in 26ms (Views: 23.6ms | Allocations: 7231)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:21:24 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1338.5ms | Allocations: 36873)
+Completed 200 OK in 1342ms (Views: 1339.5ms | Allocations: 37160)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:21:28 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 39.3ms | Allocations: 6862)
+Completed 200 OK in 43ms (Views: 40.4ms | Allocations: 7149)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:21:29 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.4ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.1ms | Allocations: 6954)
+Completed 200 OK in 26ms (Views: 24.1ms | Allocations: 7241)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:21:29 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 6914)
+Completed 200 OK in 25ms (Views: 23.1ms | Allocations: 7201)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:21:55 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1344.6ms | Allocations: 36864)
+Completed 200 OK in 1348ms (Views: 1345.5ms | Allocations: 37152)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:22:01 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.8ms | Allocations: 6893)
+Completed 200 OK in 29ms (Views: 25.8ms | Allocations: 7180)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:22:01 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.4ms | Allocations: 6859)
+Completed 200 OK in 27ms (Views: 24.4ms | Allocations: 7146)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:22:02 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 6880)
+Completed 200 OK in 25ms (Views: 23.1ms | Allocations: 7167)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:22:20 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1337.1ms | Allocations: 36890)
+Completed 200 OK in 1341ms (Views: 1338.1ms | Allocations: 37177)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:22:32 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1318.0ms | Allocations: 36870)
+Completed 200 OK in 1321ms (Views: 1319.0ms | Allocations: 37158)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:22:48 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.5ms | Allocations: 6912)
+Completed 200 OK in 28ms (Views: 25.5ms | Allocations: 7199)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:26:31 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1387.9ms | Allocations: 36875)
+Completed 200 OK in 1392ms (Views: 1388.9ms | Allocations: 37162)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:26:35 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.4ms | Allocations: 6865)
+Completed 200 OK in 26ms (Views: 23.5ms | Allocations: 7153)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:26:49 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1337.9ms | Allocations: 36897)
+Completed 200 OK in 1342ms (Views: 1338.9ms | Allocations: 37184)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:26:51 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 6963)
+Completed 200 OK in 28ms (Views: 25.5ms | Allocations: 7250)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:29:04 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1353.7ms | Allocations: 36868)
+Completed 200 OK in 1357ms (Views: 1354.6ms | Allocations: 37156)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:29:11 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 6876)
+Completed 200 OK in 27ms (Views: 24.5ms | Allocations: 7163)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 02:29:12 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.4ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 6876)
+Completed 200 OK in 26ms (Views: 23.7ms | Allocations: 7163)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-06-15 02:29:12 -0400
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 6864)
+Completed 200 OK in 26ms (Views: 23.5ms | Allocations: 7151)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:29:13 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 21.9ms | Allocations: 6871)
+Completed 200 OK in 25ms (Views: 23.0ms | Allocations: 7158)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:29:32 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1377.7ms | Allocations: 36883)
+Completed 200 OK in 1381ms (Views: 1378.7ms | Allocations: 37170)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:29:44 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1306.8ms | Allocations: 36905)
+Completed 200 OK in 1310ms (Views: 1307.8ms | Allocations: 37193)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:29:52 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.4ms | Allocations: 6858)
+Completed 200 OK in 28ms (Views: 25.4ms | Allocations: 7145)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:29:53 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.7ms | Allocations: 6871)
+Completed 200 OK in 26ms (Views: 23.9ms | Allocations: 7158)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:29:57 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1376.0ms | Allocations: 36881)
+Completed 200 OK in 1379ms (Views: 1376.9ms | Allocations: 37168)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:30:02 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.1ms | Allocations: 6867)
+Completed 200 OK in 25ms (Views: 23.1ms | Allocations: 7154)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:30:02 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.5ms | Allocations: 6850)
+Completed 200 OK in 26ms (Views: 23.4ms | Allocations: 7137)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:30:09 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1288.0ms | Allocations: 36880)
+Completed 200 OK in 1292ms (Views: 1289.0ms | Allocations: 37168)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:30:17 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 21.3ms | Allocations: 6852)
+Completed 200 OK in 25ms (Views: 22.4ms | Allocations: 7140)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 02:30:17 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 21.6ms | Allocations: 6849)
+Completed 200 OK in 25ms (Views: 22.7ms | Allocations: 7136)
+
+
+Started GET "/contact" for 127.0.0.1 at 2022-06-15 02:30:18 -0400
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.3ms | Allocations: 6861)
+Completed 200 OK in 26ms (Views: 23.4ms | Allocations: 7148)
+
+
+Started GET "/about" for 127.0.0.1 at 2022-06-15 02:30:18 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 0.3ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.5ms | Allocations: 6852)
+Completed 200 OK in 27ms (Views: 24.6ms | Allocations: 7139)
+
+
+Started GET "/services" for 127.0.0.1 at 2022-06-15 02:30:18 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 0.2ms | Allocations: 170)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 22.6ms | Allocations: 6870)
+Completed 200 OK in 26ms (Views: 23.5ms | Allocations: 7157)
+
+
+Started GET "/" for 127.0.0.1 at 2022-06-15 02:30:19 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 171)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.3ms | Allocations: 6961)
+Completed 200 OK in 26ms (Views: 24.2ms | Allocations: 7248)
+
+

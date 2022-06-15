@@ -1,17 +1,20 @@
 <!DOCTYPE html>
-<html class='h-100'>
+<html>
   <head>
     <title>FeelinkWebsite</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta description="Plataforma de tecnología inmersiva para generar empatía en el ambiente laboral">
+    <meta keywords="VR Software of microagression">
+    <meta author="SimiBrains">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
-    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= stylesheet_link_tag "application"%>
     <%= javascript_importmap_tags %>
   </head>
 
   <body class ='d-flex h-100 text-center text-white bg-dark'>
-    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+    <div class="d-flex w-100 p-3 mx-auto flex-column vh-100 ">
         <%= yield %>
         <%=render 'layouts/footer'%>
     </div>

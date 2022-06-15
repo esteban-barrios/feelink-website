@@ -1,16 +1,26 @@
- <header class="mb-auto">
-    <div>
-      <h3 class="float-md-start mb-0">Cover</h3>
-      <nav class="nav nav-masthead justify-content-center float-md-end">
-        <%= link_to 'Home', root_path, class: "nav-link active" %>
-        <%= link_to 'Services', services_path, class: "nav-link" %>
-        <%= link_to 'About Us', about_path, class: "nav-link" %>
-        <%= link_to 'Contact', contact_path, class: "nav-link" %>
-      </nav>
+<header>
+  <nav class = "nav-container">
+    <div class="nav-brand">
+      <%= link_to 'Feelink', root_path %>
     </div>
-  </header>
+    <div id="nav-hamburguer">
+      <div class="hamburguer-icon">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+    <ul class ="nav-menu">
+      <li> <%= link_to 'Home', root_path, class: "link-active" %></li>
+      <li><%= link_to 'Services', services_path%></li>
+      <li><%= link_to 'About Us', about_path %></li>
+      <li><%= link_to 'Contact', contact_path %></li>
+    </ul>
+  </nav>
+</header>
 
-<main class="px-3">
+<main class="cover-container">
   <h1>Cover your page.</h1>
   <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
   <p class="lead">
