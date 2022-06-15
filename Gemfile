@@ -71,4 +71,5 @@ group :test do
 end
 
 gem 'bootstrap', '~> 5.1.3'
-gem "devise", "~> 4.8"
+gem "devise", github: "heartcombo/devise", ref: "f8d1ea90bc3"
+gem 'rails-i18n'

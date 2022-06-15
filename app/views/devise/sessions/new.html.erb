@@ -1,4 +1,25 @@
-<h2>Log in</h2>
+<header class="mb-auto">
+  <div>
+    <h3 class="float-md-start mb-0">Cover</h3>
+    <nav class="nav nav-masthead justify-content-center float-md-end">
+      <%= link_to 'Home', root_path, class: "nav-link" %>
+      <%= link_to 'Services', services_path, class: "nav-link " %>
+      <%= link_to 'About Us', about_path, class: "nav-link" %>
+      <%= link_to 'Contact', contact_path, class: "nav-link" %>
+      <% if !user_signed_in?%>
+        <%= link_to "Iniciar Sesión", new_user_session_path, class: "nav-link" %>
+        <%= link_to "Registrarse", new_user_registration_path, class: "nav-link" %>
+      <% else %>
+        <%= link_to "Cerrar Sesión", destroy_user_session_path, class: "nav-link" %>
+      <% end %>
+
+    </nav>
+  </div>
+</header>
+
+<%=render 'layouts/flash_messages'%>
+
+<h2>Iniciar Sesión</h2>
 
 <%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
   <div class="field">
