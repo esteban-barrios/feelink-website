@@ -1,7 +1,9 @@
 <header>
   <nav class = "nav-container">
     <div class="nav-brand">
-      <%= link_to 'Feelink', root_path %>
+      <%= link_to root_path do %>
+       <%= image_tag("logo_feelink.png", size: "245x52.5") %>
+      <% end  %>
     </div>
     <div id="nav-hamburguer">
       <div class="hamburguer-icon">
@@ -20,10 +22,44 @@
   </nav>
 </header>
 
-<main class="cover-container">
-  <h1>Cover your page.</h1>
-  <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
-  <p class="lead">
-    <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
-  </p>
+<main>
+  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <div class ="carousel-text carousel-bg-image1">
+          <h1>Cover your page.</h1>
+          <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+          <p class="lead">
+            <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class ="carousel-text carousel-bg-image1">
+          <h1>Cover your page.</h1>
+          <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+          <p class="lead">
+            <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
+          </p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <div class ="carousel-text carousel-bg-image1">
+          <h1>Cover your page.</h1>
+          <p class="lead">Cover is a one-page template for building simple and beautiful home pages. Download, edit the text, and add your own fullscreen background photo to make it your own.</p>
+          <p class="lead">
+            <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Learn more</a>
+          </p>
+        </div>
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
 </main>
