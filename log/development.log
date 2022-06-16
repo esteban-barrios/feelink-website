@@ -11190,3 +11190,799 @@ Migrating to DeviseCreateUsers (20220616013358)
   [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
   [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
 >>>>>>> 32cde51 (añadir devise para usuarios)
+Started GET "/" for ::1 at 2022-06-16 12:10:25 -0400
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 524.3ms | Allocations: 33949)
+  Rendered layouts/_footer.html.erb (Duration: 2.1ms | Allocations: 137)
+  Rendered layout layouts/application.html.erb (Duration: 684.6ms | Allocations: 57747)
+Completed 200 OK in 765ms (Views: 731.6ms | ActiveRecord: 0.0ms | Allocations: 61030)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-06-16 12:10:32 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 63.8ms | Allocations: 684)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 1833.1ms | Allocations: 164117)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 1911.2ms | Allocations: 171241)
+Completed 200 OK in 2036ms (Views: 1941.5ms | ActiveRecord: 2.0ms | Allocations: 181401)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-06-16 12:11:01 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 17.4ms | Allocations: 223)
+  Rendered devise/shared/_links.html.erb (Duration: 0.6ms | Allocations: 143)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 75.6ms | Allocations: 3129)
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 121.3ms | Allocations: 10167)
+Completed 200 OK in 136ms (Views: 130.4ms | ActiveRecord: 0.0ms | Allocations: 11440)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-06-16 12:11:11 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 140)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 2.7ms | Allocations: 1207)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 35.6ms | Allocations: 8047)
+Completed 200 OK in 42ms (Views: 37.1ms | ActiveRecord: 0.0ms | Allocations: 8803)
+
+
+Started GET "/asd" for ::1 at 2022-06-16 12:13:29 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/asd"):
+  
+Started GET "/users/sign_in" for ::1 at 2022-06-16 12:13:43 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.0ms | Allocations: 542)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 10.5ms | Allocations: 2204)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 128)
+  Rendered layout layouts/application.html.erb (Duration: 71.2ms | Allocations: 9618)
+Completed 200 OK in 100ms (Views: 92.0ms | ActiveRecord: 0.0ms | Allocations: 10945)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-06-16 12:13:54 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.2ms | Allocations: 214)
+  Rendered devise/shared/_links.html.erb (Duration: 0.3ms | Allocations: 98)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 12.9ms | Allocations: 2853)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 72.8ms | Allocations: 9886)
+Completed 200 OK in 91ms (Views: 84.2ms | ActiveRecord: 0.0ms | Allocations: 10923)
+
+
+Started GET "/asd" for ::1 at 2022-06-16 12:14:08 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/asd"):
+  
+Started GET "/" for ::1 at 2022-06-16 12:14:24 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 6.3ms | Allocations: 1424)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 72.4ms | Allocations: 8876)
+Completed 200 OK in 88ms (Views: 82.4ms | ActiveRecord: 0.0ms | Allocations: 9727)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-06-16 12:14:26 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 2.6ms | Allocations: 542)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 12.6ms | Allocations: 2209)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 69.7ms | Allocations: 9232)
+Completed 200 OK in 94ms (Views: 87.6ms | ActiveRecord: 0.0ms | Allocations: 10379)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-06-16 12:14:36 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.4ms | Allocations: 140)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.2ms | Allocations: 1203)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 61.2ms | Allocations: 8041)
+Completed 200 OK in 70ms (Views: 63.2ms | ActiveRecord: 0.0ms | Allocations: 8788)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-06-16 12:14:41 -0400
+Processing by Devise::SessionsController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 0.5ms | Allocations: 140)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1203)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 17)
+  Rendered layout layouts/application.html.erb (Duration: 81.9ms | Allocations: 8041)
+Completed 200 OK in 91ms (Views: 83.7ms | ActiveRecord: 0.0ms | Allocations: 8680)
+
+
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mEmpresa Load (0.5ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas"[0m
+Started GET "/services" for ::1 at 2022-06-16 12:18:49 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 8.3ms | Allocations: 1391)
+Started GET "/services" for ::1 at 2022-06-16 12:18:53 -0400
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 167)
+  Rendered layout layouts/application.html.erb (Duration: 149.0ms | Allocations: 25304)
+Completed 200 OK in 173ms (Views: 162.2ms | Allocations: 26347)
+
+
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 5.8ms | Allocations: 1089)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 139.6ms | Allocations: 23965)
+Completed 200 OK in 149ms (Views: 142.9ms | Allocations: 24602)
+
+
+Started GET "/about" for ::1 at 2022-06-16 12:19:01 -0400
+Processing by PagesController#about as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/about.html.erb within layouts/application
+  Rendered pages/about.html.erb within layouts/application (Duration: 6.8ms | Allocations: 1137)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 62.1ms | Allocations: 8034)
+Completed 200 OK in 73ms (Views: 64.2ms | Allocations: 8417)
+
+
+Started GET "/contact" for ::1 at 2022-06-16 12:19:02 -0400
+Processing by PagesController#contact as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/contact.html.erb within layouts/application
+  Rendered pages/contact.html.erb within layouts/application (Duration: 7.8ms | Allocations: 1117)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 70.8ms | Allocations: 8005)
+Completed 200 OK in 85ms (Views: 72.5ms | Allocations: 8349)
+
+
+Started GET "/contactasd" for ::1 at 2022-06-16 12:21:14 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/contactasd"):
+  
+Started GET "/empresas/new" for ::1 at 2022-06-16 12:25:20 -0400
+Processing by EmpresasController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/new.html.erb within layouts/application
+  Rendered empresas/new.html.erb within layouts/application (Duration: 26.3ms | Allocations: 2117)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 88.2ms | Allocations: 9633)
+Completed 200 OK in 108ms (Views: 101.2ms | Allocations: 10455)
+
+
+Started GET "/empresas/new" for ::1 at 2022-06-16 12:27:54 -0400
+Processing by EmpresasController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/new.html.erb within layouts/application
+  Rendered empresas/new.html.erb within layouts/application (Duration: 5.7ms | Allocations: 2550)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 68.4ms | Allocations: 9987)
+Completed 200 OK in 86ms (Views: 80.3ms | Allocations: 10718)
+
+
+Started POST "/empresas/new" for ::1 at 2022-06-16 12:28:01 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/empresas/new"):
+  
+Started GET "/" for ::1 at 2022-06-16 12:29:36 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 7.1ms | Allocations: 1432)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 148.2ms | Allocations: 24799)
+Completed 200 OK in 171ms (Views: 160.7ms | Allocations: 25769)
+
+
+Started GET "/empresas/new" for ::1 at 2022-06-16 12:29:48 -0400
+  
+SyntaxError (C:/Users/adria/OneDrive/Escritorio/Extras/Pagina Freelink/feelink-website/app/controllers/empresas_controller.rb:8: syntax error, unexpected `end'
+    end
+    ^~~
+C:/Users/adria/OneDrive/Escritorio/Extras/Pagina Freelink/feelink-website/app/controllers/empresas_controller.rb:15: syntax error, unexpected end-of-input, expecting `end'):
+  
+app/controllers/empresas_controller.rb:8: syntax error, unexpected `end'
+app/controllers/empresas_controller.rb:15: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/empresas_controller.rb:8: syntax error, unexpected `end'
+app/controllers/empresas_controller.rb:15: syntax error, unexpected end-of-input, expecting `end'
+app/controllers/empresas_controller.rb:8: syntax error, unexpected `end'
+app/controllers/empresas_controller.rb:15: syntax error, unexpected end-of-input, expecting `end'
+Started GET "/empresas/new" for ::1 at 2022-06-16 12:30:05 -0400
+Processing by EmpresasController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/new.html.erb within layouts/application
+  Rendered empresas/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2551)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 134.2ms | Allocations: 25526)
+Completed 200 OK in 150ms (Views: 143.9ms | Allocations: 26225)
+
+
+Started GET "/" for ::1 at 2022-06-16 12:32:12 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 5.4ms | Allocations: 1120)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 129.7ms | Allocations: 24101)
+Completed 200 OK in 138ms (Views: 131.9ms | Allocations: 24737)
+
+
+Started GET "/services" for ::1 at 2022-06-16 12:35:38 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 4.1ms | Allocations: 1141)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 37.9ms | Allocations: 8046)
+Completed 200 OK in 45ms (Views: 39.7ms | Allocations: 8428)
+
+
+Started GET "/services" for ::1 at 2022-06-16 12:35:39 -0400
+Processing by PagesController#services as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/services.html.erb within layouts/application
+  Rendered pages/services.html.erb within layouts/application (Duration: 3.2ms | Allocations: 880)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 32.2ms | Allocations: 7777)
+Completed 200 OK in 37ms (Views: 33.6ms | Allocations: 8067)
+
+
+Started GET "/" for ::1 at 2022-06-16 12:35:42 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 908)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 60.2ms | Allocations: 7802)
+Completed 200 OK in 69ms (Views: 62.3ms | Allocations: 8092)
+
+
+Started GET "/empresas/new" for ::1 at 2022-06-16 12:36:23 -0400
+Processing by EmpresasController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/new.html.erb within layouts/application
+  Rendered empresas/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2744)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 66.6ms | Allocations: 10184)
+Completed 200 OK in 86ms (Views: 78.8ms | Allocations: 11004)
+
+
+Started GET "/empresas/new" for ::1 at 2022-06-16 12:37:26 -0400
+Processing by EmpresasController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/new.html.erb within layouts/application
+  Rendered empresas/new.html.erb within layouts/application (Duration: 4.0ms | Allocations: 2264)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 137.9ms | Allocations: 25238)
+Completed 200 OK in 147ms (Views: 140.6ms | Allocations: 25870)
+
+
+Started POST "/empresas" for ::1 at 2022-06-16 12:37:45 -0400
+Processing by EmpresasController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "empresa"=>{"nombre"=>"Feelink", "direccion"=>"asd", "oficina"=>"asd", "rut"=>"123456789", "comuna"=>"Santiago"}, "commit"=>"Añadir Empresa"}
+Completed 400 Bad Request in 12ms (Allocations: 1074)
+
+
+  
+ActionController::ParameterMissing (param is missing or the value is empty: address):
+  
+app/controllers/empresas_controller.rb:17:in `create_params'
+app/controllers/empresas_controller.rb:7:in `create'
+Started POST "/empresas" for ::1 at 2022-06-16 12:38:01 -0400
+Processing by EmpresasController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "empresa"=>{"nombre"=>"Feelink", "direccion"=>"asd", "oficina"=>"asd", "rut"=>"123456789", "comuna"=>"Santiago"}, "commit"=>"Añadir Empresa"}
+[31mUnpermitted parameter: :rut. Context: { controller: EmpresasController, action: create, request: #<ActionDispatch::Request:0x0000016e0a0af090>, params: {"authenticity_token"=>"[FILTERED]", "empresa"=>{"nombre"=>"Feelink", "direccion"=>"asd", "oficina"=>"asd", "rut"=>"123456789", "comuna"=>"Santiago"}, "commit"=>"Añadir Empresa", "controller"=>"empresas", "action"=>"create"} }[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/empresas_controller.rb:7:in `create'
+Completed 500 Internal Server Error in 28ms (ActiveRecord: 2.6ms | Allocations: 5260)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'comuna' for Empresa.
+
+          raise UnknownAttributeError.new(self, k.to_s)
+          ^^^^^):
+  
+app/controllers/empresas_controller.rb:7:in `create'
+  [1m[35m (1.5ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddComunaToEmpresa (20220616163837)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (4.6ms)[0m  [1m[35mALTER TABLE "empresas" ADD "comuna" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220616163837"]]
+  [1m[36mTRANSACTION (3.8ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.8ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/empresas/new" for ::1 at 2022-06-16 12:40:45 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EmpresasController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/new.html.erb within layouts/application
+  Rendered empresas/new.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2252)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 134.0ms | Allocations: 25226)
+Completed 200 OK in 143ms (Views: 136.8ms | ActiveRecord: 0.0ms | Allocations: 25871)
+
+
+Started POST "/empresas" for ::1 at 2022-06-16 12:40:50 -0400
+Processing by EmpresasController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "empresa"=>{"nombre"=>"", "direccion"=>"", "oficina"=>"", "rut"=>"", "comuna"=>"Santiago"}, "commit"=>"Añadir Empresa"}
+[31mUnpermitted parameter: :rut. Context: { controller: EmpresasController, action: create, request: #<ActionDispatch::Request:0x0000016e0ded6328>, params: {"authenticity_token"=>"[FILTERED]", "empresa"=>{"nombre"=>"", "direccion"=>"", "oficina"=>"", "rut"=>"", "comuna"=>"Santiago"}, "commit"=>"Añadir Empresa", "controller"=>"empresas", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/empresas_controller.rb:8:in `create'
+  [1m[36mEmpresa Create (1.8ms)[0m  [1m[32mINSERT INTO "empresas" ("nombre", "direccion", "oficina", "rut", "created_at", "updated_at", "comuna") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", ""], ["direccion", ""], ["oficina", ""], ["rut", nil], ["created_at", "2022-06-16 16:40:50.671248"], ["updated_at", "2022-06-16 16:40:50.671248"], ["comuna", "Santiago"]]
+  ↳ app/controllers/empresas_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (4.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/empresas_controller.rb:8:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 50ms (ActiveRecord: 8.2ms | Allocations: 6927)
+
+
+Started GET "/" for ::1 at 2022-06-16 12:40:50 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 7.5ms | Allocations: 1434)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 61.5ms | Allocations: 8512)
+Completed 200 OK in 81ms (Views: 72.2ms | ActiveRecord: 0.0ms | Allocations: 9297)
+
+
+  [1m[36mEmpresa Load (0.8ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas"[0m
+Started POST "/empresas" for ::1 at 2022-06-16 12:41:13 -0400
+Processing by EmpresasController#create as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "empresa"=>{"nombre"=>"asdasd", "direccion"=>"asdasd", "oficina"=>"asd", "rut"=>"12315", "comuna"=>"Santiago"}, "commit"=>"Añadir Empresa"}
+[31mUnpermitted parameter: :rut. Context: { controller: EmpresasController, action: create, request: #<ActionDispatch::Request:0x0000016e0b8f9e48>, params: {"authenticity_token"=>"[FILTERED]", "empresa"=>{"nombre"=>"asdasd", "direccion"=>"asdasd", "oficina"=>"asd", "rut"=>"12315", "comuna"=>"Santiago"}, "commit"=>"Añadir Empresa", "controller"=>"empresas", "action"=>"create"} }[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/empresas_controller.rb:8:in `create'
+  [1m[36mEmpresa Create (6.8ms)[0m  [1m[32mINSERT INTO "empresas" ("nombre", "direccion", "oficina", "rut", "created_at", "updated_at", "comuna") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["nombre", "asdasd"], ["direccion", "asdasd"], ["oficina", "asd"], ["rut", nil], ["created_at", "2022-06-16 16:41:13.614318"], ["updated_at", "2022-06-16 16:41:13.614318"], ["comuna", "Santiago"]]
+  ↳ app/controllers/empresas_controller.rb:8:in `create'
+  [1m[36mTRANSACTION (4.9ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/empresas_controller.rb:8:in `create'
+Redirected to http://localhost:3000/
+Completed 302 Found in 33ms (ActiveRecord: 11.8ms | Allocations: 2564)
+
+
+Started GET "/" for ::1 at 2022-06-16 12:41:13 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 5.9ms | Allocations: 908)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 61.4ms | Allocations: 7815)
+Completed 200 OK in 70ms (Views: 63.2ms | ActiveRecord: 0.0ms | Allocations: 8122)
+
+
+  [1m[36mEmpresa Load (0.3ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas"[0m
+Started GET "/empresas/new" for ::1 at 2022-06-16 12:42:16 -0400
+Processing by EmpresasController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/new.html.erb within layouts/application
+  Rendered empresas/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2749)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 69.2ms | Allocations: 10186)
+Completed 200 OK in 88ms (Views: 81.3ms | ActiveRecord: 0.0ms | Allocations: 10906)
+
+
+Started GET "/empresas/new" for ::1 at 2022-06-16 12:42:28 -0400
+Processing by EmpresasController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/new.html.erb within layouts/application
+  Rendered empresas/new.html.erb within layouts/application (Duration: 6.1ms | Allocations: 2750)
+  Rendered layouts/_footer.html.erb (Duration: 1.0ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 69.6ms | Allocations: 10187)
+Completed 200 OK in 91ms (Views: 84.3ms | ActiveRecord: 0.0ms | Allocations: 10926)
+
+
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddRegionToEmpresa (20220616164306)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (1.5ms)[0m  [1m[35mALTER TABLE "empresas" ADD "region" varchar[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220616164306"]]
+  [1m[36mTRANSACTION (3.9ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/empresas/new" for ::1 at 2022-06-16 12:44:07 -0400
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EmpresasController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/new.html.erb within layouts/application
+  Rendered empresas/new.html.erb within layouts/application (Duration: 6.5ms | Allocations: 2980)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 133.8ms | Allocations: 26347)
+Completed 200 OK in 153ms (Views: 145.9ms | ActiveRecord: 0.0ms | Allocations: 27186)
+
+
+Started GET "/empresas/new" for ::1 at 2022-06-16 12:44:42 -0400
+Processing by EmpresasController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/new.html.erb within layouts/application
+  Rendered empresas/new.html.erb within layouts/application (Duration: 6.3ms | Allocations: 2958)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 134)
+  Rendered layout layouts/application.html.erb (Duration: 75.1ms | Allocations: 10412)
+Completed 200 OK in 101ms (Views: 92.5ms | ActiveRecord: 0.0ms | Allocations: 11150)
+
+
+Started GET "/empresas/new" for ::1 at 2022-06-16 12:45:14 -0400
+Processing by EmpresasController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/new.html.erb within layouts/application
+  Rendered empresas/new.html.erb within layouts/application (Duration: 6.4ms | Allocations: 2959)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 69.0ms | Allocations: 10396)
+Completed 200 OK in 87ms (Views: 81.1ms | ActiveRecord: 0.0ms | Allocations: 11135)
+
+
+Started GET "/empresas/new" for ::1 at 2022-06-16 12:45:17 -0400
+Processing by EmpresasController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/new.html.erb within layouts/application
+  Rendered empresas/new.html.erb within layouts/application (Duration: 5.2ms | Allocations: 2222)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 80.4ms | Allocations: 9073)
+Completed 200 OK in 89ms (Views: 82.2ms | ActiveRecord: 0.0ms | Allocations: 9386)
+
+
+Started GET "/empresas/new" for ::1 at 2022-06-16 12:45:39 -0400
+Processing by EmpresasController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/new.html.erb within layouts/application
+  Rendered empresas/new.html.erb within layouts/application (Duration: 7.1ms | Allocations: 2960)
+  Rendered layouts/_footer.html.erb (Duration: 0.7ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 67.0ms | Allocations: 10398)
+Completed 200 OK in 86ms (Views: 79.2ms | ActiveRecord: 0.0ms | Allocations: 11118)
+
+
+Started GET "/empresas/new" for ::1 at 2022-06-16 12:46:06 -0400
+Processing by EmpresasController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/new.html.erb within layouts/application
+  Rendered empresas/new.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1536)
+  Rendered layout layouts/application.html.erb (Duration: 5.2ms | Allocations: 1631)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.0ms | Allocations: 2352)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_for :empresa, url: empresas_path, method: :post do |f| %>
+    <div class="row">
+
+        <div class="col-12">
+            <%= f.label :nombre, class: "form-label" %><br>
+            <%= f.text_field :nombre, class: "form-control" %>
+        </div>
+
+        <div class=" col-12">
+            <%= f.label :rut, class: "form-label" %><br>
+            <%= f.text_field :rut, class: "form-control" %>
+        </div>
+
+        <div class="col-8">
+            <%= f.label :direccion, class: "form-label" %><br>
+            <%= f.text_field :direccion, class: "form-control" %>
+        </div>
+
+        <div class=" col-4">
+            <%= f.label :oficina, class: "form-label" %><br>
+            <%= f.text_field :oficina, class: "form-control" %>
+        </div>
+
+        <div class="col-6">
+            <%= f.label :region, class: "form-label" %><br>
+            <%= f.select :region, ["Region Metropolitana"] class: "form-control" %>
+        </div>
+        
+        <div class="col-6">
+        <%= f.label :comuna, class: "form-label" %><br>
+            <%= f.select :comuna, ["Santiago","Conchalí","Huechuraba","Independencia",
+            "Quilicura","Recoleta","Renca","Las Condes","Lo Barnechea","Providencia",
+            "Vitacura","La Reina","Macul","Ñuñoa","Peñalolén","La Florida","La Granja",
+            "El Bosque","La Cisterna","La Pintana","San Ramón","Lo Espejo","Pedro Aguirre Cerda",
+            "San Joaquín","San Miguel","Cerrillos","Estación Central","Maipú","Cerro Navia","Lo Prado",
+            "Pudahuel","Quinta Normal"],
+             {}, class: "form-select" %>
+        </div>
+        
+        <div class="mt-3">
+            <%= f.submit "Añadir Empresa", class: "btn btn-warning float-end" %>
+        </div>
+    </div>
+
+<% end %>
+
+
+):
+1:    <%= form_for :empresa, url: empresas_path, method: :post do |f| %>
+2:        <div class="row">
+3:    
+4:            <div class="col-12">
+5:                <%= f.label :nombre, class: "form-label" %><br>
+6:                <%= f.text_field :nombre, class: "form-control" %>
+7:            </div>
+8:    
+9:            <div class=" col-12">
+10:                <%= f.label :rut, class: "form-label" %><br>
+11:                <%= f.text_field :rut, class: "form-control" %>
+12:            </div>
+13:    
+14:            <div class="col-8">
+15:                <%= f.label :direccion, class: "form-label" %><br>
+16:                <%= f.text_field :direccion, class: "form-control" %>
+17:            </div>
+18:    
+19:            <div class=" col-4">
+20:                <%= f.label :oficina, class: "form-label" %><br>
+21:                <%= f.text_field :oficina, class: "form-control" %>
+22:            </div>
+23:    
+24:            <div class="col-6">
+25:                <%= f.label :region, class: "form-label" %><br>
+26:                <%= f.select :region, ["Region Metropolitana"] class: "form-control" %>
+27:            </div>
+28:            
+29:            <div class="col-6">
+30:            <%= f.label :comuna, class: "form-label" %><br>
+31:                <%= f.select :comuna, ["Santiago","Conchalí","Huechuraba","Independencia",
+32:                "Quilicura","Recoleta","Renca","Las Condes","Lo Barnechea","Providencia",
+33:                "Vitacura","La Reina","Macul","Ñuñoa","Peñalolén","La Florida","La Granja",
+34:                "El Bosque","La Cisterna","La Pintana","San Ramón","Lo Espejo","Pedro Aguirre Cerda",
+35:                "San Joaquín","San Miguel","Cerrillos","Estación Central","Maipú","Cerro Navia","Lo Prado",
+36:                "Pudahuel","Quinta Normal"],
+37:                 {}, class: "form-select" %>
+38:            </div>
+39:            
+40:            <div class="mt-3">
+41:                <%= f.submit "Añadir Empresa", class: "btn btn-warning float-end" %>
+42:            </div>
+43:        </div>
+44:    
+45:    <% end %>
+46:    
+  
+app/views/empresas/new.html.erb:26: syntax error, unexpected `class', expecting ')'
+app/views/empresas/new.html.erb:26: syntax error, unexpected `class', expecting ')'
+app/views/empresas/new.html.erb:26: syntax error, unexpected `class', expecting ')'
+app/views/empresas/new.html.erb:26: syntax error, unexpected `class', expecting ')'
+app/views/empresas/new.html.erb:26: syntax error, unexpected `class', expecting ')'
+app/views/empresas/new.html.erb:26: syntax error, unexpected `class', expecting ')'
+Started GET "/empresas/new" for ::1 at 2022-06-16 12:46:18 -0400
+Processing by EmpresasController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/new.html.erb within layouts/application
+  Rendered empresas/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1524)
+  Rendered layout layouts/application.html.erb (Duration: 4.8ms | Allocations: 1619)
+Completed 500 Internal Server Error in 22ms (ActiveRecord: 0.0ms | Allocations: 2329)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <%= form_for :empresa, url: empresas_path, method: :post do |f| %>
+    <div class="row">
+
+        <div class="col-12">
+            <%= f.label :nombre, class: "form-label" %><br>
+            <%= f.text_field :nombre, class: "form-control" %>
+        </div>
+
+        <div class=" col-12">
+            <%= f.label :rut, class: "form-label" %><br>
+            <%= f.text_field :rut, class: "form-control" %>
+        </div>
+
+        <div class="col-8">
+            <%= f.label :direccion, class: "form-label" %><br>
+            <%= f.text_field :direccion, class: "form-control" %>
+        </div>
+
+        <div class=" col-4">
+            <%= f.label :oficina, class: "form-label" %><br>
+            <%= f.text_field :oficina, class: "form-control" %>
+        </div>
+
+        <div class="col-6">
+            <%= f.label :region, class: "form-label" %><br>
+            <%= f.select :region, ["Region Metropolitana"], {} class: "form-control" %>
+        </div>
+        
+        <div class="col-6">
+        <%= f.label :comuna, class: "form-label" %><br>
+            <%= f.select :comuna, ["Santiago","Conchalí","Huechuraba","Independencia",
+            "Quilicura","Recoleta","Renca","Las Condes","Lo Barnechea","Providencia",
+            "Vitacura","La Reina","Macul","Ñuñoa","Peñalolén","La Florida","La Granja",
+            "El Bosque","La Cisterna","La Pintana","San Ramón","Lo Espejo","Pedro Aguirre Cerda",
+            "San Joaquín","San Miguel","Cerrillos","Estación Central","Maipú","Cerro Navia","Lo Prado",
+            "Pudahuel","Quinta Normal"],
+             {}, class: "form-select" %>
+        </div>
+        
+        <div class="mt-3">
+            <%= f.submit "Añadir Empresa", class: "btn btn-warning float-end" %>
+        </div>
+    </div>
+
+<% end %>
+
+
+):
+1:    <%= form_for :empresa, url: empresas_path, method: :post do |f| %>
+2:        <div class="row">
+3:    
+4:            <div class="col-12">
+5:                <%= f.label :nombre, class: "form-label" %><br>
+6:                <%= f.text_field :nombre, class: "form-control" %>
+7:            </div>
+8:    
+9:            <div class=" col-12">
+10:                <%= f.label :rut, class: "form-label" %><br>
+11:                <%= f.text_field :rut, class: "form-control" %>
+12:            </div>
+13:    
+14:            <div class="col-8">
+15:                <%= f.label :direccion, class: "form-label" %><br>
+16:                <%= f.text_field :direccion, class: "form-control" %>
+17:            </div>
+18:    
+19:            <div class=" col-4">
+20:                <%= f.label :oficina, class: "form-label" %><br>
+21:                <%= f.text_field :oficina, class: "form-control" %>
+22:            </div>
+23:    
+24:            <div class="col-6">
+25:                <%= f.label :region, class: "form-label" %><br>
+26:                <%= f.select :region, ["Region Metropolitana"], {} class: "form-control" %>
+27:            </div>
+28:            
+29:            <div class="col-6">
+30:            <%= f.label :comuna, class: "form-label" %><br>
+31:                <%= f.select :comuna, ["Santiago","Conchalí","Huechuraba","Independencia",
+32:                "Quilicura","Recoleta","Renca","Las Condes","Lo Barnechea","Providencia",
+33:                "Vitacura","La Reina","Macul","Ñuñoa","Peñalolén","La Florida","La Granja",
+34:                "El Bosque","La Cisterna","La Pintana","San Ramón","Lo Espejo","Pedro Aguirre Cerda",
+35:                "San Joaquín","San Miguel","Cerrillos","Estación Central","Maipú","Cerro Navia","Lo Prado",
+36:                "Pudahuel","Quinta Normal"],
+37:                 {}, class: "form-select" %>
+38:            </div>
+39:            
+40:            <div class="mt-3">
+41:                <%= f.submit "Añadir Empresa", class: "btn btn-warning float-end" %>
+42:            </div>
+43:        </div>
+44:    
+45:    <% end %>
+46:    
+  
+app/views/empresas/new.html.erb:26: syntax error, unexpected `class', expecting ')'
+app/views/empresas/new.html.erb:26: syntax error, unexpected `class', expecting ')'
+app/views/empresas/new.html.erb:26: syntax error, unexpected `class', expecting ')'
+app/views/empresas/new.html.erb:26: syntax error, unexpected `class', expecting ')'
+app/views/empresas/new.html.erb:26: syntax error, unexpected `class', expecting ')'
+app/views/empresas/new.html.erb:26: syntax error, unexpected `class', expecting ')'
+Started GET "/empresas/new" for ::1 at 2022-06-16 12:46:46 -0400
+Processing by EmpresasController#new as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/new.html.erb within layouts/application
+  Rendered empresas/new.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2989)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 68.3ms | Allocations: 10525)
+Completed 200 OK in 87ms (Views: 80.4ms | ActiveRecord: 0.0ms | Allocations: 11263)
+
+
+Started GET "/empresas/" for ::1 at 2022-06-16 12:53:30 -0400
+Processing by EmpresasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/index.html.erb within layouts/application
+  Rendered empresas/index.html.erb within layouts/application (Duration: 2.1ms | Allocations: 1226)
+  Rendered layout layouts/application.html.erb (Duration: 3.6ms | Allocations: 1321)
+Completed 500 Internal Server Error in 29ms (Allocations: 2714)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Empresas</h1>
+
+<% for @empresas.each do |empresa| %>
+    <h2><%= empresa.nombre %></h2>
+    <h4><%= "Direccion: #{empresa.direccion}" %></h4>
+    <h4><%= "Oficina: #{empresa.direccion}" %></h4>
+    <h4><%= "Comuna: #{empresa.direccion}" %></h4>
+<% end %>
+
+
+):
+1:    <h1>Empresas</h1>
+2:    
+3:    <% for @empresas.each do |empresa| %>
+4:        <h2><%= empresa.nombre %></h2>
+5:        <h4><%= "Direccion: #{empresa.direccion}" %></h4>
+6:        <h4><%= "Oficina: #{empresa.direccion}" %></h4>
+7:        <h4><%= "Comuna: #{empresa.direccion}" %></h4>
+8:    <% end %>
+9:    
+  
+app/views/empresas/index.html.erb:8: syntax error, unexpected '\n', expecting '.' or &. or :: or '['
+app/views/empresas/index.html.erb:8: syntax error, unexpected '\n', expecting '.' or &. or :: or '['
+app/views/empresas/index.html.erb:8: syntax error, unexpected '\n', expecting '.' or &. or :: or '['
+app/views/empresas/index.html.erb:8: syntax error, unexpected '\n', expecting '.' or &. or :: or '['
+app/views/empresas/index.html.erb:8: syntax error, unexpected '\n', expecting '.' or &. or :: or '['
+app/views/empresas/index.html.erb:8: syntax error, unexpected '\n', expecting '.' or &. or :: or '['
+Started GET "/empresas/" for ::1 at 2022-06-16 12:55:02 -0400
+Processing by EmpresasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/index.html.erb within layouts/application
+  Rendered empresas/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1257)
+  Rendered layout layouts/application.html.erb (Duration: 5.1ms | Allocations: 1352)
+Completed 500 Internal Server Error in 26ms (Allocations: 2181)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h1>Empresas</h1>
+
+<% for @empresas.each do |empresa| %>
+    <h2><%= empresa.nombre %></h2>
+    <h4><%= "Direccion: #{empresa.direccion}" %></h4>
+    <h4><%= "Oficina: #{empresa.oficina}" %></h4>
+    <h4><%= "Comuna: #{empresa.comuna}" %></h4>
+<% end %>
+
+
+):
+1:    <h1>Empresas</h1>
+2:    
+3:    <% for @empresas.each do |empresa| %>
+4:        <h2><%= empresa.nombre %></h2>
+5:        <h4><%= "Direccion: #{empresa.direccion}" %></h4>
+6:        <h4><%= "Oficina: #{empresa.oficina}" %></h4>
+7:        <h4><%= "Comuna: #{empresa.comuna}" %></h4>
+8:    <% end %>
+9:    
+  
+app/views/empresas/index.html.erb:8: syntax error, unexpected '\n', expecting '.' or &. or :: or '['
+app/views/empresas/index.html.erb:8: syntax error, unexpected '\n', expecting '.' or &. or :: or '['
+app/views/empresas/index.html.erb:8: syntax error, unexpected '\n', expecting '.' or &. or :: or '['
+app/views/empresas/index.html.erb:8: syntax error, unexpected '\n', expecting '.' or &. or :: or '['
+app/views/empresas/index.html.erb:8: syntax error, unexpected '\n', expecting '.' or &. or :: or '['
+app/views/empresas/index.html.erb:8: syntax error, unexpected '\n', expecting '.' or &. or :: or '['
+Started GET "/empresas/" for ::1 at 2022-06-16 12:57:30 -0400
+Processing by EmpresasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/index.html.erb within layouts/application
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/views/empresas/index.html.erb:3
+  [1m[36mEmpresa Load (0.5ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas"[0m
+  ↳ app/views/empresas/index.html.erb:3
+  Rendered empresas/index.html.erb within layouts/application (Duration: 21.1ms | Allocations: 4275)
+  Rendered layouts/_footer.html.erb (Duration: 1.4ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 155.5ms | Allocations: 28011)
+Completed 200 OK in 177ms (Views: 167.6ms | ActiveRecord: 4.2ms | Allocations: 28878)
+
+
+Started GET "/empresas/" for ::1 at 2022-06-16 12:58:02 -0400
+Processing by EmpresasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/index.html.erb within layouts/application
+  [1m[36mEmpresa Load (0.4ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas"[0m
+  ↳ app/views/empresas/index.html.erb:3
+  Rendered empresas/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 928)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 68.4ms | Allocations: 8646)
+Completed 200 OK in 89ms (Views: 79.7ms | ActiveRecord: 0.4ms | Allocations: 9511)
+
+
