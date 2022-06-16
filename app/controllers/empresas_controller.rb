@@ -15,6 +15,10 @@ class EmpresasController < ApplicationController
         @empresas = Empresa.all
     end
 
+    def show
+        @empresa = Empresa.find(params[:id])
+    end
+
     def agregar_usuario
         @user = User.new()
     end
