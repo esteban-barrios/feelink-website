@@ -1,7 +1,7 @@
 <h1>Empresas</h1>
 
 <% @empresas.each do |empresa| %>
-    <h2><%= empresa.nombre %></h2>
+    <h2><%= link_to empresa.nombre, empresa_path(empresa.id) %></h2>
     <h4><%= "Direccion: #{empresa.direccion}" %></h4>
     <h4><%= "Oficina: #{empresa.oficina}" %></h4>
     <h4><%= "Comuna: #{empresa.comuna}" %></h4>

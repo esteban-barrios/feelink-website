@@ -1,0 +1,28 @@
+<h1><%= @empresa.nombre %></h1>
+<h4><%= "Direccion: #{@empresa.direccion}" %></h4>
+<h4><%= "Oficina: #{@empresa.oficina}" %></h4>
+<h4><%= "Comuna: #{@empresa.comuna}" %></h4>
+
+<br/>
+
+<h1>Trabajadores</h1>
+
+<h2>Encargados</h2>
+<% if @empresa.encargados.empty?%>
+    <p>No hay nada aqui todavia</p>
+<% else %>
+    <% @empresa.encargados.each do |encargado| %>
+        <%= encargado.nombre%>
+    <% end %>
+<% end %>
+
+<h2>Empleados</h2>
+<% if @empresa.empleados.empty?%>
+    <p>No hay nada aqui todavia</p>
+<% else %>
+    <% @empresa.empleados.each do |empleado| %>
+        <%= empleado.nombre%>
+    <% end %>
+<% end %>
+
+<%= link_to "Añadir Empleado", root_path%>
