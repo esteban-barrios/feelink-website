@@ -1,0 +1,29 @@
+body{
+  font-family: $web-font-family;
+  font-weight: normal;
+  font-size: $size_normal;
+}
+
+b{
+  font-weight: bold;
+}
+h1{
+  font-size: $size_h1;
+}
+h2{
+  font-size: $size_h2;
+}
+h3{
+  font-size:$size_h3;
+}
+h4{
+  font-size: $size_h4;
+}
+
+.big-text{
+  font-size: $size_big;
+}
+
+.small-text{
+  font-size: $size_small;
+}

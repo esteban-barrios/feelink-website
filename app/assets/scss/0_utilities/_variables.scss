@@ -1,0 +1,27 @@
+
+/* Fluid font-size */
+$size_big: clamp(2.18rem, calc(1.84rem + 1.71vw), 3.05rem);
+$size_h1: clamp(1.81rem, calc(1.57rem + 1.22vw), 2.44rem);
+$size_h2: clamp(1.51rem, calc(1.34rem + 0.86vw), 1.95rem);
+$size_h3: clamp(1.26rem, calc(1.14rem + 0.59vw), 1.56rem);
+$size_h4: clamp(1.05rem, calc(0.97rem + 0.39vw), 1.25rem);
+$size_normal: clamp(0.88rem, calc(0.83rem + 0.24vw), 1.00rem);
+$size_small: clamp(0.73rem, calc(0.70rem + 0.14vw), 0.80rem);
+
+
+/* Pallete Colors */
+
+$dark-blue:#0A1158;
+$blue: #4169e1;
+$light-blue:#2db5e6;
+$orange:#cc5d3c;
+$vivid-orange: #ff6900;
+$vivid-amber: #fcb900;
+$vivid-green: #59b13a;
+$gray:#2b3840;
+$red: #D2222D;
+
+/* Font family*/
+
+$web-font-family: 'Poppins', sans-serif;
+
