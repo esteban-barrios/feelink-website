@@ -18,13 +18,24 @@
       <li><%= link_to 'Services', services_path%></li>
       <li><%= link_to 'About Us', about_path %></li>
       <li><%= link_to 'Contact', contact_path %></li>
-      <li><%= link_to 'Sign in', new_user_session_path %></li>
+
+      <% if user_signed_in? %>
+        <li><%= link_to 'Sign out', destroy_user_session_path %></li>
+        <% if current_user.admin %>
+          <%= link_to 'Empresas', empresas_path%>
+        <% else %>
+          <li><%= link_to 'Mi Empresa', empresa_path(current_user.empresa_id)%></li>
+        <% end %>
+      <% else %>
+        <li><%= link_to 'Sign in', new_user_session_path %></li>
+      <% end %>
     </ul>
   </nav>
 </header>
 
 <main>
-  <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+  <%=render 'layouts/noticias' %>
+  <div id="carouselExampleControls" class="carousel slide mt-0" data-ride="carousel">
     <div class="carousel-inner">
       <div class="carousel-item active">
         <div class ="carousel-text carousel-bg-image1">
