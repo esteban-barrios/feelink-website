@@ -7,7 +7,7 @@ class EmpresasController < ApplicationController
         @empresa = Empresa.new(create_params)
         if @empresa.save
             flash[:notice] = "#{@empresa.nombre} ha sido creada con exito"
-            redirect_to root_path
+            redirect_to empresas_path
         end
     end
 
