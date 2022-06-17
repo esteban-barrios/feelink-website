@@ -7,6 +7,7 @@ class Empresa < ApplicationRecord
     validates :region, presence: true
     validates :rut, presence: false
 
+    has_many :users, dependent: :destroy
 
     def empleados
         User.where(empresa_id: self.id).where(encargado: false).all
