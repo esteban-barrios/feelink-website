@@ -15,7 +15,7 @@
         <p>No hay nada aqui todavia</p>
     <% else %>
         <% @empresa.encargados.each do |encargado| %>
-            <%= "#{encargado.nombre} #{encargado.apellido} "%><br/>
+            <%= link_to "#{encargado.nombre} #{encargado.apellido} ", show_user_path(encargado.id)%><br/>
         <% end %>
     <% end %>
 
@@ -24,7 +24,7 @@
         <p>No hay nada aqui todavia</p>
     <% else %>
         <% @empresa.empleados.each do |empleado| %>
-            <%= "#{empleado.nombre} #{empleado.apellido} "%><br/>
+            <%= link_to "#{empleado.nombre} #{empleado.apellido} ", show_user_path(empleado.id)%><br/>
         <% end %>
     <% end %>
 

@@ -1,0 +1,22 @@
+<%= stylesheet_link_tag 'vaquero' %>
+
+<div class="container">
+    <h1> <%= "#{@user.nombre} #{@user.apellido}" %> </h1>
+    <% if @user.encargado %>
+        <h4> Encargado </h4>
+    <% else%>
+        <h4> Empleado </h4>
+    <% end %>
+    <br/>
+    <h2> Datos: </h2> 
+    <h4> <b> Correo:</b><%= " #{@user.email}" %> </h4>
+    <h4> <b> Telefono:</b><%= " +569 #{@user.telefono}" %> </h4>
+    <h4> <b> Correo:</b><%= " #{@user.email}" %> </h4>
+    <br/>
+    
+    <h2> Resultados </h2>
+        <div class="container2">
+            <span class="poop"></span>
+        </div>
+  
+</div>
