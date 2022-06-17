@@ -29,5 +29,8 @@
             <%= button_to "Eliminar", destroy_user_path, :class=> 'btn btn-danger', method: :delete %>
         </div>
     <% end%>
+    <% if current_user.id == @user.id%>
+        <%= link_to "Editar Perfil", edit_user_registration_path(current_user.id), class: 'btn btn-primary' %>
+    <% end %>
     <%= link_to "Volver", empresa_path(@user.empresa_id), class: 'btn btn-secondary' %> <br/><br/>
 </div>
