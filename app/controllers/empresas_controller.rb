@@ -5,9 +5,13 @@ class EmpresasController < ApplicationController
     
     def create
         @empresa = Empresa.new(create_params)
+        
         if @empresa.save
             flash[:notice] = "#{@empresa.nombre} ha sido creada con exito"
             redirect_to empresas_path
+        else
+            flash[:alert] = @empresa.errors.full_messages
+            redirect_to new_empresa_path
         end
     end
 
@@ -31,7 +35,8 @@ class EmpresasController < ApplicationController
         if @user.save
             flash[:notice] = "#{@user.nombre} #{@user.apellido} ha sido añadido con exito"
         else
-            flash[:notice] = "No se ha podido añadir al empleado"
+            flash[:alert] = @user.errors.full_messages
+            
         end
         redirect_to agregar_usuario_empresa_path
     end
