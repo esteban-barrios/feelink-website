@@ -15,6 +15,23 @@ class EmpresasController < ApplicationController
         end
     end
 
+    def edit
+        @empresa = Empresa.find(params[:id])
+    end
+
+    def update
+        @empresa = Empresa.find(params[:id])
+        @empresa.update(create_params)
+
+        if @empresa.save
+            flash[:notice] = "#{@empresa.nombre} ha sido actualizada con exito"
+            redirect_to empresa_path(id: @empresa.id)
+        else
+            flash[:alert] = @empresa.errors.full_messages
+            redirect_to edit_empresa_path
+        end
+    end
+
     def index
         @empresas = Empresa.all
     end

@@ -1,0 +1,52 @@
+<div class='container'>
+
+    <h1>Editar Empresa</h1><br/>
+    <%= render 'layouts/noticias' %>
+
+    <%= form_for :empresa, url: empresa_path, method: :patch do |f| %>
+        <div class="row">
+
+            <div class="col-12">
+                <%= f.label :nombre, class: "form-label" %><br>
+                <%= f.text_field :nombre, class: "form-control" %>
+            </div>
+
+            <div class=" col-12">
+                <%= f.label :rut, class: "form-label" %><br>
+                <%= f.text_field :rut, class: "form-control" %>
+            </div>
+
+            <div class="col-8">
+                <%= f.label :direccion, class: "form-label" %><br>
+                <%= f.text_field :direccion, class: "form-control" %>
+            </div>
+
+            <div class=" col-4">
+                <%= f.label :oficina, class: "form-label" %><br>
+                <%= f.text_field :oficina, class: "form-control" %>
+            </div>
+
+            <div class="col-6">
+                <%= f.label :region, class: "form-label" %><br>
+                <%= f.select :region, ["Region Metropolitana"], {}, class: "form-control" %>
+            </div>
+            
+            <div class="col-6">
+            <%= f.label :comuna, class: "form-label" %><br>
+                <%= f.select :comuna, ["Santiago","Conchalí","Huechuraba","Independencia",
+                "Quilicura","Recoleta","Renca","Las Condes","Lo Barnechea","Providencia",
+                "Vitacura","La Reina","Macul","Ñuñoa","Peñalolén","La Florida","La Granja",
+                "El Bosque","La Cisterna","La Pintana","San Ramón","Lo Espejo","Pedro Aguirre Cerda",
+                "San Joaquín","San Miguel","Cerrillos","Estación Central","Maipú","Cerro Navia","Lo Prado",
+                "Pudahuel","Quinta Normal"],
+                {}, class: "form-select" %>
+            </div>
+            
+            <div class="mt-3">
+                <%= f.submit "Editar", class: "btn btn-primary " %>
+                <%= link_to "Volver", empresas_path, class: 'btn btn-secondary' %>
+            </div>
+        </div>
+
+    <% end %>
+</div>
