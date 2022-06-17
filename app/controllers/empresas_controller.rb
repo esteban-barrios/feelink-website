@@ -1,4 +1,5 @@
 class EmpresasController < ApplicationController
+    
     def def new
         @empresa = Empresa.new()
     end
@@ -12,6 +13,18 @@ class EmpresasController < ApplicationController
         else
             flash[:alert] = @empresa.errors.full_messages
             redirect_to new_empresa_path
+        end
+    end
+
+    def destroy
+        @empresa = Empresa.find(params[:id])
+        name = @empresa.nombre
+        if @empresa.destroy
+            flash[:notice] = "#{name} se ha eliminado con exito"
+            redirect_to empresas_path
+        else
+            flash[:alert] = "No se pudo eliminar #{name}"
+            redirect_to empresa_path(params[:id])
         end
     end
 
