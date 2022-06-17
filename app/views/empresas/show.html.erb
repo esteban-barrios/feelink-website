@@ -1,7 +1,7 @@
 <div class='container'>
 
     <%= render 'layouts/noticias' %>
-    
+
     <h1><%= @empresa.nombre %></h1>
     <h4><%= "Direccion: #{@empresa.direccion}" %></h4>
     <% if !@empresa.oficina.empty? %>
@@ -35,7 +35,8 @@
 
     <div>
         <%= link_to "Añadir Trabajador", agregar_usuario_empresa_path, class: 'btn btn-primary'%>
-        <%= link_to "Volver", empresas_path, class: 'btn btn-secondary' %>
+        <%= link_to "Volver", empresas_path, class: 'btn btn-secondary' %> <br/>
+        <%= button_to "Eliminar Empresa", empresa_path(@empresa.id), class: 'btn btn-danger', method: :delete, data: { confirm: 'Are you sure you want to delete this record?' }%>
     </div>
     <br/>
 </div>
