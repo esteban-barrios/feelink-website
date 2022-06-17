@@ -6,6 +6,8 @@ Rails.application.routes.draw do
     end
   end
   devise_for :users
+
+  get "users/:id", to: "users#show", as: 'show_user'
   get 'about', to: "pages#about"
   get 'contact', to: "pages#contact"
   get 'experience', to: "pages#experience"
