@@ -1,5 +1,10 @@
 Rails.application.routes.draw do
-  resources :empresas
+  resources :empresas do
+    member do
+      get :agregar_usuario
+      post :crear_usuario
+    end
+  end
   devise_for :users
   get 'about', to: "pages#about"
   get 'contact', to: "pages#contact"

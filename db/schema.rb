@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_16_164306) do
+ActiveRecord::Schema[7.0].define(version: 2022_06_17_013003) do
   create_table "empresas", force: :cascade do |t|
     t.string "nombre", null: false
     t.string "direccion", null: false
@@ -33,8 +33,8 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_16_164306) do
     t.string "nombre"
     t.string "apellido"
     t.string "telefono"
-    t.boolean "encargado"
-    t.boolean "admin"
+    t.boolean "encargado", default: false
+    t.boolean "admin", default: false
     t.integer "empresa_id"
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["empresa_id"], name: "index_users_on_empresa_id"

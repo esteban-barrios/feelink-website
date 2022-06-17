@@ -20,12 +20,18 @@ class EmpresasController < ApplicationController
     end
 
     def agregar_usuario
+        @empresa = Empresa.find(params[:id])
         @user = User.new()
     end
 
     def crear_usuario
         @user = User.new(user_create_params)
-        @user.empresa_id = @empresa.id
+        @user.empresa_id = params[:id]
+        if @user.save
+            flash[:notice] = "#{@user.nombre} #{@user.apellido} ha sido añadido con exito"
+        else
+            flash[:notice] = "No se ha podido añadir al empleado"
+        end
     end
 
     private
@@ -35,6 +41,6 @@ class EmpresasController < ApplicationController
     end
 
     def user_create_params
-        params.require(:user).permit(:nombre, :email, :apellido, :telefono, :encargado)
+        params.require(:user).permit(:nombre, :email, :apellido, :telefono, :encargado, :password, :password_confirmation)
       end
 end

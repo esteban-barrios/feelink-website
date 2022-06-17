@@ -20310,4 +20310,1839 @@ Processing by Devise::SessionsController#new as HTML
 Completed 200 OK in 42ms (Views: 38.1ms | Allocations: 8810)
 
 
+<<<<<<< HEAD
 >>>>>>> 60302db (fix crear usuario)
+=======
+Started GET "/empresas/agregar_usuario" for ::1 at 2022-06-16 18:03:38 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EmpresasController#show as HTML
+  Parameters: {"id"=>"agregar_usuario"}
+  [1m[36mEmpresa Load (0.2ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas" WHERE "empresas"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:19:in `show'
+Completed 404 Not Found in 20ms (ActiveRecord: 1.0ms | Allocations: 6006)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Empresa with 'id'=agregar_usuario):
+  
+app/controllers/empresas_controller.rb:19:in `show'
+Started GET "/empresasasdas" for ::1 at 2022-06-16 18:03:50 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/empresasasdas"):
+  
+Started GET "/empresas/1/agregar_usuario" for ::1 at 2022-06-16 18:04:04 -0400
+Processing by EmpresasController#agregar_usuario as HTML
+  Parameters: {"id"=>"1"}
+Completed 406 Not Acceptable in 117ms (ActiveRecord: 0.7ms | Allocations: 15843)
+
+
+  
+ActionController::MissingExactTemplate (EmpresasController#agregar_usuario is missing a template for request formats: text/html):
+  
+actionpack (7.0.3) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (7.0.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (7.0.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (7.0.3) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.3) lib/action_controller/metal/rendering.rb:53:in `process_action'
+actionpack (7.0.3) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.3) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.3) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.3) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.3) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.3) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.3) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.3) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.3) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.3) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.3) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.3) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.3) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.3) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.3) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.3) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.3) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.3) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3.1) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3.1) lib/rack/etag.rb:27:in `call'
+rack (2.2.3.1) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3.1) lib/rack/head.rb:12:in `call'
+actionpack (7.0.3) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.3) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.3.1) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3.1) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (7.0.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 18:04:07 -0400
+Processing by EmpresasController#agregar_usuario as HTML
+  Parameters: {"id"=>"2"}
+Completed 406 Not Acceptable in 3ms (ActiveRecord: 0.0ms | Allocations: 589)
+
+
+  
+ActionController::MissingExactTemplate (EmpresasController#agregar_usuario is missing a template for request formats: text/html):
+  
+actionpack (7.0.3) lib/action_controller/metal/implicit_render.rb:45:in `default_render'
+actionpack (7.0.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+<internal:kernel>:90:in `tap'
+actionpack (7.0.3) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (7.0.3) lib/abstract_controller/base.rb:215:in `process_action'
+actionpack (7.0.3) lib/action_controller/metal/rendering.rb:53:in `process_action'
+actionpack (7.0.3) lib/abstract_controller/callbacks.rb:234:in `block in process_action'
+activesupport (7.0.3) lib/active_support/callbacks.rb:118:in `block in run_callbacks'
+actiontext (7.0.3) lib/action_text/rendering.rb:20:in `with_renderer'
+actiontext (7.0.3) lib/action_text/engine.rb:69:in `block (4 levels) in <class:Engine>'
+activesupport (7.0.3) lib/active_support/callbacks.rb:127:in `instance_exec'
+activesupport (7.0.3) lib/active_support/callbacks.rb:127:in `block in run_callbacks'
+activesupport (7.0.3) lib/active_support/callbacks.rb:138:in `run_callbacks'
+actionpack (7.0.3) lib/abstract_controller/callbacks.rb:233:in `process_action'
+actionpack (7.0.3) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (7.0.3) lib/action_controller/metal/instrumentation.rb:67:in `block in process_action'
+activesupport (7.0.3) lib/active_support/notifications.rb:206:in `block in instrument'
+activesupport (7.0.3) lib/active_support/notifications/instrumenter.rb:24:in `instrument'
+activesupport (7.0.3) lib/active_support/notifications.rb:206:in `instrument'
+actionpack (7.0.3) lib/action_controller/metal/instrumentation.rb:66:in `process_action'
+actionpack (7.0.3) lib/action_controller/metal/params_wrapper.rb:259:in `process_action'
+activerecord (7.0.3) lib/active_record/railties/controller_runtime.rb:27:in `process_action'
+actionpack (7.0.3) lib/abstract_controller/base.rb:151:in `process'
+actionview (7.0.3) lib/action_view/rendering.rb:39:in `process'
+actionpack (7.0.3) lib/action_controller/metal.rb:188:in `dispatch'
+actionpack (7.0.3) lib/action_controller/metal.rb:251:in `dispatch'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:49:in `dispatch'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:32:in `each'
+actionpack (7.0.3) lib/action_dispatch/journey/router.rb:32:in `serve'
+actionpack (7.0.3) lib/action_dispatch/routing/route_set.rb:852:in `call'
+warden (1.2.9) lib/warden/manager.rb:36:in `block in call'
+warden (1.2.9) lib/warden/manager.rb:34:in `catch'
+warden (1.2.9) lib/warden/manager.rb:34:in `call'
+rack (2.2.3.1) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.3.1) lib/rack/etag.rb:27:in `call'
+rack (2.2.3.1) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.3.1) lib/rack/head.rb:12:in `call'
+actionpack (7.0.3) lib/action_dispatch/http/permissions_policy.rb:38:in `call'
+actionpack (7.0.3) lib/action_dispatch/http/content_security_policy.rb:36:in `call'
+rack (2.2.3.1) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.3.1) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/cookies.rb:697:in `call'
+activerecord (7.0.3) lib/active_record/migration.rb:603:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (7.0.3) lib/active_support/callbacks.rb:99:in `run_callbacks'
+actionpack (7.0.3) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/debug_exceptions.rb:28:in `call'
+web-console (4.2.0) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.2.0) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.2.0) lib/web_console/middleware.rb:17:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/show_exceptions.rb:26:in `call'
+railties (7.0.3) lib/rails/rack/logger.rb:40:in `call_app'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `block in call'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `block in tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:38:in `tagged'
+activesupport (7.0.3) lib/active_support/tagged_logging.rb:114:in `tagged'
+railties (7.0.3) lib/rails/rack/logger.rb:25:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/remote_ip.rb:93:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/request_id.rb:26:in `call'
+rack (2.2.3.1) lib/rack/method_override.rb:24:in `call'
+rack (2.2.3.1) lib/rack/runtime.rb:22:in `call'
+activesupport (7.0.3) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/server_timing.rb:20:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/static.rb:23:in `call'
+rack (2.2.3.1) lib/rack/sendfile.rb:110:in `call'
+actionpack (7.0.3) lib/action_dispatch/middleware/host_authorization.rb:137:in `call'
+railties (7.0.3) lib/rails/engine.rb:530:in `call'
+puma (5.6.4) lib/puma/configuration.rb:252:in `call'
+puma (5.6.4) lib/puma/request.rb:77:in `block in handle_request'
+puma (5.6.4) lib/puma/thread_pool.rb:340:in `with_force_shutdown'
+puma (5.6.4) lib/puma/request.rb:76:in `handle_request'
+puma (5.6.4) lib/puma/server.rb:441:in `process_client'
+puma (5.6.4) lib/puma/thread_pool.rb:147:in `block in spawn_thread'
+Started GET "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 18:06:28 -0400
+Processing by EmpresasController#agregar_usuario as HTML
+  Parameters: {"id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/agregar_usuario.html.erb within layouts/application
+  Rendered empresas/agregar_usuario.html.erb within layouts/application (Duration: 0.3ms | Allocations: 125)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 135)
+  Rendered layout layouts/application.html.erb (Duration: 165.9ms | Allocations: 54420)
+Completed 200 OK in 175ms (Views: 171.1ms | ActiveRecord: 0.0ms | Allocations: 55461)
+
+
+Started GET "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 18:07:02 -0400
+Processing by EmpresasController#agregar_usuario as HTML
+  Parameters: {"id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/agregar_usuario.html.erb within layouts/application
+  Rendered empresas/agregar_usuario.html.erb within layouts/application (Duration: 7.6ms | Allocations: 5914)
+  Rendered layout layouts/application.html.erb (Duration: 8.2ms | Allocations: 6008)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.0ms | Allocations: 6872)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource' for #<ActionView::Base:0x0000000000e2b8>
+Did you mean?  rescue):
+    1: <h2>Añadir Usuario</h2>
+    2: 
+    3: <%= form_for(resource, as: resource_name, url: registration_path(resource_name)) do |f| %>
+    4:   <%= render "devise/shared/error_messages", resource: resource %>
+    5:   
+    6:   <div class="field">
+  
+app/views/empresas/agregar_usuario.html.erb:3
+Started GET "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 18:08:23 -0400
+Processing by EmpresasController#agregar_usuario as HTML
+  Parameters: {"id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/agregar_usuario.html.erb within layouts/application
+  Rendered empresas/agregar_usuario.html.erb within layouts/application (Duration: 1.4ms | Allocations: 1713)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1807)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 2671)
+
+
+  
+ActionView::Template::Error (no implicit conversion of Symbol into String):
+    1: <h2>Añadir Usuario</h2>
+    2: 
+    3: <%= form_for :user,  agregar_usuario_empresa_path do |f| %>
+    4:   <%= render "devise/shared/error_messages", resource: resource %>
+    5:   
+    6:   <div class="field">
+  
+app/views/empresas/agregar_usuario.html.erb:3
+Started GET "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 18:08:51 -0400
+Processing by EmpresasController#agregar_usuario as HTML
+  Parameters: {"id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/agregar_usuario.html.erb within layouts/application
+  Rendered empresas/agregar_usuario.html.erb within layouts/application (Duration: 5.8ms | Allocations: 5979)
+  Rendered layout layouts/application.html.erb (Duration: 6.2ms | Allocations: 6073)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms | Allocations: 6928)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource' for #<ActionView::Base:0x0000000000e8d0>
+Did you mean?  rescue):
+    1: <h2>Añadir Usuario</h2>
+    2: 
+    3: <%= form_for :user,  url: agregar_usuario_empresa_path do |f| %>
+    4:   <%= render "devise/shared/error_messages", resource: resource %>
+    5:   
+    6:   <div class="field">
+    7:     <%= f.label :nombre %><br />
+  
+app/views/empresas/agregar_usuario.html.erb:4
+app/views/empresas/agregar_usuario.html.erb:3
+Started GET "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 18:09:00 -0400
+Processing by EmpresasController#agregar_usuario as HTML
+  Parameters: {"id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/agregar_usuario.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 2.7ms | Allocations: 2940)
+  Rendered empresas/agregar_usuario.html.erb within layouts/application (Duration: 6.4ms | Allocations: 3754)
+  Rendered layout layouts/application.html.erb (Duration: 6.9ms | Allocations: 3848)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms | Allocations: 4705)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for :user:Symbol):
+    1: <% if resource.errors.any? %>
+    2:   <div id="error_explanation">
+    3:     <h2>
+    4:       <%= I18n.t("errors.messages.not_saved",
+  
+app/views/devise/shared/_error_messages.html.erb:1
+app/views/empresas/agregar_usuario.html.erb:4
+app/views/empresas/agregar_usuario.html.erb:3
+Started GET "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 18:09:12 -0400
+Processing by EmpresasController#agregar_usuario as HTML
+  Parameters: {"id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/agregar_usuario.html.erb within layouts/application
+  Rendered empresas/agregar_usuario.html.erb within layouts/application (Duration: 8.5ms | Allocations: 1595)
+  Rendered layout layouts/application.html.erb (Duration: 9.4ms | Allocations: 1690)
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 0.0ms | Allocations: 2550)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h2>Añadir Usuario</h2>
+
+<%= form_for :user,  url: agregar_usuario_empresa_path do |f| %>
+  <%= #render "devise/shared/error_messages", resource: :user %>
+  
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre, autofocus: true, autocomplete: "name" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :apellido %><br />
+    <%= f.text_field :apellido, autofocus: true, autocomplete: "name" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :telefono %><br />
+    <%= f.text_field :telefono, autofocus: true, autocomplete: "phone" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :encargado, "Encargado?" %>
+    <%= f.radio_button :encargado, "Encargado?", :checked => false %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+
+):
+1:    <h2>Añadir Usuario</h2>
+2:    
+3:    <%= form_for :user,  url: agregar_usuario_empresa_path do |f| %>
+4:      <%= #render "devise/shared/error_messages", resource: :user %>
+5:      
+6:      <div class="field">
+7:        <%= f.label :nombre %><br />
+8:        <%= f.text_field :nombre, autofocus: true, autocomplete: "name" %>
+9:      </div>
+10:    
+11:      <div class="field">
+12:        <%= f.label :apellido %><br />
+13:        <%= f.text_field :apellido, autofocus: true, autocomplete: "name" %>
+14:      </div>
+15:    
+16:      <div class="field">
+17:        <%= f.label :email %><br />
+18:        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+19:      </div>
+20:    
+21:      <div class="field">
+22:        <%= f.label :telefono %><br />
+23:        <%= f.text_field :telefono, autofocus: true, autocomplete: "phone" %>
+24:      </div>
+25:    
+26:      <div class="field">
+27:        <%= f.label :password %>
+28:        <% if @minimum_password_length %>
+29:        <em>(<%= @minimum_password_length %> characters minimum)</em>
+30:        <% end %><br />
+31:        <%= f.password_field :password, autocomplete: "new-password" %>
+32:      </div>
+33:    
+34:      <div class="field">
+35:        <%= f.label :password_confirmation %><br />
+36:        <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+37:      </div>
+38:    
+39:      <div class="field">
+40:        <%= f.label :encargado, "Encargado?" %>
+41:        <%= f.radio_button :encargado, "Encargado?", :checked => false %>
+42:      </div>
+43:    
+44:      <div class="actions">
+45:        <%= f.submit "Sign up" %>
+46:      </div>
+47:    <% end %>
+48:    
+49:    <%= render "devise/shared/links" %>
+  
+app/views/empresas/agregar_usuario.html.erb:6: syntax error, unexpected '<', expecting ')'
+app/views/empresas/agregar_usuario.html.erb:7: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:9: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:11: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:12: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:14: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:16: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:17: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:19: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:21: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:22: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:24: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:26: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:29: syntax error, unexpected local variable or method, expecting ')'
+app/views/empresas/agregar_usuario.html.erb:42: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:44: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:49: unknown regexp options - hard
+app/views/empresas/agregar_usuario.html.erb:49: end pattern with unmatched parenthesis: /div>
+app/views/empresas/agregar_usuario.html.erb:49: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:52: unterminated string meets end of file
+app/views/empresas/agregar_usuario.html.erb:52: syntax error, unexpected end-of-input, expecting ')'
+app/views/empresas/agregar_usuario.html.erb:6: syntax error, unexpected '<', expecting ')'
+app/views/empresas/agregar_usuario.html.erb:7: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:9: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:11: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:12: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:14: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:16: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:17: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:19: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:21: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:22: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:24: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:26: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:29: syntax error, unexpected local variable or method, expecting ')'
+app/views/empresas/agregar_usuario.html.erb:42: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:44: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:49: unknown regexp options - hard
+app/views/empresas/agregar_usuario.html.erb:49: end pattern with unmatched parenthesis: /div>
+app/views/empresas/agregar_usuario.html.erb:49: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:52: unterminated string meets end of file
+app/views/empresas/agregar_usuario.html.erb:52: syntax error, unexpected end-of-input, expecting ')'
+app/views/empresas/agregar_usuario.html.erb:6: syntax error, unexpected '<', expecting ')'
+app/views/empresas/agregar_usuario.html.erb:7: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:9: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:11: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:12: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:14: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:16: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:17: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:19: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:21: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:22: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:24: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:26: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:29: syntax error, unexpected local variable or method, expecting ')'
+app/views/empresas/agregar_usuario.html.erb:42: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:44: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:49: unknown regexp options - hard
+app/views/empresas/agregar_usuario.html.erb:49: end pattern with unmatched parenthesis: /div>
+app/views/empresas/agregar_usuario.html.erb:49: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:52: unterminated string meets end of file
+app/views/empresas/agregar_usuario.html.erb:52: syntax error, unexpected end-of-input, expecting ')'
+app/views/empresas/agregar_usuario.html.erb:6: syntax error, unexpected '<', expecting ')'
+app/views/empresas/agregar_usuario.html.erb:7: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:9: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:11: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:12: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:14: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:16: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:17: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:19: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:21: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:22: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:24: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:26: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:29: syntax error, unexpected local variable or method, expecting ')'
+app/views/empresas/agregar_usuario.html.erb:42: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:44: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:49: unknown regexp options - hard
+app/views/empresas/agregar_usuario.html.erb:49: end pattern with unmatched parenthesis: /div>
+app/views/empresas/agregar_usuario.html.erb:49: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:52: unterminated string meets end of file
+app/views/empresas/agregar_usuario.html.erb:52: syntax error, unexpected end-of-input, expecting ')'
+app/views/empresas/agregar_usuario.html.erb:6: syntax error, unexpected '<', expecting ')'
+app/views/empresas/agregar_usuario.html.erb:7: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:9: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:11: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:12: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:14: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:16: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:17: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:19: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:21: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:22: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:24: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:26: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:29: syntax error, unexpected local variable or method, expecting ')'
+app/views/empresas/agregar_usuario.html.erb:42: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:44: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:49: unknown regexp options - hard
+app/views/empresas/agregar_usuario.html.erb:49: end pattern with unmatched parenthesis: /div>
+app/views/empresas/agregar_usuario.html.erb:49: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:52: unterminated string meets end of file
+app/views/empresas/agregar_usuario.html.erb:52: syntax error, unexpected end-of-input, expecting ')'
+app/views/empresas/agregar_usuario.html.erb:6: syntax error, unexpected '<', expecting ')'
+app/views/empresas/agregar_usuario.html.erb:7: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:9: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:11: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:12: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:14: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:16: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:17: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:19: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:21: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:22: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:24: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:26: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:29: syntax error, unexpected local variable or method, expecting ')'
+app/views/empresas/agregar_usuario.html.erb:42: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:44: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:49: unknown regexp options - hard
+app/views/empresas/agregar_usuario.html.erb:49: end pattern with unmatched parenthesis: /div>
+app/views/empresas/agregar_usuario.html.erb:49: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:52: unterminated string meets end of file
+app/views/empresas/agregar_usuario.html.erb:52: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 18:09:15 -0400
+Processing by EmpresasController#agregar_usuario as HTML
+  Parameters: {"id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/agregar_usuario.html.erb within layouts/application
+  Rendered empresas/agregar_usuario.html.erb within layouts/application (Duration: 1.2ms | Allocations: 1509)
+  Rendered layout layouts/application.html.erb (Duration: 1.7ms | Allocations: 1598)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1919)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h2>Añadir Usuario</h2>
+
+<%= form_for :user,  url: agregar_usuario_empresa_path do |f| %>
+  <%= #render "devise/shared/error_messages", resource: :user %>
+  
+  <div class="field">
+    <%= f.label :nombre %><br />
+    <%= f.text_field :nombre, autofocus: true, autocomplete: "name" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :apellido %><br />
+    <%= f.text_field :apellido, autofocus: true, autocomplete: "name" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :email %><br />
+    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :telefono %><br />
+    <%= f.text_field :telefono, autofocus: true, autocomplete: "phone" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password %>
+    <% if @minimum_password_length %>
+    <em>(<%= @minimum_password_length %> characters minimum)</em>
+    <% end %><br />
+    <%= f.password_field :password, autocomplete: "new-password" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :password_confirmation %><br />
+    <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+  </div>
+
+  <div class="field">
+    <%= f.label :encargado, "Encargado?" %>
+    <%= f.radio_button :encargado, "Encargado?", :checked => false %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Sign up" %>
+  </div>
+<% end %>
+
+<%= render "devise/shared/links" %>
+
+):
+1:    <h2>Añadir Usuario</h2>
+2:    
+3:    <%= form_for :user,  url: agregar_usuario_empresa_path do |f| %>
+4:      <%= #render "devise/shared/error_messages", resource: :user %>
+5:      
+6:      <div class="field">
+7:        <%= f.label :nombre %><br />
+8:        <%= f.text_field :nombre, autofocus: true, autocomplete: "name" %>
+9:      </div>
+10:    
+11:      <div class="field">
+12:        <%= f.label :apellido %><br />
+13:        <%= f.text_field :apellido, autofocus: true, autocomplete: "name" %>
+14:      </div>
+15:    
+16:      <div class="field">
+17:        <%= f.label :email %><br />
+18:        <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+19:      </div>
+20:    
+21:      <div class="field">
+22:        <%= f.label :telefono %><br />
+23:        <%= f.text_field :telefono, autofocus: true, autocomplete: "phone" %>
+24:      </div>
+25:    
+26:      <div class="field">
+27:        <%= f.label :password %>
+28:        <% if @minimum_password_length %>
+29:        <em>(<%= @minimum_password_length %> characters minimum)</em>
+30:        <% end %><br />
+31:        <%= f.password_field :password, autocomplete: "new-password" %>
+32:      </div>
+33:    
+34:      <div class="field">
+35:        <%= f.label :password_confirmation %><br />
+36:        <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
+37:      </div>
+38:    
+39:      <div class="field">
+40:        <%= f.label :encargado, "Encargado?" %>
+41:        <%= f.radio_button :encargado, "Encargado?", :checked => false %>
+42:      </div>
+43:    
+44:      <div class="actions">
+45:        <%= f.submit "Sign up" %>
+46:      </div>
+47:    <% end %>
+48:    
+49:    <%= render "devise/shared/links" %>
+  
+app/views/empresas/agregar_usuario.html.erb:6: syntax error, unexpected '<', expecting ')'
+app/views/empresas/agregar_usuario.html.erb:7: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:9: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:11: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:12: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:14: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:16: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:17: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:19: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:21: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:22: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:24: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:26: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:29: syntax error, unexpected local variable or method, expecting ')'
+app/views/empresas/agregar_usuario.html.erb:42: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:44: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:49: unknown regexp options - hard
+app/views/empresas/agregar_usuario.html.erb:49: end pattern with unmatched parenthesis: /div>
+app/views/empresas/agregar_usuario.html.erb:49: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:52: unterminated string meets end of file
+app/views/empresas/agregar_usuario.html.erb:52: syntax error, unexpected end-of-input, expecting ')'
+app/views/empresas/agregar_usuario.html.erb:6: syntax error, unexpected '<', expecting ')'
+app/views/empresas/agregar_usuario.html.erb:7: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:9: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:11: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:12: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:14: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:16: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:17: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:19: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:21: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:22: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:24: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:26: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:29: syntax error, unexpected local variable or method, expecting ')'
+app/views/empresas/agregar_usuario.html.erb:42: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:44: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:49: unknown regexp options - hard
+app/views/empresas/agregar_usuario.html.erb:49: end pattern with unmatched parenthesis: /div>
+app/views/empresas/agregar_usuario.html.erb:49: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:52: unterminated string meets end of file
+app/views/empresas/agregar_usuario.html.erb:52: syntax error, unexpected end-of-input, expecting ')'
+app/views/empresas/agregar_usuario.html.erb:6: syntax error, unexpected '<', expecting ')'
+app/views/empresas/agregar_usuario.html.erb:7: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:9: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:11: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:12: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:14: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:16: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:17: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:19: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:21: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:22: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:24: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:26: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:29: syntax error, unexpected local variable or method, expecting ')'
+app/views/empresas/agregar_usuario.html.erb:42: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:44: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:49: unknown regexp options - hard
+app/views/empresas/agregar_usuario.html.erb:49: end pattern with unmatched parenthesis: /div>
+app/views/empresas/agregar_usuario.html.erb:49: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:52: unterminated string meets end of file
+app/views/empresas/agregar_usuario.html.erb:52: syntax error, unexpected end-of-input, expecting ')'
+app/views/empresas/agregar_usuario.html.erb:6: syntax error, unexpected '<', expecting ')'
+app/views/empresas/agregar_usuario.html.erb:7: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:9: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:11: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:12: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:14: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:16: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:17: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:19: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:21: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:22: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:24: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:26: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:29: syntax error, unexpected local variable or method, expecting ')'
+app/views/empresas/agregar_usuario.html.erb:42: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:44: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:49: unknown regexp options - hard
+app/views/empresas/agregar_usuario.html.erb:49: end pattern with unmatched parenthesis: /div>
+app/views/empresas/agregar_usuario.html.erb:49: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:52: unterminated string meets end of file
+app/views/empresas/agregar_usuario.html.erb:52: syntax error, unexpected end-of-input, expecting ')'
+app/views/empresas/agregar_usuario.html.erb:6: syntax error, unexpected '<', expecting ')'
+app/views/empresas/agregar_usuario.html.erb:7: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:9: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:11: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:12: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:14: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:16: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:17: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:19: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:21: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:22: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:24: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:26: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:29: syntax error, unexpected local variable or method, expecting ')'
+app/views/empresas/agregar_usuario.html.erb:42: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:44: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:49: unknown regexp options - hard
+app/views/empresas/agregar_usuario.html.erb:49: end pattern with unmatched parenthesis: /div>
+app/views/empresas/agregar_usuario.html.erb:49: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:52: unterminated string meets end of file
+app/views/empresas/agregar_usuario.html.erb:52: syntax error, unexpected end-of-input, expecting ')'
+app/views/empresas/agregar_usuario.html.erb:6: syntax error, unexpected '<', expecting ')'
+app/views/empresas/agregar_usuario.html.erb:7: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:9: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:11: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:12: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:14: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:16: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:17: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:19: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:21: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:22: syntax error, unexpected regexp literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:24: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:26: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:29: syntax error, unexpected local variable or method, expecting ')'
+app/views/empresas/agregar_usuario.html.erb:42: unknown regexp options - dv
+app/views/empresas/agregar_usuario.html.erb:44: syntax error, unexpected '<'
+app/views/empresas/agregar_usuario.html.erb:49: unknown regexp options - hard
+app/views/empresas/agregar_usuario.html.erb:49: end pattern with unmatched parenthesis: /div>
+app/views/empresas/agregar_usuario.html.erb:49: syntax error, unexpected string literal, expecting `do' or '{' or '('
+app/views/empresas/agregar_usuario.html.erb:52: unterminated string meets end of file
+app/views/empresas/agregar_usuario.html.erb:52: syntax error, unexpected end-of-input, expecting ')'
+Started GET "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 18:09:26 -0400
+Processing by EmpresasController#agregar_usuario as HTML
+  Parameters: {"id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/agregar_usuario.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.4ms | Allocations: 2907)
+  Rendered empresas/agregar_usuario.html.erb within layouts/application (Duration: 3.9ms | Allocations: 3718)
+  Rendered layout layouts/application.html.erb (Duration: 4.3ms | Allocations: 3812)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 4639)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for :user:Symbol):
+    1: <% if resource.errors.any? %>
+    2:   <div id="error_explanation">
+    3:     <h2>
+    4:       <%= I18n.t("errors.messages.not_saved",
+  
+app/views/devise/shared/_error_messages.html.erb:1
+app/views/empresas/agregar_usuario.html.erb:4
+app/views/empresas/agregar_usuario.html.erb:3
+Started GET "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 18:09:37 -0400
+Processing by EmpresasController#agregar_usuario as HTML
+  Parameters: {"id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/agregar_usuario.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 1.6ms | Allocations: 2700)
+  Rendered empresas/agregar_usuario.html.erb within layouts/application (Duration: 2.0ms | Allocations: 2841)
+  Rendered layout layouts/application.html.erb (Duration: 2.4ms | Allocations: 2929)
+Completed 500 Internal Server Error in 6ms (Allocations: 3246)
+
+
+  
+ActionView::Template::Error (undefined method `errors' for :user:Symbol):
+    1: <% if resource.errors.any? %>
+    2:   <div id="error_explanation">
+    3:     <h2>
+    4:       <%= I18n.t("errors.messages.not_saved",
+  
+app/views/devise/shared/_error_messages.html.erb:1
+app/views/empresas/agregar_usuario.html.erb:4
+app/views/empresas/agregar_usuario.html.erb:3
+Started GET "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 18:09:46 -0400
+Processing by EmpresasController#agregar_usuario as HTML
+  Parameters: {"id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/agregar_usuario.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 7.3ms | Allocations: 5909)
+  Rendered empresas/agregar_usuario.html.erb within layouts/application (Duration: 289.8ms | Allocations: 52230)
+  Rendered layout layouts/application.html.erb (Duration: 290.2ms | Allocations: 52324)
+Completed 500 Internal Server Error in 300ms (Allocations: 53144)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `resource_name' for #<ActionView::Base:0x0000000000fc08>
+Did you mean?  resolve_asset):
+    1: <%- if controller_name != 'sessions' %>
+    2:   <%= link_to "Log in", new_session_path(resource_name) %><br />
+    3: <% end %>
+    4: 
+    5: <%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+  
+app/views/devise/shared/_links.html.erb:2
+app/views/empresas/agregar_usuario.html.erb:48
+Started GET "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 18:09:59 -0400
+Processing by EmpresasController#agregar_usuario as HTML
+  Parameters: {"id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/agregar_usuario.html.erb within layouts/application
+  Rendered empresas/agregar_usuario.html.erb within layouts/application (Duration: 3.2ms | Allocations: 2698)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 36.4ms | Allocations: 10236)
+Completed 200 OK in 45ms (Views: 41.4ms | Allocations: 11111)
+
+
+Started POST "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 18:10:18 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/empresas/2/agregar_usuario"):
+  
+Started POST "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 18:12:12 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/empresas/2/agregar_usuario"):
+  
+Started POST "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 18:12:38 -0400
+  
+ActionController::RoutingError (No route matches [POST] "/empresas/2/agregar_usuario"):
+  
+Started GET "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 18:12:45 -0400
+Processing by EmpresasController#agregar_usuario as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/empresas_controller.rb:23:in `agregar_usuario'
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/agregar_usuario.html.erb within layouts/application
+  Rendered empresas/agregar_usuario.html.erb within layouts/application (Duration: 3.0ms | Allocations: 2733)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 132)
+  Rendered layout layouts/application.html.erb (Duration: 65.2ms | Allocations: 26060)
+Completed 200 OK in 83ms (Views: 70.9ms | ActiveRecord: 0.4ms | Allocations: 31074)
+
+
+Started POST "/empresas/2/crear_usuario" for ::1 at 2022-06-16 18:12:58 -0400
+Processing by EmpresasController#crear_usuario as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"nombre"=>"asd", "apellido"=>"c", "email"=>"a1@asd.com", "telefono"=>"asd", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "encargado"=>"Encargado?"}, "commit"=>"Sign up", "id"=>"2"}
+[31mUnpermitted parameters: :password, :password_confirmation. Context: { controller: EmpresasController, action: crear_usuario, request: #<ActionDispatch::Request:0x000002148c077d10>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{"nombre"=>"asd", "apellido"=>"c", "email"=>"a1@asd.com", "telefono"=>"asd", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "encargado"=>"Encargado?"}, "commit"=>"Sign up", "controller"=>"empresas", "action"=>"crear_usuario", "id"=>"2"} }[0m
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 1937)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass
+
+        @user.empresa_id = @empresa.id
+                                   ^^^):
+  
+app/controllers/empresas_controller.rb:28:in `crear_usuario'
+Started POST "/empresas/2/crear_usuario" for ::1 at 2022-06-16 18:13:34 -0400
+Processing by EmpresasController#crear_usuario as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"nombre"=>"asd", "apellido"=>"c", "email"=>"a1@asd.com", "telefono"=>"asd", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "encargado"=>"Encargado?"}, "commit"=>"Sign up", "id"=>"2"}
+[31mUnpermitted parameters: :password, :password_confirmation. Context: { controller: EmpresasController, action: crear_usuario, request: #<ActionDispatch::Request:0x000002148fb7ce10>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{"nombre"=>"asd", "apellido"=>"c", "email"=>"a1@asd.com", "telefono"=>"asd", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "encargado"=>"Encargado?"}, "commit"=>"Sign up", "controller"=>"empresas", "action"=>"crear_usuario", "id"=>"2"} }[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/empresas_controller.rb:28:in `crear_usuario'
+Completed 500 Internal Server Error in 28392ms (ActiveRecord: 1.0ms | Allocations: 96249)
+
+
+  
+NoMethodError (undefined method `id' for nil:NilClass
+
+        @user.empresa_id = @empresa.id
+                                   ^^^):
+  
+app/controllers/empresas_controller.rb:29:in `crear_usuario'
+Started POST "/empresas/2/crear_usuario" for ::1 at 2022-06-16 18:15:20 -0400
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EmpresasController#crear_usuario as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"nombre"=>"asd", "apellido"=>"c", "email"=>"a1@asd.com", "telefono"=>"asd", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "encargado"=>"Encargado?"}, "commit"=>"Sign up", "id"=>"2"}
+[31mUnpermitted parameters: :password, :password_confirmation. Context: { controller: EmpresasController, action: crear_usuario, request: #<ActionDispatch::Request:0x00000289dd4eb9e8>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{"nombre"=>"asd", "apellido"=>"c", "email"=>"a1@asd.com", "telefono"=>"asd", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "encargado"=>"Encargado?"}, "commit"=>"Sign up", "controller"=>"empresas", "action"=>"crear_usuario", "id"=>"2"} }[0m
+Completed 500 Internal Server Error in 2462ms (ActiveRecord: 0.8ms | Allocations: 47979)
+
+
+  
+NoMethodError (undefined method `save' for nil:NilClass
+
+        if @empresa.save
+                   ^^^^^):
+  
+app/controllers/empresas_controller.rb:30:in `crear_usuario'
+Started POST "/empresas/2/crear_usuario" for ::1 at 2022-06-16 18:15:33 -0400
+Processing by EmpresasController#crear_usuario as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"nombre"=>"asd", "apellido"=>"c", "email"=>"a1@asd.com", "telefono"=>"asd", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "encargado"=>"Encargado?"}, "commit"=>"Sign up", "id"=>"2"}
+[31mUnpermitted parameters: :password, :password_confirmation. Context: { controller: EmpresasController, action: crear_usuario, request: #<ActionDispatch::Request:0x00000289dcecf2f8>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{"nombre"=>"asd", "apellido"=>"c", "email"=>"a1@asd.com", "telefono"=>"asd", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "encargado"=>"Encargado?"}, "commit"=>"Sign up", "controller"=>"empresas", "action"=>"crear_usuario", "id"=>"2"} }[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/empresas_controller.rb:28:in `crear_usuario'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "a1@asd.com"], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+No template found for EmpresasController#crear_usuario, rendering head :no_content
+Completed 204 No Content in 747ms (ActiveRecord: 1.4ms | Allocations: 20324)
+
+
+Started POST "/empresas/2/crear_usuario" for ::1 at 2022-06-16 18:16:17 -0400
+Processing by EmpresasController#crear_usuario as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"nombre"=>"asd", "apellido"=>"c", "email"=>"a1@asd.com", "telefono"=>"asd", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "encargado"=>"Encargado?"}, "commit"=>"Sign up", "id"=>"2"}
+[31mUnpermitted parameters: :password, :password_confirmation. Context: { controller: EmpresasController, action: crear_usuario, request: #<ActionDispatch::Request:0x00000289dc2db0c8>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{"nombre"=>"asd", "apellido"=>"c", "email"=>"a1@asd.com", "telefono"=>"asd", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "encargado"=>"Encargado?"}, "commit"=>"Sign up", "controller"=>"empresas", "action"=>"crear_usuario", "id"=>"2"} }[0m
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/empresas_controller.rb:27:in `crear_usuario'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/empresas_controller.rb:29:in `crear_usuario'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "a1@asd.com"], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:29:in `crear_usuario'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/empresas_controller.rb:29:in `crear_usuario'
+No template found for EmpresasController#crear_usuario, rendering head :no_content
+Completed 204 No Content in 20689ms (ActiveRecord: 1.3ms | Allocations: 49857)
+
+
+Started GET "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 18:16:49 -0400
+  [1m[35m (1.2ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EmpresasController#agregar_usuario as HTML
+  Parameters: {"id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/agregar_usuario.html.erb within layouts/application
+  Rendered empresas/agregar_usuario.html.erb within layouts/application (Duration: 5.2ms | Allocations: 3439)
+  Rendered layout layouts/application.html.erb (Duration: 5.8ms | Allocations: 3554)
+Completed 500 Internal Server Error in 43ms (ActiveRecord: 0.9ms | Allocations: 15469)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    1: <h2>Añadir Usuario</h2>
+    2: 
+    3: <%= form_for :user,  url: crear_usuario_empresa_path(@empresa.id) do |f| %>
+    4:   
+    5:   <div class="field">
+    6:     <%= f.label :nombre %><br />
+  
+app/views/empresas/agregar_usuario.html.erb:3
+Started GET "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 18:16:52 -0400
+Processing by EmpresasController#agregar_usuario as HTML
+  Parameters: {"id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/agregar_usuario.html.erb within layouts/application
+  Rendered empresas/agregar_usuario.html.erb within layouts/application (Duration: 1.0ms | Allocations: 2310)
+  Rendered layout layouts/application.html.erb (Duration: 1.5ms | Allocations: 2399)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2749)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    1: <h2>Añadir Usuario</h2>
+    2: 
+    3: <%= form_for :user,  url: crear_usuario_empresa_path(@empresa.id) do |f| %>
+    4:   
+    5:   <div class="field">
+    6:     <%= f.label :nombre %><br />
+  
+app/views/empresas/agregar_usuario.html.erb:3
+Started GET "/" for ::1 at 2022-06-16 18:17:02 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 137.6ms | Allocations: 32047)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 133)
+  Rendered layout layouts/application.html.erb (Duration: 196.1ms | Allocations: 55575)
+Completed 200 OK in 208ms (Views: 203.7ms | ActiveRecord: 0.0ms | Allocations: 56402)
+
+
+Started GET "/empresas" for ::1 at 2022-06-16 18:17:05 -0400
+Processing by EmpresasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/index.html.erb within layouts/application
+  [1m[36mEmpresa Load (0.2ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas"[0m
+  ↳ app/views/empresas/index.html.erb:3
+  Rendered empresas/index.html.erb within layouts/application (Duration: 4.9ms | Allocations: 4769)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 29.8ms | Allocations: 12083)
+Completed 200 OK in 36ms (Views: 29.7ms | ActiveRecord: 0.9ms | Allocations: 13024)
+
+
+Started GET "/empresas/2" for ::1 at 2022-06-16 18:17:07 -0400
+Processing by EmpresasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEmpresa Load (0.2ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas" WHERE "empresas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/show.html.erb within layouts/application
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ? LIMIT ?[0m  [["empresa_id", 2], ["encargado", 1], ["LIMIT", 1]]
+  ↳ app/views/empresas/show.html.erb:11
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ? LIMIT ?[0m  [["empresa_id", 2], ["encargado", 0], ["LIMIT", 1]]
+  ↳ app/views/empresas/show.html.erb:20
+  Rendered empresas/show.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2002)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 19)
+  Rendered layout layouts/application.html.erb (Duration: 28.6ms | Allocations: 9202)
+Completed 200 OK in 36ms (Views: 28.8ms | ActiveRecord: 0.7ms | Allocations: 12051)
+
+
+Started GET "/" for ::1 at 2022-06-16 18:17:09 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.2ms | Allocations: 917)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 28.9ms | Allocations: 7829)
+Completed 200 OK in 32ms (Views: 29.4ms | ActiveRecord: 0.0ms | Allocations: 8127)
+
+
+Started GET "/" for ::1 at 2022-06-16 18:17:16 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 911)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 30.3ms | Allocations: 7818)
+Completed 200 OK in 34ms (Views: 31.0ms | ActiveRecord: 0.0ms | Allocations: 8111)
+
+
+Started GET "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 18:17:22 -0400
+Processing by EmpresasController#agregar_usuario as HTML
+  Parameters: {"id"=>"2"}
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/agregar_usuario.html.erb within layouts/application
+  Rendered empresas/agregar_usuario.html.erb within layouts/application (Duration: 0.7ms | Allocations: 2312)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 2400)
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2708)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    1: <h2>Añadir Usuario</h2>
+    2: 
+    3: <%= form_for :user,  url: crear_usuario_empresa_path(@empresa.id) do |f| %>
+    4:   
+    5:   <div class="field">
+    6:     <%= f.label :nombre %><br />
+  
+app/views/empresas/agregar_usuario.html.erb:3
+Started GET "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 18:18:06 -0400
+Processing by EmpresasController#agregar_usuario as HTML
+  Parameters: {"id"=>"2"}
+Started GET "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 18:18:32 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/empresas_controller.rb:24:in `agregar_usuario'
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/agregar_usuario.html.erb within layouts/application
+  Rendered empresas/agregar_usuario.html.erb within layouts/application (Duration: 0.9ms | Allocations: 2258)
+  Rendered layout layouts/application.html.erb (Duration: 1.1ms | Allocations: 2364)
+Completed 500 Internal Server Error in 39211ms (ActiveRecord: 1.0ms | Allocations: 68784)
+
+
+  
+ActionView::Template::Error (undefined method `id' for nil:NilClass):
+    1: <h2>Añadir Usuario</h2>
+    2: 
+    3: <%= form_for :user,  url: crear_usuario_empresa_path(@empresa.id) do |f| %>
+    4:   
+    5:   <div class="field">
+    6:     <%= f.label :nombre %><br />
+  
+app/views/empresas/agregar_usuario.html.erb:3
+Processing by EmpresasController#agregar_usuario as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/empresas_controller.rb:23:in `agregar_usuario'
+  [1m[36mEmpresa Load (0.1ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas" WHERE "empresas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:23:in `agregar_usuario'
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/agregar_usuario.html.erb within layouts/application
+Started GET "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 18:18:49 -0400
+Processing by EmpresasController#agregar_usuario as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/empresas_controller.rb:23:in `agregar_usuario'
+  [1m[36mEmpresa Load (0.2ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas" WHERE "empresas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:23:in `agregar_usuario'
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/agregar_usuario.html.erb within layouts/application
+  Rendered empresas/agregar_usuario.html.erb within layouts/application (Duration: 288.5ms | Allocations: 56589)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 33)
+  Rendered layout layouts/application.html.erb (Duration: 361.9ms | Allocations: 91449)
+Completed 200 OK in 378ms (Views: 363.3ms | ActiveRecord: 1.7ms | Allocations: 100596)
+
+
+  Rendered empresas/agregar_usuario.html.erb within layouts/application (Duration: 243.4ms | Allocations: 79270)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 267.4ms | Allocations: 86132)
+Completed 200 OK in 280ms (Views: 274.7ms | ActiveRecord: 0.6ms | Allocations: 88183)
+
+
+Started POST "/empresas/2/crear_usuario" for ::1 at 2022-06-16 18:19:02 -0400
+Processing by EmpresasController#crear_usuario as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"nombre"=>"asdasd", "apellido"=>"asdasd", "email"=>"1@1.com", "telefono"=>"123", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "encargado"=>"Encargado?"}, "commit"=>"Sign up", "id"=>"2"}
+[31mUnpermitted parameters: :password, :password_confirmation. Context: { controller: EmpresasController, action: crear_usuario, request: #<ActionDispatch::Request:0x00000228d9fa2d10>, params: {"authenticity_token"=>"[FILTERED]", "user"=>{"nombre"=>"asdasd", "apellido"=>"asdasd", "email"=>"1@1.com", "telefono"=>"123", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "encargado"=>"Encargado?"}, "commit"=>"Sign up", "controller"=>"empresas", "action"=>"crear_usuario", "id"=>"2"} }[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+No template found for EmpresasController#crear_usuario, rendering head :no_content
+Completed 204 No Content in 16650ms (ActiveRecord: 0.3ms | Allocations: 40499)
+
+
+Started GET "/" for ::1 at 2022-06-16 18:21:15 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2312)
+  Rendered layout layouts/application.html.erb (Duration: 3.0ms | Allocations: 2406)
+Completed 500 Internal Server Error in 7ms (Allocations: 3613)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"new", :controller=>"devise/sessions"}, missing required keys: [:id]
+Did you mean?  new_user_session_url):
+    18:       <li><%= link_to 'Services', services_path%></li>
+    19:       <li><%= link_to 'About Us', about_path %></li>
+    20:       <li><%= link_to 'Contact', contact_path %></li>
+    21:       <li><%= link_to 'Sign in', new_user_session_path %></li>
+    22:     </ul>
+    23:   </nav>
+    24: </header>
+  
+app/views/pages/index.html.erb:21
+Started GET "/" for ::1 at 2022-06-16 18:21:32 -0400
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered pages/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1120)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 64.2ms | Allocations: 24079)
+Completed 200 OK in 69ms (Views: 65.0ms | Allocations: 25317)
+
+
+Started GET "/users/sign_in" for ::1 at 2022-06-16 18:21:51 -0400
+Processing by Devise::SessionsController#new as HTML
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/sessions/new.html.erb within layouts/application
+  Rendered devise/shared/_links.html.erb (Duration: 1.4ms | Allocations: 683)
+  Rendered devise/sessions/new.html.erb within layouts/application (Duration: 10.2ms | Allocations: 2981)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 37.1ms | Allocations: 10006)
+Completed 200 OK in 59ms (Views: 49.0ms | ActiveRecord: 1.0ms | Allocations: 16237)
+
+
+Started GET "/users/sign_up" for ::1 at 2022-06-16 18:24:08 -0400
+Processing by Devise::RegistrationsController#new as HTML
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  Rendering layout layouts/application.html.erb
+  Rendering devise/registrations/new.html.erb within layouts/application
+  Rendered devise/shared/_error_messages.html.erb (Duration: 0.5ms | Allocations: 224)
+  Rendered devise/shared/_links.html.erb (Duration: 0.2ms | Allocations: 143)
+  Rendered devise/registrations/new.html.erb within layouts/application (Duration: 5.4ms | Allocations: 3194)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 68.6ms | Allocations: 26103)
+Completed 200 OK in 83ms (Views: 74.5ms | ActiveRecord: 1.0ms | Allocations: 31922)
+
+
+Started GET "/empresas" for ::1 at 2022-06-16 18:24:12 -0400
+Processing by EmpresasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/index.html.erb within layouts/application
+  [1m[36mEmpresa Load (0.2ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas"[0m
+  ↳ app/views/empresas/index.html.erb:3
+  Rendered empresas/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 3094)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 21)
+  Rendered layout layouts/application.html.erb (Duration: 28.9ms | Allocations: 10431)
+Completed 200 OK in 34ms (Views: 29.1ms | ActiveRecord: 0.9ms | Allocations: 11577)
+
+
+Started GET "/empresas/2" for ::1 at 2022-06-16 18:24:13 -0400
+Processing by EmpresasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEmpresa Load (0.2ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas" WHERE "empresas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/show.html.erb within layouts/application
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ? LIMIT ?[0m  [["empresa_id", 2], ["encargado", 1], ["LIMIT", 1]]
+  ↳ app/views/empresas/show.html.erb:11
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ? LIMIT ?[0m  [["empresa_id", 2], ["encargado", 0], ["LIMIT", 1]]
+  ↳ app/views/empresas/show.html.erb:20
+  Rendered empresas/show.html.erb within layouts/application (Duration: 2.8ms | Allocations: 1528)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 28.2ms | Allocations: 8563)
+Completed 200 OK in 33ms (Views: 28.5ms | ActiveRecord: 0.6ms | Allocations: 10055)
+
+
+Started GET "/empresas/asd" for ::1 at 2022-06-16 18:24:38 -0400
+Processing by EmpresasController#show as HTML
+  Parameters: {"id"=>"asd"}
+  [1m[36mEmpresa Load (0.1ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas" WHERE "empresas"."id" = ? LIMIT ?[0m  [["id", nil], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:19:in `show'
+Completed 404 Not Found in 3ms (ActiveRecord: 0.1ms | Allocations: 956)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Empresa with 'id'=asd):
+  
+app/controllers/empresas_controller.rb:19:in `show'
+Started GET "/empressdas/asd" for ::1 at 2022-06-16 18:24:41 -0400
+  
+ActionController::RoutingError (No route matches [GET] "/empressdas/asd"):
+  
+Started POST "/empresas/2/crear_usuario" for ::1 at 2022-06-16 18:24:49 -0400
+Processing by EmpresasController#crear_usuario as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"nombre"=>"asdasd", "apellido"=>"asdasd", "email"=>"1@1.com", "telefono"=>"123", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "encargado"=>"Encargado?"}, "commit"=>"Sign up", "id"=>"2"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mUser Create (0.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at", "nombre", "apellido", "telefono", "encargado", "admin", "empresa_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "1@1.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2022-06-16 22:24:50.230674"], ["updated_at", "2022-06-16 22:24:50.230674"], ["nombre", "asdasd"], ["apellido", "asdasd"], ["telefono", "123"], ["encargado", 1], ["admin", nil], ["empresa_id", 2]]
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mTRANSACTION (3.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+No template found for EmpresasController#crear_usuario, rendering head :no_content
+Completed 204 No Content in 231ms (ActiveRecord: 4.8ms | Allocations: 16818)
+
+
+Started POST "/empresas/2/crear_usuario" for ::1 at 2022-06-16 18:24:51 -0400
+Processing by EmpresasController#crear_usuario as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"nombre"=>"asdasd", "apellido"=>"asdasd", "email"=>"1@1.com", "telefono"=>"123", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "encargado"=>"Encargado?"}, "commit"=>"Sign up", "id"=>"2"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "1@1.com"], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+No template found for EmpresasController#crear_usuario, rendering head :no_content
+Completed 204 No Content in 1378ms (ActiveRecord: 0.3ms | Allocations: 13425)
+
+
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/empresas/2" for ::1 at 2022-06-16 18:25:37 -0400
+Processing by EmpresasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEmpresa Load (0.1ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas" WHERE "empresas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/show.html.erb within layouts/application
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ? LIMIT ?[0m  [["empresa_id", 2], ["encargado", 1], ["LIMIT", 1]]
+  ↳ app/views/empresas/show.html.erb:11
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ?[0m  [["empresa_id", 2], ["encargado", 1]]
+  ↳ app/views/empresas/show.html.erb:14
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ? LIMIT ?[0m  [["empresa_id", 2], ["encargado", 0], ["LIMIT", 1]]
+  ↳ app/views/empresas/show.html.erb:20
+  Rendered empresas/show.html.erb within layouts/application (Duration: 4.2ms | Allocations: 2659)
+  Rendered layouts/_footer.html.erb (Duration: 0.4ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 28.4ms | Allocations: 10430)
+Completed 200 OK in 38ms (Views: 32.9ms | ActiveRecord: 0.7ms | Allocations: 11756)
+
+
+Started GET "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 18:25:43 -0400
+Processing by EmpresasController#agregar_usuario as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEmpresa Load (0.2ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas" WHERE "empresas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:23:in `agregar_usuario'
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/agregar_usuario.html.erb within layouts/application
+  Rendered empresas/agregar_usuario.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2550)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 25.3ms | Allocations: 9393)
+Completed 200 OK in 30ms (Views: 25.8ms | ActiveRecord: 0.2ms | Allocations: 10295)
+
+
+Started POST "/empresas/2/crear_usuario" for ::1 at 2022-06-16 18:26:01 -0400
+Processing by EmpresasController#crear_usuario as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"nombre"=>"pepe", "apellido"=>"palmera", "email"=>"2@2.com", "telefono"=>"123|", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "id"=>"2"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "2@2.com"], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at", "nombre", "apellido", "telefono", "encargado", "admin", "empresa_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "2@2.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2022-06-16 22:26:01.329205"], ["updated_at", "2022-06-16 22:26:01.329205"], ["nombre", "pepe"], ["apellido", "palmera"], ["telefono", "123|"], ["encargado", nil], ["admin", nil], ["empresa_id", 2]]
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+No template found for EmpresasController#crear_usuario, rendering head :no_content
+Completed 204 No Content in 178ms (ActiveRecord: 4.1ms | Allocations: 13640)
+
+
+Started GET "/empresas/2/" for ::1 at 2022-06-16 18:26:04 -0400
+Processing by EmpresasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEmpresa Load (0.1ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas" WHERE "empresas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/show.html.erb within layouts/application
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ? LIMIT ?[0m  [["empresa_id", 2], ["encargado", 1], ["LIMIT", 1]]
+  ↳ app/views/empresas/show.html.erb:11
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ?[0m  [["empresa_id", 2], ["encargado", 1]]
+  ↳ app/views/empresas/show.html.erb:14
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ? LIMIT ?[0m  [["empresa_id", 2], ["encargado", 0], ["LIMIT", 1]]
+  ↳ app/views/empresas/show.html.erb:20
+  Rendered empresas/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1996)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 29.8ms | Allocations: 9122)
+Completed 200 OK in 34ms (Views: 29.8ms | ActiveRecord: 0.6ms | Allocations: 9907)
+
+
+Started GET "/empresas/2/" for ::1 at 2022-06-16 18:26:06 -0400
+Processing by EmpresasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEmpresa Load (0.1ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas" WHERE "empresas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/show.html.erb within layouts/application
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ? LIMIT ?[0m  [["empresa_id", 2], ["encargado", 1], ["LIMIT", 1]]
+  ↳ app/views/empresas/show.html.erb:11
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ?[0m  [["empresa_id", 2], ["encargado", 1]]
+  ↳ app/views/empresas/show.html.erb:14
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ? LIMIT ?[0m  [["empresa_id", 2], ["encargado", 0], ["LIMIT", 1]]
+  ↳ app/views/empresas/show.html.erb:20
+  Rendered empresas/show.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1996)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 9022)
+Completed 200 OK in 30ms (Views: 25.5ms | ActiveRecord: 0.6ms | Allocations: 9806)
+
+
+Started GET "/empresas/2/" for ::1 at 2022-06-16 18:26:07 -0400
+Processing by EmpresasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEmpresa Load (0.2ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas" WHERE "empresas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/show.html.erb within layouts/application
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ? LIMIT ?[0m  [["empresa_id", 2], ["encargado", 1], ["LIMIT", 1]]
+  ↳ app/views/empresas/show.html.erb:11
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ?[0m  [["empresa_id", 2], ["encargado", 1]]
+  ↳ app/views/empresas/show.html.erb:14
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ? LIMIT ?[0m  [["empresa_id", 2], ["encargado", 0], ["LIMIT", 1]]
+  ↳ app/views/empresas/show.html.erb:20
+  Rendered empresas/show.html.erb within layouts/application (Duration: 3.2ms | Allocations: 1995)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 25.8ms | Allocations: 9021)
+Completed 200 OK in 30ms (Views: 25.9ms | ActiveRecord: 0.6ms | Allocations: 9805)
+
+
+Started GET "/empresas/2/" for ::1 at 2022-06-16 18:26:07 -0400
+Processing by EmpresasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEmpresa Load (0.2ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas" WHERE "empresas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/show.html.erb within layouts/application
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ? LIMIT ?[0m  [["empresa_id", 2], ["encargado", 1], ["LIMIT", 1]]
+  ↳ app/views/empresas/show.html.erb:11
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ?[0m  [["empresa_id", 2], ["encargado", 1]]
+  ↳ app/views/empresas/show.html.erb:14
+  [1m[36mUser Exists? (0.1ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ? LIMIT ?[0m  [["empresa_id", 2], ["encargado", 0], ["LIMIT", 1]]
+  ↳ app/views/empresas/show.html.erb:20
+  Rendered empresas/show.html.erb within layouts/application (Duration: 3.1ms | Allocations: 1995)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 9033)
+Completed 200 OK in 30ms (Views: 25.5ms | ActiveRecord: 0.6ms | Allocations: 9817)
+
+
+Started GET "/empresas/2/" for ::1 at 2022-06-16 18:26:07 -0400
+Processing by EmpresasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEmpresa Load (0.2ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas" WHERE "empresas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/show.html.erb within layouts/application
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ? LIMIT ?[0m  [["empresa_id", 2], ["encargado", 1], ["LIMIT", 1]]
+  ↳ app/views/empresas/show.html.erb:11
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ?[0m  [["empresa_id", 2], ["encargado", 1]]
+  ↳ app/views/empresas/show.html.erb:14
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ? LIMIT ?[0m  [["empresa_id", 2], ["encargado", 0], ["LIMIT", 1]]
+  ↳ app/views/empresas/show.html.erb:20
+  Rendered empresas/show.html.erb within layouts/application (Duration: 3.3ms | Allocations: 1996)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 25.5ms | Allocations: 9022)
+Completed 200 OK in 30ms (Views: 25.6ms | ActiveRecord: 0.6ms | Allocations: 9806)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 18:42:47 -0400
+Processing by EmpresasController#agregar_usuario as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/empresas_controller.rb:23:in `agregar_usuario'
+  [1m[36mEmpresa Load (0.2ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas" WHERE "empresas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:23:in `agregar_usuario'
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/agregar_usuario.html.erb within layouts/application
+  Rendered empresas/agregar_usuario.html.erb within layouts/application (Duration: 2.1ms | Allocations: 2240)
+Started GET "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 18:42:49 -0400
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 69.3ms | Allocations: 25708)
+Completed 200 OK in 86ms (Views: 70.6ms | ActiveRecord: 0.6ms | Allocations: 33731)
+
+
+Processing by EmpresasController#agregar_usuario as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/empresas_controller.rb:23:in `agregar_usuario'
+  [1m[36mEmpresa Load (0.2ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas" WHERE "empresas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:23:in `agregar_usuario'
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/agregar_usuario.html.erb within layouts/application
+  Rendered empresas/agregar_usuario.html.erb within layouts/application (Duration: 1.9ms | Allocations: 2240)
+Started GET "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 18:42:50 -0400
+  Rendered layouts/_footer.html.erb (Duration: 0.2ms | Allocations: 39)
+  Rendered layout layouts/application.html.erb (Duration: 72.5ms | Allocations: 25867)
+Completed 200 OK in 89ms (Views: 73.6ms | ActiveRecord: 2.0ms | Allocations: 35042)
+
+
+Processing by EmpresasController#agregar_usuario as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEmpresa Load (0.2ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas" WHERE "empresas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:23:in `agregar_usuario'
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/agregar_usuario.html.erb within layouts/application
+  Rendered empresas/agregar_usuario.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1955)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 31.2ms | Allocations: 8843)
+Completed 200 OK in 36ms (Views: 31.8ms | ActiveRecord: 0.2ms | Allocations: 9732)
+
+
+Started GET "/empresas/2" for ::1 at 2022-06-16 18:43:03 -0400
+Processing by EmpresasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEmpresa Load (0.4ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas" WHERE "empresas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/show.html.erb within layouts/application
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ? LIMIT ?[0m  [["empresa_id", 2], ["encargado", 1], ["LIMIT", 1]]
+  ↳ app/views/empresas/show.html.erb:11
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ?[0m  [["empresa_id", 2], ["encargado", 1]]
+  ↳ app/views/empresas/show.html.erb:14
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ? LIMIT ?[0m  [["empresa_id", 2], ["encargado", 0], ["LIMIT", 1]]
+  ↳ app/views/empresas/show.html.erb:20
+  Rendered empresas/show.html.erb within layouts/application (Duration: 5.1ms | Allocations: 2382)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 41.2ms | Allocations: 9396)
+Completed 200 OK in 47ms (Views: 41.2ms | ActiveRecord: 1.1ms | Allocations: 10182)
+
+
+Started GET "/empresas/2" for ::1 at 2022-06-16 18:43:12 -0400
+Processing by EmpresasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEmpresa Load (0.2ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas" WHERE "empresas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/show.html.erb within layouts/application
+  [1m[36mUser Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ? LIMIT ?[0m  [["empresa_id", 2], ["encargado", 1], ["LIMIT", 1]]
+  ↳ app/views/empresas/show.html.erb:11
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ?[0m  [["empresa_id", 2], ["encargado", 1]]
+  ↳ app/views/empresas/show.html.erb:14
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ? LIMIT ?[0m  [["empresa_id", 2], ["encargado", 0], ["LIMIT", 1]]
+  ↳ app/views/empresas/show.html.erb:20
+  Rendered empresas/show.html.erb within layouts/application (Duration: 4.4ms | Allocations: 1995)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 36.0ms | Allocations: 9001)
+Completed 200 OK in 41ms (Views: 36.1ms | ActiveRecord: 0.9ms | Allocations: 9785)
+
+
+Started GET "/empresas/2" for ::1 at 2022-06-16 18:43:17 -0400
+Processing by EmpresasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEmpresa Load (0.2ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas" WHERE "empresas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/show.html.erb within layouts/application
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ? LIMIT ?[0m  [["empresa_id", 2], ["encargado", 1], ["LIMIT", 1]]
+  ↳ app/views/empresas/show.html.erb:11
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ?[0m  [["empresa_id", 2], ["encargado", 1]]
+  ↳ app/views/empresas/show.html.erb:14
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ? LIMIT ?[0m  [["empresa_id", 2], ["encargado", 0], ["LIMIT", 1]]
+  ↳ app/views/empresas/show.html.erb:20
+  Rendered empresas/show.html.erb within layouts/application (Duration: 3.9ms | Allocations: 1995)
+  Rendered layouts/_footer.html.erb (Duration: 0.1ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 42.2ms | Allocations: 8991)
+Completed 200 OK in 47ms (Views: 42.5ms | ActiveRecord: 0.7ms | Allocations: 9775)
+
+
+Started GET "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 18:43:36 -0400
+Processing by EmpresasController#agregar_usuario as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEmpresa Load (0.2ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas" WHERE "empresas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:23:in `agregar_usuario'
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/agregar_usuario.html.erb within layouts/application
+  Rendered empresas/agregar_usuario.html.erb within layouts/application (Duration: 2.3ms | Allocations: 1934)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 33.5ms | Allocations: 8778)
+Completed 200 OK in 39ms (Views: 34.3ms | ActiveRecord: 0.2ms | Allocations: 9586)
+
+
+Started GET "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 18:45:49 -0400
+Processing by EmpresasController#agregar_usuario as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEmpresa Load (0.2ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas" WHERE "empresas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:23:in `agregar_usuario'
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/agregar_usuario.html.erb within layouts/application
+  Rendered empresas/agregar_usuario.html.erb within layouts/application (Duration: 3.3ms | Allocations: 2703)
+  Rendered layouts/_footer.html.erb (Duration: 0.8ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 35.4ms | Allocations: 10169)
+Completed 200 OK in 47ms (Views: 41.9ms | ActiveRecord: 0.2ms | Allocations: 11544)
+
+
+Started GET "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 18:47:11 -0400
+Processing by EmpresasController#agregar_usuario as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEmpresa Load (0.2ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas" WHERE "empresas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:23:in `agregar_usuario'
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/agregar_usuario.html.erb within layouts/application
+  Rendered empresas/agregar_usuario.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2698)
+  Rendered layouts/_footer.html.erb (Duration: 0.3ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 59.8ms | Allocations: 10132)
+Completed 200 OK in 76ms (Views: 70.7ms | ActiveRecord: 0.2ms | Allocations: 11564)
+
+
+Started POST "/empresas/2/crear_usuario" for ::1 at 2022-06-16 19:36:10 -0400
+Processing by EmpresasController#crear_usuario as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"nombre"=>"kljdksj", "apellido"=>"azxc", "email"=>"3@3.com", "telefono"=>"123", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "id"=>"2"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mUser Exists? (1.0ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "3@3.com"], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mUser Create (1.0ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at", "nombre", "apellido", "telefono", "encargado", "admin", "empresa_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "3@3.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2022-06-16 23:36:11.220048"], ["updated_at", "2022-06-16 23:36:11.220048"], ["nombre", "kljdksj"], ["apellido", "azxc"], ["telefono", "123"], ["encargado", nil], ["admin", nil], ["empresa_id", 2]]
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mTRANSACTION (4.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+No template found for EmpresasController#crear_usuario, rendering head :no_content
+Completed 204 No Content in 7965ms (ActiveRecord: 7.9ms | Allocations: 30370)
+
+
+  [1m[36mUser Load (1.3ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[36mUser Load (0.6ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started POST "/empresas/2/crear_usuario" for ::1 at 2022-06-16 21:25:06 -0400
+Processing by EmpresasController#crear_usuario as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"nombre"=>"empleado1", "apellido"=>"doe", "email"=>"empleado1@gmail.com", "telefono"=>"1", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "id"=>"2"}
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "empleado1@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at", "nombre", "apellido", "telefono", "encargado", "admin", "empresa_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "empleado1@gmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2022-06-17 01:25:06.957854"], ["updated_at", "2022-06-17 01:25:06.957854"], ["nombre", "empleado1"], ["apellido", "doe"], ["telefono", "1"], ["encargado", nil], ["admin", nil], ["empresa_id", 2]]
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+No template found for EmpresasController#crear_usuario, rendering head :no_content
+Completed 204 No Content in 15477ms (ActiveRecord: 5.1ms | Allocations: 20491)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started POST "/empresas/2/crear_usuario" for ::1 at 2022-06-16 21:25:57 -0400
+Processing by EmpresasController#crear_usuario as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"nombre"=>"empleado2", "apellido"=>"doe", "email"=>"empleado2@gmail.com", "telefono"=>"123", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "encargado"=>"true"}, "commit"=>"Sign up", "id"=>"2"}
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ app/controllers/empresas_controller.rb:28:in `crear_usuario'
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "empleado2@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at", "nombre", "apellido", "telefono", "encargado", "admin", "empresa_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "empleado2@gmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2022-06-17 01:25:59.132433"], ["updated_at", "2022-06-17 01:25:59.132433"], ["nombre", "empleado2"], ["apellido", "doe"], ["telefono", "123"], ["encargado", 1], ["admin", nil], ["empresa_id", 2]]
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+No template found for EmpresasController#crear_usuario, rendering head :no_content
+Completed 204 No Content in 182ms (ActiveRecord: 5.4ms | Allocations: 8829)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started POST "/empresas/2/crear_usuario" for ::1 at 2022-06-16 21:27:49 -0400
+Processing by EmpresasController#crear_usuario as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"nombre"=>"empleado3", "apellido"=>"doe", "email"=>"empleado3@gmail.com", "telefono"=>"123", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "encargado"=>"true"}, "commit"=>"Sign up", "id"=>"2"}
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "empleado3@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at", "nombre", "apellido", "telefono", "encargado", "admin", "empresa_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "empleado3@gmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2022-06-17 01:27:50.035398"], ["updated_at", "2022-06-17 01:27:50.035398"], ["nombre", "empleado3"], ["apellido", "doe"], ["telefono", "123"], ["encargado", 1], ["admin", nil], ["empresa_id", 2]]
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mTRANSACTION (3.1ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+No template found for EmpresasController#crear_usuario, rendering head :no_content
+Completed 204 No Content in 177ms (ActiveRecord: 4.1ms | Allocations: 3613)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started POST "/empresas/2/crear_usuario" for ::1 at 2022-06-16 21:27:58 -0400
+Processing by EmpresasController#crear_usuario as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"nombre"=>"empleado4", "apellido"=>"doe", "email"=>"empleado4@gmail.com", "telefono"=>"123", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "id"=>"2"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "empleado4@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mUser Create (0.7ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at", "nombre", "apellido", "telefono", "encargado", "admin", "empresa_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "empleado4@gmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2022-06-17 01:27:59.047452"], ["updated_at", "2022-06-17 01:27:59.047452"], ["nombre", "empleado4"], ["apellido", "doe"], ["telefono", "123"], ["encargado", nil], ["admin", nil], ["empresa_id", 2]]
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+No template found for EmpresasController#crear_usuario, rendering head :no_content
+Completed 204 No Content in 172ms (ActiveRecord: 3.9ms | Allocations: 3332)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started POST "/empresas/2/crear_usuario" for ::1 at 2022-06-16 21:28:57 -0400
+Processing by EmpresasController#crear_usuario as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"nombre"=>"empleado5", "apellido"=>"doe", "email"=>"empleado5@gmail.com", "telefono"=>"123", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up", "id"=>"2"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "empleado5@gmail.com"], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at", "nombre", "apellido", "telefono", "encargado", "admin", "empresa_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "empleado5@gmail.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2022-06-17 01:28:57.263810"], ["updated_at", "2022-06-17 01:28:57.263810"], ["nombre", "empleado5"], ["apellido", "doe"], ["telefono", "123"], ["encargado", nil], ["admin", nil], ["empresa_id", 2]]
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mTRANSACTION (3.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+No template found for EmpresasController#crear_usuario, rendering head :no_content
+Completed 204 No Content in 177ms (ActiveRecord: 4.4ms | Allocations: 3533)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+  [1m[35m (1.4ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Migrating to AddDefaultValuesToUser (20220617013003)
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.7ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ausers" ("id" integer NOT NULL PRIMARY KEY, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar DEFAULT NULL, "reset_password_sent_at" datetime(6) DEFAULT NULL, "remember_created_at" datetime(6) DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "nombre" varchar DEFAULT NULL, "apellido" varchar DEFAULT NULL, "telefono" varchar DEFAULT NULL, "encargado" boolean DEFAULT NULL, "admin" boolean DEFAULT NULL, "empresa_id" integer DEFAULT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE INDEX "tindex_ausers_on_empresa_id" ON "ausers" ("empresa_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "tindex_ausers_on_reset_password_token" ON "ausers" ("reset_password_token")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "tindex_ausers_on_email" ON "ausers" ("email")[0m
+  [1m[35m (0.2ms)[0m  [1m[32mINSERT INTO "ausers" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","created_at","updated_at","nombre","apellido","telefono","encargado","admin","empresa_id")
+                     SELECT "id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","created_at","updated_at","nombre","apellido","telefono","encargado","admin","empresa_id" FROM "users"[0m
+  [1m[35m (1.2ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer NOT NULL PRIMARY KEY, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar DEFAULT NULL, "reset_password_sent_at" datetime(6) DEFAULT NULL, "remember_created_at" datetime(6) DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "nombre" varchar DEFAULT NULL, "apellido" varchar DEFAULT NULL, "telefono" varchar DEFAULT NULL, "encargado" boolean DEFAULT NULL, "admin" boolean DEFAULT 0, "empresa_id" integer DEFAULT NULL, CONSTRAINT "fk_rails_c9ab7fe689"
+FOREIGN KEY ("empresa_id")
+  REFERENCES "empresas" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_users_on_empresa_id" ON "users" ("empresa_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "users" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","created_at","updated_at","nombre","apellido","telefono","encargado","admin","empresa_id")
+                     SELECT "id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","created_at","updated_at","nombre","apellido","telefono","encargado","admin","empresa_id" FROM "ausers"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "ausers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = ON[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = OFF[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TEMPORARY TABLE "ausers" ("id" integer NOT NULL PRIMARY KEY, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar DEFAULT NULL, "reset_password_sent_at" datetime(6) DEFAULT NULL, "remember_created_at" datetime(6) DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "nombre" varchar DEFAULT NULL, "apellido" varchar DEFAULT NULL, "telefono" varchar DEFAULT NULL, "encargado" boolean DEFAULT NULL, "admin" boolean DEFAULT 0, "empresa_id" integer DEFAULT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "tindex_ausers_on_empresa_id" ON "ausers" ("empresa_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "tindex_ausers_on_reset_password_token" ON "ausers" ("reset_password_token")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "tindex_ausers_on_email" ON "ausers" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "ausers" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","created_at","updated_at","nombre","apellido","telefono","encargado","admin","empresa_id")
+                     SELECT "id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","created_at","updated_at","nombre","apellido","telefono","encargado","admin","empresa_id" FROM "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mDROP TABLE "users"[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer NOT NULL PRIMARY KEY, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "reset_password_token" varchar DEFAULT NULL, "reset_password_sent_at" datetime(6) DEFAULT NULL, "remember_created_at" datetime(6) DEFAULT NULL, "created_at" datetime(6) NOT NULL, "updated_at" datetime(6) NOT NULL, "nombre" varchar DEFAULT NULL, "apellido" varchar DEFAULT NULL, "telefono" varchar DEFAULT NULL, "encargado" boolean DEFAULT 0, "admin" boolean DEFAULT 0, "empresa_id" integer DEFAULT NULL, CONSTRAINT "fk_rails_c9ab7fe689"
+FOREIGN KEY ("empresa_id")
+  REFERENCES "empresas" ("id")
+)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE INDEX "index_users_on_empresa_id" ON "users" ("empresa_id")[0m
+  [1m[35m (0.1ms)[0m  [1m[32mINSERT INTO "users" ("id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","created_at","updated_at","nombre","apellido","telefono","encargado","admin","empresa_id")
+                     SELECT "id","email","encrypted_password","reset_password_token","reset_password_sent_at","remember_created_at","created_at","updated_at","nombre","apellido","telefono","encargado","admin","empresa_id" FROM "ausers"[0m
+  [1m[35m (0.2ms)[0m  [1m[35mDROP TABLE "ausers"[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA defer_foreign_keys = 0[0m
+  [1m[35m (0.0ms)[0m  [1m[35mPRAGMA foreign_keys = 1[0m
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20220617013003"]]
+  [1m[36mTRANSACTION (3.2ms)[0m  [1m[36mcommit transaction[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mUser Load (1.8ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 21:31:01 -0400
+  [1m[35m (0.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by EmpresasController#agregar_usuario as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEmpresa Load (0.1ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas" WHERE "empresas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:23:in `agregar_usuario'
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/agregar_usuario.html.erb within layouts/application
+  Rendered empresas/agregar_usuario.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2818)
+  Rendered layouts/_footer.html.erb (Duration: 0.5ms | Allocations: 131)
+  Rendered layout layouts/application.html.erb (Duration: 60.1ms | Allocations: 26133)
+Completed 200 OK in 81ms (Views: 65.8ms | ActiveRecord: 1.5ms | Allocations: 34905)
+
+
+Started POST "/empresas/2/crear_usuario" for ::1 at 2022-06-16 21:31:22 -0400
+Processing by EmpresasController#crear_usuario as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"nombre"=>"empleado6", "apellido"=>"encargadi", "email"=>"1@2.com", "telefono"=>"123", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "encargado"=>"false"}, "commit"=>"Sign up", "id"=>"2"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "1@2.com"], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mUser Create (0.8ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at", "nombre", "apellido", "telefono", "encargado", "admin", "empresa_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "1@2.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2022-06-17 01:31:22.588419"], ["updated_at", "2022-06-17 01:31:22.588419"], ["nombre", "empleado6"], ["apellido", "encargadi"], ["telefono", "123"], ["encargado", 0], ["admin", 0], ["empresa_id", 2]]
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+No template found for EmpresasController#crear_usuario, rendering head :no_content
+Completed 204 No Content in 178ms (ActiveRecord: 4.1ms | Allocations: 4117)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started POST "/empresas/2/crear_usuario" for ::1 at 2022-06-16 21:31:32 -0400
+Processing by EmpresasController#crear_usuario as HTML
+  Parameters: {"authenticity_token"=>"[FILTERED]", "user"=>{"nombre"=>"empleado7", "apellido"=>"encargadi", "email"=>"7@2.com", "telefono"=>"123", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]", "encargado"=>"true"}, "commit"=>"Sign up", "id"=>"2"}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "7@2.com"], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mUser Create (0.6ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "reset_password_token", "reset_password_sent_at", "remember_created_at", "created_at", "updated_at", "nombre", "apellido", "telefono", "encargado", "admin", "empresa_id") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["email", "7@2.com"], ["encrypted_password", "[FILTERED]"], ["reset_password_token", "[FILTERED]"], ["reset_password_sent_at", "[FILTERED]"], ["remember_created_at", nil], ["created_at", "2022-06-17 01:31:32.967639"], ["updated_at", "2022-06-17 01:31:32.967639"], ["nombre", "empleado7"], ["apellido", "encargadi"], ["telefono", "123"], ["encargado", 1], ["admin", 0], ["empresa_id", 2]]
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+  [1m[36mTRANSACTION (3.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/empresas_controller.rb:30:in `crear_usuario'
+No template found for EmpresasController#crear_usuario, rendering head :no_content
+Completed 204 No Content in 171ms (ActiveRecord: 3.9ms | Allocations: 3303)
+
+
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" ORDER BY "users"."id" DESC LIMIT ?[0m  [["LIMIT", 1]]
+Started GET "/empresas/2/" for ::1 at 2022-06-16 21:31:45 -0400
+Processing by EmpresasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEmpresa Load (0.2ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas" WHERE "empresas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/show.html.erb within layouts/application
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ? LIMIT ?[0m  [["empresa_id", 2], ["encargado", 1], ["LIMIT", 1]]
+  ↳ app/views/empresas/show.html.erb:11
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ?[0m  [["empresa_id", 2], ["encargado", 1]]
+  ↳ app/views/empresas/show.html.erb:14
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ? LIMIT ?[0m  [["empresa_id", 2], ["encargado", 0], ["LIMIT", 1]]
+  ↳ app/views/empresas/show.html.erb:20
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ?[0m  [["empresa_id", 2], ["encargado", 0]]
+  ↳ app/views/empresas/show.html.erb:23
+  Rendered empresas/show.html.erb within layouts/application (Duration: 5.5ms | Allocations: 3225)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 27.7ms | Allocations: 10254)
+Completed 200 OK in 33ms (Views: 27.5ms | ActiveRecord: 0.8ms | Allocations: 11119)
+
+
+Started GET "/empresas" for ::1 at 2022-06-16 21:33:38 -0400
+Processing by EmpresasController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/index.html.erb within layouts/application
+  [1m[36mEmpresa Load (0.2ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas"[0m
+  ↳ app/views/empresas/index.html.erb:3
+  Rendered empresas/index.html.erb within layouts/application (Duration: 1.9ms | Allocations: 942)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 24.3ms | Allocations: 7967)
+Completed 200 OK in 28ms (Views: 24.6ms | ActiveRecord: 0.2ms | Allocations: 8328)
+
+
+Started GET "/empresas/2" for ::1 at 2022-06-16 21:33:40 -0400
+Processing by EmpresasController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEmpresa Load (0.2ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas" WHERE "empresas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:19:in `show'
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/show.html.erb within layouts/application
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ? LIMIT ?[0m  [["empresa_id", 2], ["encargado", 1], ["LIMIT", 1]]
+  ↳ app/views/empresas/show.html.erb:11
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ?[0m  [["empresa_id", 2], ["encargado", 1]]
+  ↳ app/views/empresas/show.html.erb:14
+  [1m[36mUser Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ? LIMIT ?[0m  [["empresa_id", 2], ["encargado", 0], ["LIMIT", 1]]
+  ↳ app/views/empresas/show.html.erb:20
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT "users".* FROM "users" WHERE "users"."empresa_id" = ? AND "users"."encargado" = ?[0m  [["empresa_id", 2], ["encargado", 0]]
+  ↳ app/views/empresas/show.html.erb:23
+  Rendered empresas/show.html.erb within layouts/application (Duration: 4.3ms | Allocations: 2706)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 26.5ms | Allocations: 9738)
+Completed 200 OK in 30ms (Views: 26.3ms | ActiveRecord: 0.8ms | Allocations: 10522)
+
+
+Started GET "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 21:33:42 -0400
+Processing by EmpresasController#agregar_usuario as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEmpresa Load (0.2ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas" WHERE "empresas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:23:in `agregar_usuario'
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/agregar_usuario.html.erb within layouts/application
+  Rendered empresas/agregar_usuario.html.erb within layouts/application (Duration: 1.9ms | Allocations: 1997)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 23.8ms | Allocations: 8840)
+Completed 200 OK in 28ms (Views: 24.3ms | ActiveRecord: 0.2ms | Allocations: 9650)
+
+
+Started GET "/empresas/2/agregar_usuario" for ::1 at 2022-06-16 21:33:46 -0400
+Processing by EmpresasController#agregar_usuario as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mEmpresa Load (0.2ms)[0m  [1m[34mSELECT "empresas".* FROM "empresas" WHERE "empresas"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/empresas_controller.rb:23:in `agregar_usuario'
+  Rendering layout layouts/application.html.erb
+  Rendering empresas/agregar_usuario.html.erb within layouts/application
+  Rendered empresas/agregar_usuario.html.erb within layouts/application (Duration: 1.7ms | Allocations: 1985)
+  Rendered layouts/_footer.html.erb (Duration: 0.0ms | Allocations: 18)
+  Rendered layout layouts/application.html.erb (Duration: 28.1ms | Allocations: 8866)
+Completed 200 OK in 32ms (Views: 28.5ms | ActiveRecord: 0.2ms | Allocations: 9674)
+
+
+>>>>>>> 1ee8411 (agregar encargados y empleados de empresas)
