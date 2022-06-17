@@ -20,10 +20,14 @@
         <div class="container2">
             <span class="poop"></span>
         </div>
-    <%= link_to "Añadir Resultado", show_user_path, class: 'btn btn-primary'%><br/><br/>
+
+    <% if current_user.admin%>
+        <%= link_to "Añadir Resultado", show_user_path, class: 'btn btn-primary'%><br/><br/>
         <%= link_to "Editar", edit_user_path, class: 'btn btn-warning' %>
+
         <div style="display:inline-block;">
             <%= button_to "Eliminar", destroy_user_path, :class=> 'btn btn-danger', method: :delete %>
         </div>
-        <%= link_to "Volver", empresa_path(@user.empresa_id), class: 'btn btn-secondary' %> <br/>
+    <% end%>
+    <%= link_to "Volver", empresa_path(@user.empresa_id), class: 'btn btn-secondary' %> <br/><br/>
 </div>
