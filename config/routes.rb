@@ -8,6 +8,10 @@ Rails.application.routes.draw do
   devise_for :users
 
   get "users/:id", to: "users#show", as: 'show_user'
+  get "users/:id/editar", to:"users#edit", as: 'edit_user'
+  post "users/:id/editar", to:"users#update", as: 'update_user'
+  delete "users/:id/destroy", to:"users#destroy", as: 'destroy_user'
+
   get 'about', to: "pages#about"
   get 'contact', to: "pages#contact"
   get 'services', to: "pages#services"

@@ -1,6 +1,9 @@
 <%= stylesheet_link_tag 'vaquero' %>
 
 <div class="container">
+
+    <%= render 'layouts/noticias' %>
+
     <h1> <%= "#{@user.nombre} #{@user.apellido}" %> </h1>
     <% if @user.encargado %>
         <h4> Encargado </h4>
@@ -17,5 +20,10 @@
         <div class="container2">
             <span class="poop"></span>
         </div>
-  
+    <%= link_to "Añadir Resultado", show_user_path, class: 'btn btn-primary'%><br/><br/>
+        <%= link_to "Editar", edit_user_path, class: 'btn btn-warning' %>
+        <div style="display:inline-block;">
+            <%= button_to "Eliminar", destroy_user_path, :class=> 'btn btn-danger', method: :delete %>
+        </div>
+        <%= link_to "Volver", empresa_path(@user.empresa_id), class: 'btn btn-secondary' %> <br/>
 </div>

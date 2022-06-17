@@ -1,9 +1,9 @@
 <div class='container'>
-  <h2>Añadir Trabajador</h2>
+  <h2>Editar Trabajador</h2>
   <br/>
   <%= render 'layouts/noticias' %>
 
-  <%= form_for :user,  url: crear_usuario_empresa_path(@empresa.id) do |f| %>
+  <%= form_for :user,  url: update_user_path, method: :post do |f| %>
     
     <div class="field">
       <%= f.label :nombre, class: "form-label"%><br />
@@ -26,31 +26,17 @@
     </div>
 
     <div class="field">
-      <%= f.label :password, class: "form-label" %>
-      <% if @minimum_password_length %>
-      <em>(<%= @minimum_password_length %> characters minimum)</em>
-      <% end %><br />
-      <%= f.password_field :password, autocomplete: "new-password" %>
-    </div>
-
-    <div class="field">
-      <%= f.label :password_confirmation, class: "form-label" %><br />
-      <%= f.password_field :password_confirmation, autocomplete: "new-password" %>
-    </div>
-    <br/>
-
-    <div class="field">
       <%= f.label :encargado, "Encargado: " %>
       <%= f.check_box :encargado, {:class => "form-check-input"}, 'true', 'false' %>
     </div>
     <br/>
 
     <div class="actions">
-      <%= f.submit "Añadir", class: 'btn btn-primary' %>
+      <%= f.submit "Editar", class: 'btn btn-primary' %>
       <%= link_to "Volver", empresa_path(id: params[:id]), class: 'btn btn-secondary' %>
     </div>
-    <br/
-    >
+    <br/>
   <% end %>
 </div>
+
 
