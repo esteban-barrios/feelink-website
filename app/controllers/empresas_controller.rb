@@ -25,6 +25,7 @@ class EmpresasController < ApplicationController
     end
 
     def crear_usuario
+        @empresa_id = params[:id]
         @user = User.new(user_create_params)
         @user.empresa_id = params[:id]
         if @user.save
@@ -32,6 +33,7 @@ class EmpresasController < ApplicationController
         else
             flash[:notice] = "No se ha podido añadir al empleado"
         end
+        redirect_to agregar_usuario_empresa_path
     end
 
     private
