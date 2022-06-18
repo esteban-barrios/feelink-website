@@ -1,4 +1,5 @@
 class EmpresasController < ApplicationController
+    before_action :authenticate_user!
     
     def def new
         @empresa = Empresa.new()
