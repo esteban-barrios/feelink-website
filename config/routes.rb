@@ -5,14 +5,12 @@ Rails.application.routes.draw do
       post :crear_usuario
     end
   end
-  devise_for :users, path_names: {
-      sign_up: ''
-    }
+  devise_for :users, :controllers => { :registrations => "registrations" }
 
-  get "users/:id", to: "users#show", as: 'show_user'
-  get "users/:id/editar", to:"users#edit", as: 'edit_user'
-  post "users/:id/editar", to:"users#update", as: 'update_user'
-  delete "users/:id/destroy", to:"users#destroy", as: 'destroy_user'
+  get "user/:id", to: "users#show", as: 'show_user'
+  get "user/:id/editar", to:"users#edit", as: 'edit_user'
+  post "user/:id/editar", to:"users#update", as: 'update_user'
+  delete "user/:id/destroy", to:"users#destroy", as: 'destroy_user'
 
   get 'about', to: "pages#about"
   get 'contact', to: "pages#contact"
