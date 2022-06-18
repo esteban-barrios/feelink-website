@@ -266,8 +266,8 @@ DEPENDENCIES
   pry
   puma (~> 5.0)
   rails (~> 7.0.3)
-  sassc-rails
   rails-i18n
+  sassc-rails
   selenium-webdriver
   sprockets-rails
   sqlite3 (~> 1.4)
