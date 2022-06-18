@@ -4,6 +4,7 @@
     position: relative;
     width:100%;
     height: 60vh;
+    min-height: 200px;
     & img{
       width:100%;
       height:100%;
@@ -19,11 +20,11 @@
     left: 0;
     color: #fff;
     z-index: 99;
+    overflow: hidden;
   }
 
   & .bg-color-box {
     text-align: center;
-    width: 100%;
     position: absolute;
     top: 50%;
     left: 0;
@@ -33,10 +34,15 @@
   & .bg-color{
     background-color: rgba(0,0,0,.8);
   }
-}
-  @media (min-width: 768px){
-    .bg-color-box  {
-      text-align: left!important;
+
+  & .hero-text{
+    font-weight: normal;
   }
+  
+  & .hero-text2{
+    color: #00fca8;
+  }
+
 }
+
 
