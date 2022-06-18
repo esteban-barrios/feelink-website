@@ -1,8 +1,12 @@
 class UsersController < ApplicationController
     before_action :authenticate_user!
-    
+    load_and_authorize_resource
+
     def show
         @user = User.find(params[:id])
+        if current_user.empresa_id != @user.empresa_id
+            redirect_to root_path
+        end
     end
 
     def edit

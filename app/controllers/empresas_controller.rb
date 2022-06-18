@@ -1,5 +1,6 @@
 class EmpresasController < ApplicationController
     before_action :authenticate_user!
+    load_and_authorize_resource
     
     def def new
         @empresa = Empresa.new()
