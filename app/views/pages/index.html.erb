@@ -20,12 +20,20 @@
       <li><%= link_to 'Contact', contact_path %></li>
 
       <% if user_signed_in? %>
-        <% if current_user.admin %>
+
+        <% if can? :index, Empresa %>
           <li><%= link_to 'Empresas', empresas_path%></li>
         <% else %>
-          <li><%= link_to 'Mi Empresa', empresa_path(current_user.empresa_id)%></li>
+          <% if can? :show, Empresa%>
+            <li><%= link_to 'Mi Empresa', empresa_path(current_user.empresa_id)%></li>
+          <% end %>
+
+        <% end %>
+
+        <% if can? :show, User %>
           <li><%= link_to 'Mi Perfil', show_user_path(current_user.id)%></li>
         <% end %>
+
         <li><%= link_to 'Sign out', destroy_user_session_path %></li>
       <% else %>
         <li><%= link_to 'Sign in', new_user_session_path %></li>
