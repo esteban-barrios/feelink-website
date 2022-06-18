@@ -44,38 +44,8 @@ table {
   border-spacing: 0;
 }
 
-/*default settings*/
-
-* {
-  box-sizing: border-box;
-}
-
-button{
-  border: none;
-  border-radius: 1rem ;
-  padding: 0.5rem 2rem;
-  font-size: $size_normal;
-  background: transparent;
-}
-
-a{
-  text-decoration: none;
-  font-size: $size_normal;
-}
-
-a:active , a:hover , a:focus{
-  color: black;
-}
+//default
 
 body{
-  background-color: #f4f4f4;
-}
-
-.row{
-  display: flex;
-  flex-direction: row;
-  align-self: start;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
+  background: #eee !important;
 }

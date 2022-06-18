@@ -46,7 +46,7 @@
 }
 
 .nav-menu.open {
-    max-height: 100vh;
+    max-height: 336px;
     transition: max-height 1s ease-in-out;
 }
 
@@ -156,7 +156,7 @@
 
 /* Desktop 48em = 768px */
 
-@media (min-width: 48em) {
+@media (min-width: 1140px) {
     .nav-menu {
         max-height: 80px;
         width: fit-content;
