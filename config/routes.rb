@@ -5,7 +5,9 @@ Rails.application.routes.draw do
       post :crear_usuario
     end
   end
-  devise_for :users
+  devise_for :users, path_names: {
+      sign_up: ''
+    }
 
   get "users/:id", to: "users#show", as: 'show_user'
   get "users/:id/editar", to:"users#edit", as: 'edit_user'
