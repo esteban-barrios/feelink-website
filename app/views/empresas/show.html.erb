@@ -32,16 +32,25 @@
     <% end %>
 
     <br/>
-
-    <% if current_user.admin %>
         <div>
-            <%= link_to "Añadir Trabajador", agregar_usuario_empresa_path, class: 'btn btn-primary'%>
-            <%= link_to "Volver", empresas_path, class: 'btn btn-secondary' %> <br/>
-            <%= link_to "Editar", edit_empresa_path, class: 'btn btn-warning' %>
-            <div style="display:inline-block;">
-                <%= button_to "Eliminar", empresa_path(@empresa.id), :class=> 'btn btn-danger', method: :delete %>
-            </div>
+            <% if can? :new, User %>
+                <%= link_to "Añadir Trabajador", agregar_usuario_empresa_path, class: 'btn btn-primary'%>
+            <% end%>
+
+            <% if can? :manage, Empresa %>
+                <%= link_to "Volver", empresas_path, class: 'btn btn-secondary' %> <br/>
+            <% end %>
+            
+            <% if can? :edit, Empresa %>
+                <%= link_to "Editar", edit_empresa_path, class: 'btn btn-warning' %>
+            <% end%>
+
+            <% if can? :delete, Empresa %>
+                <div style="display:inline-block;">
+                    <%= button_to "Eliminar", empresa_path(@empresa.id), :class=> 'btn btn-danger', method: :delete %>
+                </div>
+            <% end%>
+
         </div>
         <br/>
-    <% end %>
 </div>
