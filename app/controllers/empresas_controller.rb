@@ -13,7 +13,7 @@ class EmpresasController < ApplicationController
             flash[:notice] = "#{@empresa.nombre} ha sido creada con exito"
             redirect_to empresas_path
         else
-            flash[:alert] = @empresa.errors.full_messages
+            flash[:alert] = @empresa.errors.full_messages.join(', ')
             redirect_to new_empresa_path
         end
     end
@@ -42,7 +42,7 @@ class EmpresasController < ApplicationController
             flash[:notice] = "#{@empresa.nombre} ha sido actualizada con exito"
             redirect_to empresa_path(id: @empresa.id)
         else
-            flash[:alert] = @empresa.errors.full_messages
+            flash[:alert] = @empresa.errors.full_messages.join(', ')
             redirect_to edit_empresa_path
         end
     end
@@ -67,7 +67,7 @@ class EmpresasController < ApplicationController
         if @user.save
             flash[:notice] = "#{@user.nombre} #{@user.apellido} ha sido añadido con exito"
         else
-            flash[:alert] = @user.errors.full_messages
+            flash[:alert] = @user.errors.full_messages.join(', ')
             
         end
         redirect_to agregar_usuario_empresa_path

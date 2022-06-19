@@ -1,8 +1,6 @@
 <div class='container'>
     <h1>Empresas</h1>
 
-    <%= render 'layouts/noticias' %>
-
     <% @empresas.each do |empresa| %>
         <h2><%= link_to empresa.nombre, empresa_path(empresa.id) %></h2>
         <h4><%= "Direccion: #{empresa.direccion}" %></h4>

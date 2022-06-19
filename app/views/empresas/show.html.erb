@@ -1,7 +1,5 @@
 <div class='container'>
 
-    <%= render 'layouts/noticias' %>
-
     <h1><%= @empresa.nombre %></h1>
     <h4><%= "Direccion: #{@empresa.direccion}" %></h4>
     <% if !@empresa.oficina.empty? %>

@@ -18,7 +18,7 @@ class UsersController < ApplicationController
             flash[:notice] = "Usuario modificado con exito"
             redirect_to show_user_path
         else
-            flash[:alert] = @user.errors.full_messages
+            flash[:alert] = @user.errors.full_messages.join(', ')
             redirect_to edit_user_path
         end
     end
