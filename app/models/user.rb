@@ -12,6 +12,16 @@ class User < ApplicationRecord
   validates :encargado, presence: false
   validates :admin, presence: false
 
+  def simulaciones
+    Simulacion.where(user_id: self.id).all
+  end
 
+  def simulaciones_realizadas
+    Simulacion.where(user_id: self.id).where(realizada: true).all
+  end
+
+  def simulaciones_pendientes
+    Simulacion.where(user_id: self.id).where(realizada: false).all
+  end
 
 end

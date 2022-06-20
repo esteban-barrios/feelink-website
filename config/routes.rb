@@ -6,6 +6,12 @@ Rails.application.routes.draw do
     end
   end
   devise_for :users, :controllers => { :registrations => "registrations" }
+  
+  resources :users, :except => ['show', 'edit', 'update', 'destroy'] do
+    resources :simulacions do
+      get '/marcar-realizada', to: "simulacions#marcar_realizada", as: "marcar_realizada"
+    end
+  end
 
   get "user/:id", to: "users#show", as: 'show_user'
   get "user/:id/editar", to:"users#edit", as: 'edit_user'

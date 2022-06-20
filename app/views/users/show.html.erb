@@ -13,6 +13,32 @@
     <h4> <b> Correo:</b><%= " #{@user.email}" %> </h4>
     <h4> <b> Telefono:</b><%= " +56#{@user.telefono}" %> </h4>
     <br/>
+
+    <h2> Simulaciones Asignadas </h2><br/>
+    <% if !@user.simulaciones_realizadas.empty?%>
+        <h3> Realizadas<h3>
+        <% @user.simulaciones_realizadas.each do |simulacion| %>
+            <h2 class='text-success'> <%= simulacion.nombre%> </h2>
+        <% end %>
+        <br/>
+    <%end %>
+    
+    <% if !@user.simulaciones_pendientes.empty?%>
+        <h3> Pendientes<h3>
+        <% @user.simulaciones_pendientes.each do |simulacion| %>
+            <li> 
+                <span class='text-danger'> <%= simulacion.nombre%> </span> 
+                <% if can? :destroy, Simulacion %>
+                    <%= button_to "X", user_simulacion_path(simulacion.id), form: {style: 'display:inline-block;'}, :class=> 'btn btn-sm btn-danger', method: :delete %>
+                    <%= link_to "Y", user_simulacion_marcar_realizada_path(simulacion_id: simulacion.id, user_id: @user.id), form: {style: 'display:inline-block;'}, :class=> 'btn btn-sm btn-success'%>
+                <% end %>
+            </li>
+        <% end %> <br/>
+    <% end %>
+
+
+    <%= link_to 'Asignar Simulación', new_user_simulacion_path(@user.id), class: 'btn btn-primary'  %>
+
     
     <h2> Resultados </h2>
         <div class="container2">

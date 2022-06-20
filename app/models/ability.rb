@@ -13,9 +13,11 @@ class Ability
         can [:show, :edit], Empresa, id: user.empresa_id
         can :show, User, empresa_id: user.empresa_id
         can :edit, User, id: user.id
+        can :manage, Simulacion, :all
       else
         can :show, Empresa, id: user.empresa_id
         can [:show, :edit], User, id: user.id
+        can [:show, :read], Simulacion, user_id: user.id
       end
     end
     #
