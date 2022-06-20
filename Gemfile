@@ -75,3 +75,5 @@ gem 'devise'
 gem 'rails-i18n'
 gem 'pry'
 gem 'cancancan'
+
+gem "rest-client"
