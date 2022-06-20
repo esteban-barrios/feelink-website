@@ -10,17 +10,7 @@ class SimulacionsController < ApplicationController
 
         if @simulacion.save
             flash[:notice] = "Simulación de #{@simulacion.nombre} asignada con exito"
-            
-            data = 
-            "{
-                'id_simulacion': #{@simulacion.id},
-                'nombre_simulacion': #{@simulacion.nombre},
-                'id_usuario': #{@user.id},
-                'nombre_usuario': #{@user.nombre},
-                'apellido_usuario': #{@user.apellido}
-            }
-            "
-            
+
             redirect_to show_user_path(params[:user_id])
 
         else

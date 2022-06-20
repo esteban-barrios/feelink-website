@@ -25,4 +25,10 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   root "pages#index"
+
+
+  #API
+  get "api/show_user/:id", to: "api#show_user", as: "api_show_user"
+  get "api/simulacion_realizada/:id", to: "api#simulacion_realizada", as: "api_simulacion_realizada"
+
 end
