@@ -6,20 +6,18 @@ class ApiController < ApplicationController
         @simulacion = @user.simulaciones_pendientes.first
 
         if @simulacion.nil?
-            data = "nada"
+            data = {}
         else
-            data = 
-            "{
-                'id_simulacion': #{@simulacion.id},
-                'nombre_simulacion': #{@simulacion.nombre},
-                'id_usuario': #{@user.id},
-                'nombre_usuario': #{@user.nombre},
-                'apellido_usuario': #{@user.apellido}
+            data = {
+                :id_simulacion => @simulacion.id,
+                :nombre_simulacion => @simulacion.nombre,
+                :id_usuario => @user.id,
+                :nombre_usuario => @user.nombre,
+                :apellido_usuario => @user.apellido,
             }
-            "
         end
-
-        render json: data
+        require 'json'
+        render json: data.to_json
     end
 
     def simulacion_realizada
@@ -27,9 +25,15 @@ class ApiController < ApplicationController
         @simulacion.update(realizada: true)
 
         if @simulacion.save
-            render json: 1
+            data = {
+                :realizada => "true"
+            }
         else
-            render json: 0
+            data = {
+                :realizada => "false"
+            }
         end
+        require 'json'
+        render json: data.to_json
     end
 end
