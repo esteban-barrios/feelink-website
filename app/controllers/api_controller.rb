@@ -21,17 +21,21 @@ class ApiController < ApplicationController
     end
 
     def simulacion_realizada
-        @simulacion = @simulacion = Simulacion.find(params[:id])
-        @simulacion.update(realizada: true)
+        @simulacion = Simulacion.find_by_id(params[:id])
 
-        if @simulacion.save
-            data = {
-                :realizada => "true"
-            }
+        if @simulacion.nil?
+            render json: -1
         else
-            data = {
-                :realizada => "false"
-            }
+            if @simulacion.realizada
+                render json: 0
+            else
+                @simulacion.update(realizada: true)
+                if @simulacion.save
+                    render json: 1
+                else
+                    render json: 0
+                end
+            end
         end
         require 'json'
         render json: data.to_json

@@ -47973,3 +47973,18 @@ Completed 200 OK in 54ms (Views: 44.4ms | ActiveRecord: 1.2ms | Allocations: 155
   [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
   [1m[36mActiveRecord::SchemaMigration Pluck (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   [1m[36mActiveRecord::InternalMetadata Pluck (0.1ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+Started GET "/" for 127.0.0.1 at 2022-06-21 17:48:59 -0400
+  [1m[35m (1.7ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Processing by PagesController#index as HTML
+  Rendering layout layouts/application.html.erb
+  Rendering pages/index.html.erb within layouts/application
+  Rendered sections/_home-hero.html.erb (Duration: 292.9ms | Allocations: 46364)
+  Rendered pages/index.html.erb within layouts/application (Duration: 296.8ms | Allocations: 46884)
+  Rendered layouts/_navbar.html.erb (Duration: 8.6ms | Allocations: 1650)
+  Rendered layouts/_noticias.html.erb (Duration: 1.1ms | Allocations: 339)
+  Rendered layouts/_footer.html.erb (Duration: 0.9ms | Allocations: 129)
+  Rendered layout layouts/application.html.erb (Duration: 412.8ms | Allocations: 84524)
+Completed 200 OK in 448ms (Views: 423.7ms | ActiveRecord: 0.0ms | Allocations: 88529)
+
+
