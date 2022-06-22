@@ -94,7 +94,7 @@
                 <%= link_to "Encuesta Inicial", user_encuesta_inicial_path(@user.id), class: 'btn btn-primary float-start'  %>
             <% else %>
               <h3 class="mt-4">Resultados</h3> 
-              <b>Encuesta inicial: </b>
+              <b>Encuesta Inicial: </b>
               <%= "#{@user.encuesta_inicial.porcentaje_bueno}% correcto" %>
 
               <% if @user.encuesta_final?%>
