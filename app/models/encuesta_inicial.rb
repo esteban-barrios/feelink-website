@@ -1,5 +1,7 @@
 class EncuestaInicial < ApplicationRecord
 
+    belongs_to :user, foreign_key: "user_id"
+
     def cant_preguntas_buenas
         buenas = 0
         if self.pregunta1 == true

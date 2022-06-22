@@ -37,10 +37,20 @@ class UsersController < ApplicationController
     end
 
     def encuesta_inicial
+        @user = User.find(params[:user_id])
+        if @user.encuesta_inicial?
+            flash[:alert] = "Ya has realizado la encuesta inicial"
+            redirect_to show_user_path(@user.id)
+        end
         @encuesta = EncuestaInicial.new()
     end
 
     def submit_encuesta_inicial
+        @user = User.find(params[:user_id])
+        if @user.encuesta_inicial?
+            flash[:alert] = "Ya has realizado la encuesta inicial"
+            redirect_to show_user_path(@user.id)
+        end
         @encuesta = EncuestaInicial.new(encuesta_create_params)
         @encuesta.update(user_id: params[:user_id])
 
@@ -59,6 +69,9 @@ class UsersController < ApplicationController
         params.require(:user).permit(:nombre, :email, :apellido, :telefono, :encargado, :password, :password_confirmation)
       end
       def encuesta_create_params
-        params.require(:encuesta_inicial).permit(:pregunta1, :pregunta2, :pregunta3, :pregunta4, :pregunta5, :pregunta6)
+        if params.has_key?(:encuesta_inicial)
+            params.fetch(:encuesta_inicial)
+            .permit(:pregunta1, :pregunta2, :pregunta3, :pregunta4, :pregunta5, :pregunta6)
+        end
       end
 end

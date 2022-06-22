@@ -88,12 +88,26 @@
                   </li>
               <% end %> 
           <% end %>
+
+          <% if can? :encuesta_inicial, User %>
+            <% if !@user.encuesta_inicial? %>
+                <%= link_to "Encuesta Inicial", user_encuesta_inicial_path(@user.id), class: 'btn btn-primary float-start'  %>
+              <% else %>
+                <h3 class="mt-4">Resultados</h3> 
+                <b>Encuesta inicial: </b>
+                <%= "#{@user.encuesta_inicial.porcentaje_bueno}% correcto" %>
+              <% end %>
+          <% end%>
       </div>
       <div class="col-lg-12 mb-4 mb-sm-5">
         <div class ="row">
           <div class ="col-lg-6 mb-4 mb-lg-0">
           <% if can? :manage, Simulacion%>
             <%= link_to 'Asignar Simulación', new_user_simulacion_path(@user.id), class: 'btn btn-primary float-start'  %>
+          <% end %>
+
+          <% if can? :delete, User %>
+            <%= button_to 'Borrar Empleado', destroy_user_path(@user.id), class: 'btn btn-danger ms-4', method: :delete  %>
           <% end %>
           </div> 
           <div class = "col-lg-6 mb-4 mb-lg-0">
