@@ -1,0 +1,78 @@
+<div class='container'>
+    <h1 class="mb-4">Encuesta Inicial</h1>
+
+        <%= form_for :encuesta_final, url: user_submit_encuesta_final_path, method: :post do |f| %>
+            <div class="row">
+
+                <div class="col-12 mb-4">
+                    <b>En la simulación evidenciaste un:</b><br/>
+                    <%= f.radio_button :pregunta1, true %>    
+                    Comentario o acción discriminatoria accidental.
+                    <br/>
+                    <%= f.radio_button :pregunta1, false %>    
+                    Comportamiento intencional y discriminatorio sin pretensión de ofensa.
+                    <br/>
+                    <%= f.radio_button :pregunta1, false %>    
+                    Minimización de experiencias ajenas
+                    <br/>
+                    <%= f.radio_button :pregunta1, false %>    
+                    No hubo ningún comentario o acción inadecuada.
+                </div>
+
+                <div class="col-12 mb-4">
+                    <b>Teniendo bajo consideración que un(a) <br/>
+                    I. Microataque es un comportamiento intencional y discriminatorio sin pretensión de ofensa.<br/>
+                    II. Microinvalidación es menospreciar o invalidar experiencias ajenas<br/>
+                    III. Microinsulto es un comentario o acción que es discriminatoria accidentalmente.<br/>
+                    En la simulación realizada recientemente, usted fue testigo de:
+
+                    </b><br/>
+                    <%= f.radio_button :pregunta2, false %>    Solo I
+                    <br/>
+                    <%= f.radio_button :pregunta2, false %>   Solo II
+                    <br/>
+                    <%= f.radio_button :pregunta2, true %>   Solo III
+                    <br/>
+                    <%= f.radio_button :pregunta2, false %>  I, II
+                    <br/>
+                    <%= f.radio_button :pregunta2, false %>   III, I
+                    <br/>
+                    <%= f.radio_button :pregunta2, false %>   Ninguna de las anteriores.
+                </div>
+
+                <div class="col-12 mb-4">
+                    <b>Considera que en la simulación se atacó a:</b><br/>
+                    <%= f.radio_button :pregunta3, true %>    Luis.
+                    <br/>
+                    <%= f.radio_button :pregunta3, false %>    Me sentí atacado durante la simulación.                
+                    <br/>
+                    <%= f.radio_button :pregunta3, false %>    Leonardo.
+                    <br/>
+                    <%= f.radio_button :pregunta3, false %>    Laura.
+                    <br/>
+                    <%= f.radio_button :pregunta3, false %>    No se atacó a nadie durante la simulación.
+                </div>
+
+                <div class="col-12 mb-4">
+                    <b>¿Alguna vez has visto en lugar de trabajo una situación similar?</b><br/>
+                    <%= f.radio_button :pregunta4, true %>    
+                    Si
+                    <br/>
+                    <%= f.radio_button :pregunta4, true %>    
+                    No.
+                    <br/>
+                    <%= f.radio_button :pregunta4, true %>    
+                    Quizás.
+                    <br/>
+
+                </div>
+                
+                <div class="mt-3">
+                    <%= f.submit "Enviar", class: "btn btn-primary " %>
+                    <%= link_to "Volver", empresas_path, class: 'btn btn-secondary' %>
+                </div>
+            </div>
+
+        <% end %>
+
+    </div>

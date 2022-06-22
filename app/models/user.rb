@@ -5,6 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
 
   belongs_to :empresa, class_name: "empresa", foreign_key: "empresa_id", optional: true
+  has_one :encuesta_inicial, dependent: :destroy
   
   validates :nombre, presence: true
   validates :apellido, presence: true
@@ -27,5 +28,29 @@ class User < ApplicationRecord
   def empresa
     Empresa.find(self.empresa_id)
   end
-  
+
+  def encuesta_inicial
+    EncuestaInicial.find_by(user_id: self.id)
+  end
+
+  def encuesta_inicial?
+    if self.encuesta_inicial.nil?
+      false
+    else
+      true
+    end
+  end
+
+  def encuesta_final
+    EncuestaFinal.find_by(user_id: self.id)
+  end
+
+  def encuesta_final?
+    if self.encuesta_final.nil?
+      false
+    else
+      true
+    end
+  end
+
 end

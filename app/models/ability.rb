@@ -16,8 +16,9 @@ class Ability
         can :manage, Simulacion, :all
       else
         can :show, Empresa, id: user.empresa_id
-        can [:show, :edit], User, id: user.id
+        can [:encuesta_inicial, :submit_encuesta_inicial,:encuesta_final, :submit_encuesta_final, :show, :edit], User, id: user.id
         can [:show, :read], Simulacion, user_id: user.id
+        can :new, EncuestaInicial
       end
     end
     #
