@@ -2,7 +2,7 @@
 /* import "@hotwired/turbo-rails"
 //= require custom/stepper.js
 import "controllers" */
+import "@hotwired/turbo-rails"
 import "popper"
 import "bootstrap"
 import "custom/hamburger"
-import "custom/stepper"
