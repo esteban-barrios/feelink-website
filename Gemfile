@@ -77,3 +77,4 @@ gem 'pry'
 gem 'cancancan'
 
 gem "rest-client"
+gem "font-awesome-rails"

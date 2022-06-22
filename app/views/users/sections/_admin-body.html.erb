@@ -1,0 +1,77 @@
+<div class="event-schedule-area-two bg-color pad100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title text-center">
+                  <h2>Encargados</h2>
+                </div>
+            </div>
+            <!-- /.col end-->
+        </div>
+        <!-- row end-->
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade active show" id="home" role="tabpanel">
+                        <div class="table-responsive">
+                            <table class="table">
+                                <thead>
+                                    <tr>
+                                        <th class="text-center" scope="col">Empresa</th>
+                                        <th scope="col">Foto</th>
+                                        <th scope="col">Contacto</th>
+                                        <th scope="col"></th>
+                                        <th class="text-center" scope="col">Perfil</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <% @user.empresas.each do |empresa| %>
+                                        <% encargado = empresa.encargados.last%>
+                                        <tr class="inner-box">
+                                            <th scope="row">
+                                                <div class="event-date">
+                                                    <h4><%= empresa.nombre%></h4>
+                                                </div>
+                                            </th>
+                                            <td>
+                                                <div class="event-img">
+                                                    <img src="https://bootdey.com/img/Content/avatar/avatar1.png" alt="" />
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="event-wrap">
+                                                    <h3><a href="#"><%= "#{encargado.nombre} #{encargado.apellido}"%></a></h3>
+                                                    <div class="meta">
+                                                        <div class="organizers">
+                                                            <a href="#"><%= "#{encargado.email}"%></a>
+                                                        </div>
+                                                        <div>
+                                                            <%= fa_icon('phone') %><a href="#"><%= " +56 #{encargado.telefono[0]} #{encargado.telefono[1,4]} #{encargado.telefono[5,9]}"%></a>
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="r-no">
+                                                    <span></span>
+                                                </div>
+                                            </td>
+                                            <td>
+                                                <div class="primary-btn">
+                                                    <%= link_to "Ver más", show_user_path(encargado.id), class:"btn bg-secondary text-white" %>
+                                                </div>
+                                            </td>
+                                        </tr>
+                                    <% end %>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- /col end-->
+        </div>
+        <!-- /row end-->
+    </div>
+</div>

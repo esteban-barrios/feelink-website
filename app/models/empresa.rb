@@ -16,5 +16,18 @@ class Empresa < ApplicationRecord
     def encargados
         User.where(empresa_id: self.id).where(encargado: true).all
     end
+
+    def promedio_encuesta_inicial
+        encuestas_iniciales = self.empleados.each{|empleado| empleado.encuesta_inicial}
+        cant_encuestas = encuestas_iniciales.length()
+
+        suma = 0
+        encuestas_iniciales.each do |encuesta|
+            suma += encuesta.porcentaje_bueno
+        end
+
+        promedio = suma/cant_encuestas
+
+    end
     
 end

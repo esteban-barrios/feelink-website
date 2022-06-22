@@ -22,7 +22,7 @@ class ApiController < ApplicationController
 
     def simulacion_realizada
         @simulacion = Simulacion.find_by_id(params[:id])
-
+            
         if @simulacion.nil?
             render json: -1
         else
