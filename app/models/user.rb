@@ -27,4 +27,5 @@ class User < ApplicationRecord
   def empresa
     Empresa.find(self.empresa_id)
   end
+  
 end

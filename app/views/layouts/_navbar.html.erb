@@ -21,9 +21,6 @@
       <% if !user_signed_in? %>
         <li><%= link_to 'Iniciar Sesión', new_user_session_path, class: "#{current_page?(new_user_session_path) ? 'link-active' : ''}" %></li>
       <% else %>
-        <% if can? :manage, Empresa %>
-          <li><%= link_to 'Empresas', empresas_path, class: "#{current_page?(empresas_path) ? 'link-active' : ''}" %></li>
-        <% end %>
         <li><%= link_to ' Mi Perfil', show_user_path(current_user.id), class: "#{current_page?(show_user_path(current_user.id)) ? 'link-active' : ''}" %></li>
         <li><%= link_to 'Cerrar Sesión', destroy_user_session_path, class: "#{current_page?(new_user_session_path) ? 'link-active' : ''}" %></li>
       <% end %>

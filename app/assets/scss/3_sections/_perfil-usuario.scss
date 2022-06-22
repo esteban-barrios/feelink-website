@@ -1,7 +1,7 @@
 .perfil-usuario{
-
+  margin-top:40px ;
   .card-style1 {
-    box-shadow: 0px 0px 10px 0px rgba(89, 75, 128, 0.9);
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
   }
   .border-0 {
       border: 0!important;
@@ -16,7 +16,7 @@
       background-clip: border-box;
       border: 1px solid rgba(0,0,0,.125);
       border-radius: 0.25rem;
-      margin-top: 20px;
+
   }
 
   section {
@@ -29,6 +29,7 @@
   }
 
   .section-title {
+      font-size: 1.3rem;
       font-weight: 600;
       letter-spacing: 2px;
       text-transform: uppercase;
@@ -36,8 +37,11 @@
       position: relative;
       display: inline-block;
   }
+  .text-badge{
+    color: #ceaa4d!important;
+  }
   .text-primary {
-      color: #ceaa4d !important;
+      color: black !important;
   }
   .text-secondary {
       color: #15395A !important;
