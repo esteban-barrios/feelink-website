@@ -1,0 +1,124 @@
+<div class='container'>
+    <h1 class="mb-4">Encuesta Inicial</h1>
+
+        <%= form_for :encuesta_inicial, url: user_submit_encuesta_inicial_path, method: :post do |f| %>
+            <div class="row">
+
+                <div class="col-12 mb-4">
+                    <b>Elige la definición más adecuada para Microagresión</b><br/>
+                    <%= f.radio_button :pregunta1, true %>    
+                    Una microagresión es un comentario o acción que se dirige negativamente a un grupo de personas marginado.
+                    <br/>
+                    <%= f.radio_button :pregunta1, false %>    
+                    Una microagresión es un comentario accidental que se dirige a personas físicamente diferentes con mala intención.
+                    <br/>
+                    <%= f.radio_button :pregunta1, false %>    
+                    Acción violenta que realiza una persona con la intención de causar un daño a otra.
+                </div>
+
+                <div class="col-12 mb-4">
+                    <b>¿Cuál de las siguientes alternativas es un tipo de microagresión?</b><br/>
+                    <%= f.radio_button :pregunta2, false %>    Microinsulto
+                    <br/>
+                    <%= f.radio_button :pregunta2, false %>   Microinvalidación
+                    <br/>
+                    <%= f.radio_button :pregunta2, false %>   Microataque
+                    <br/>
+                    <%= f.radio_button :pregunta2, false %>  Microdiscriminación
+                    <br/>
+                    <%= f.radio_button :pregunta2, true %>   Solo a, b y c
+                    <br/>
+                    <%= f.radio_button :pregunta2, false %>   a, b, c y d
+                </div>
+
+                <div class="col-12 mb-4">
+                    <b>Microinsulto</b><br/>
+                    <%= f.radio_button :pregunta3, true %>    
+                    Es un comentario o acción que es discriminatoria accidentalmente.
+                    <br/>
+                    <%= f.radio_button :pregunta3, false %>    
+                    Es una acción agresiva que insulta a otra persona.                
+                    <br/>
+                    <%= f.radio_button :pregunta3, false %>    
+                    Es un comentario o acción que discrimina.
+                </div>
+
+                <div class="col-12 mb-4">
+                    <b>Un ejemplo de microagresión puede ser:</b><br/>
+                    <%= f.radio_button :pregunta4, false %>    
+                    Decir “Mi jefa está loca”.
+                    <br/>
+                    <%= f.radio_button :pregunta4, false %>    
+                    Decirle a alguien “Tu nombre es tan difícil de pronunciar”.
+                    <br/>
+                    <%= f.radio_button :pregunta4, false %>    
+                    Interrumpir a alguien mientras habla.
+                    <br/>
+                    <%= f.radio_button :pregunta4, false %>    
+                    Decirle a una persona delgada que debería comer más.
+                    <br/>
+                    <%= f.radio_button :pregunta4, true %>    
+                    Todas
+                    <br/>
+                    <%= f.radio_button :pregunta4, false %>    
+                    Solo a, b y c
+                </div>
+
+
+                <div class="col-12 mb-4">
+                    <b>Una definición adecuada del tipo Microataque es</b><br/>
+                    <%= f.radio_button :pregunta5, false %>    
+                    Es un comentario o acción que es discriminatoria accidentalmente.
+                    <br/>
+                    <%= f.radio_button :pregunta5, true %>    
+                    Comportamiento intencional y discriminatorio sin pretensión de ofensa.
+                    <br/>
+                    <%= f.radio_button :pregunta5, false %>    
+                    Menospreciar o invalidar experiencias ajenas.
+                    <br/>
+                    <%= f.radio_button :pregunta5, false %>    
+                    Decirle a una persona delgada que debería comer más.
+                    <br/>
+                    <%= f.radio_button :pregunta5, false %>    
+                    Acción violenta que realiza una persona con la intención de causar un daño a otra.
+                </div>
+
+                <div class="col-12 mb-4">
+                    <b>Una definición adecuada del tipo Microinvalidacion es</b><br/>
+                    <%= f.radio_button :pregunta6, false %>    
+                    Hacer que una persona pierda valor ante otros.
+                    <br/>
+                    <%= f.radio_button :pregunta6, true %>    
+                    Menospreciar o invalidar experiencias ajenas.
+                    <br/>
+                    <%= f.radio_button :pregunta6, false %>    
+                    Es un comentario o acción que es discriminatoria accidentalmente.
+                    <br/>
+                    <%= f.radio_button :pregunta6, false %>    
+                    Comportamiento intencional y discriminatorio sin pretensión de ofensa.
+                </div>
+
+                <div class="col-12 mb-4">
+                    <b>Alguna vez has visto en lugar de trabajo una situación similar a una microagresión?</b><br/>
+                    <%= f.radio_button :pregunta7, false %>    
+                    Si
+                    <br/>
+                    <%= f.radio_button :pregunta7, true %>    
+                    No.
+                    <br/>
+                    <%= f.radio_button :pregunta7, false %>    
+                    No estoy seguro/a.
+                    <br/>
+                    <%= f.radio_button :pregunta7, false %>    
+                    Comportamiento intencional y discriminatorio sin pretensión de ofensa.
+                </div>
+                
+                <div class="mt-3">
+                    <%= f.submit "Enviar", class: "btn btn-primary " %>
+                    <%= link_to "Volver", empresas_path, class: 'btn btn-secondary' %>
+                </div>
+            </div>
+
+        <% end %>
+
+    </div>

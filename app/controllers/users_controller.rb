@@ -36,9 +36,29 @@ class UsersController < ApplicationController
         end
     end
 
+    def encuesta_inicial
+        @encuesta = EncuestaInicial.new()
+    end
+
+    def submit_encuesta_inicial
+        @encuesta = EncuestaInicial.new(encuesta_create_params)
+        @encuesta.update(user_id: params[:user_id])
+
+        if @encuesta.save
+            flash[:notice] = "Encuesta completada con exito"
+            redirect_to show_user_path(params[:user_id])
+        else
+            flash[:alert] = @encuesta.errors.full_messages.join(', ')
+        end
+
+    end
+
     private
 
     def create_params
         params.require(:user).permit(:nombre, :email, :apellido, :telefono, :encargado, :password, :password_confirmation)
+      end
+      def encuesta_create_params
+        params.require(:encuesta_inicial).permit(:pregunta1, :pregunta2, :pregunta3, :pregunta4, :pregunta5, :pregunta6)
       end
 end

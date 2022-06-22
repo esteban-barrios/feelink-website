@@ -11,12 +11,15 @@ Rails.application.routes.draw do
     resources :simulacions do
       get '/marcar-realizada', to: "simulacions#marcar_realizada", as: "marcar_realizada"
     end
+    get '/encuesta_inicial', to: "users#encuesta_inicial", as: "encuesta_inicial"
+    post '/encuesta_inicial', to: "users#submit_encuesta_inicial", as: "submit_encuesta_inicial"
   end
 
   get "user/:id", to: "users#show", as: 'show_user'
   get "user/:id/editar", to:"users#edit", as: 'edit_user'
   post "user/:id/editar", to:"users#update", as: 'update_user'
   delete "user/:id/destroy", to:"users#destroy", as: 'destroy_user'
+  
 
   get 'about', to: "pages#about"
   get 'contact', to: "pages#contact"

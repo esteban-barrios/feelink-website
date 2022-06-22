@@ -27,4 +27,16 @@ class User < ApplicationRecord
   def empresa
     Empresa.find(self.empresa_id)
   end
+  
+  def encuesta_inicial
+    EncuestaInicial.find_by(user_id: self.id)
+  end
+
+  def encuesta_inicial?
+    if self.encuesta_inicial.nil?
+      false
+    else
+      true
+    end
+  end
 end
