@@ -18,16 +18,23 @@ class Empresa < ApplicationRecord
     end
 
     def promedio_encuesta_inicial
-        encuestas_iniciales = self.empleados.each{|empleado| empleado.encuesta_inicial}
-        cant_encuestas = encuestas_iniciales.length()
-
-        suma = 0
-        encuestas_iniciales.each do |encuesta|
-            suma += encuesta.porcentaje_bueno
+        encuestas_iniciales = []
+        self.empleados.each do |empleado|
+            encuestas_iniciales << empleado.encuesta_inicial
         end
+        
+        if !encuestas_iniciales.nil?
 
-        promedio = suma/cant_encuestas
+            cant_encuestas = encuestas_iniciales.length()
 
+            suma = 0
+            encuestas_iniciales.each do |encuesta|
+                suma += encuesta.porcentaje_bueno
+            end
+
+            promedio = suma/cant_encuestas
+
+        end
     end
     
 end

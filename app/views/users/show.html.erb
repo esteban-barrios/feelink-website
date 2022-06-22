@@ -7,6 +7,7 @@
       <% if @user.admin %>
         <%= render 'users/sections/admin-body'%>
       <% elsif @user.encargado %>
+      <%= render 'users/sections/encargado-results'%>
         <%= render 'users/sections/encargado-body'%>
       <% else %>
         <%= render 'users/sections/user-body'%>

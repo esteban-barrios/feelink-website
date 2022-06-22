@@ -13,6 +13,10 @@ class User < ApplicationRecord
   validates :encargado, presence: false
   validates :admin, presence: false
 
+  def has_simulacion?
+    Simulacion.where(user_id: self.id).all
+  end
+
   def simulaciones
     Simulacion.where(user_id: self.id).all
   end

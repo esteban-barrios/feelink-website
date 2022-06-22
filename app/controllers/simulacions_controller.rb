@@ -11,7 +11,7 @@ class SimulacionsController < ApplicationController
         if @simulacion.save
             flash[:notice] = "Simulación de #{@simulacion.nombre} asignada con exito"
 
-            redirect_to show_user_path(params[:user_id])
+            redirect_to show_user_path(current_user.id)
 
         else
             flash[:alert] = @simulacion.errors.full_messages.join(", ")

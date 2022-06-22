@@ -21,63 +21,71 @@
                                         <th scope="col">Contacto</th>
                                         <th scope="col">Simulacion</th>
                                         <th scope="col">Estado</th>
-                                        <th class="text-center" scope="col">Perfil</th>
+                                        <th class="text-center" scope="col">Acción</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <% @user.empresa.empleados.each do |empleado| %>
-                                        <tr class="inner-box">
-                                            <td>
-                                                <div class="event-img">
-                                                    <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="" />
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="event-wrap">
-                                                    <h3><a href="#"><%= "#{empleado.nombre} #{empleado.apellido}"%></a></h3>
-                                                    <div class="meta">
-                                                        <div class="organizers">
-                                                            <a href="#"><%= "#{empleado.email}"%></a>
-                                                        </div>
-                                                        <div>
-                                                            <%= fa_icon('phone') %><a href="#"><%= " +56 #{empleado.telefono[0]} #{empleado.telefono[1,4]} #{empleado.telefono[5,9]}"%></a>
-                                                        </div>
-
+                                        <%= form_for :simulacion, url: user_simulacions_path(user_id: empleado.id), method: :post do |f| %>
+                                            <tr class="inner-box">
+                                                <td>
+                                                    <div class="event-img">
+                                                        <img src="https://bootdey.com/img/Content/avatar/avatar3.png" alt="" />
                                                     </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="r-no">
-                                                    <span>
-                                                    <% if empleado.simulaciones.nil? %>              
-                                                        <%= empleado.simulaciones.first.nombre %>
-                                                    <% else %>
-                                                        
-                                                    <% end%>
-                                                    </span>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="r-no">
-                                                    <span>
-                                                    <% if empleado.simulaciones.nil? %>              
-                                                        <% if empleado.simulaciones.first.realizada %>
-                                                            Realizada
+                                                </td>
+                                                <td>
+                                                    <div class="event-wrap">
+                                                        <h3><a href="#"><%= "#{empleado.nombre} #{empleado.apellido}"%></a></h3>
+                                                        <div class="meta">
+                                                            <div class="organizers">
+                                                                <a href="#"><%= "#{empleado.email}"%></a>
+                                                            </div>
+                                                            <div>
+                                                                <%= fa_icon('phone') %><a href="#"><%= " +56 #{empleado.telefono[0]} #{empleado.telefono[1,4]} #{empleado.telefono[5,9]}"%></a>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="r-no">
+                                                        <span>
+                                                        <% if !empleado.simulaciones.empty? %>              
+                                                            <%= empleado.simulaciones.first.nombre %>
                                                         <% else %>
-                                                            Pendiente
+                                                            <%= f.select :nombre, ["Microinsulto"],{}, class: "form-select" %>
+                                                        <% end%>
+                                                        </span>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="r-no">
+                                                        <span>
+                                                        <% if !empleado.simulaciones.empty? %>              
+                                                            <% if empleado.simulaciones.first.realizada %>
+                                                                Realizada
+                                                            <% else %>
+                                                                Pendiente
+                                                            <% end %>
+                                                        <% else %>
+                                                                
+                                                        <% end%>
+                                                        </span>              
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="primary-btn">
+                                                        <% if !empleado.simulaciones.empty? %>
+                                                            <%= link_to "Ver más", show_user_path(empleado.id), class:"btn bg-secondary text-white" %>
+                                                        <% else%>
+                                                            <%= f.submit "Asignar Simulación", class: "btn bg-secondary text-white " %>
                                                         <% end %>
-                                                    <% else %>
-                                                        Sin Asignación
-                                                    <% end%>
-                                                    </span>              
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="primary-btn">
-                                                    <%= link_to "Ver más", show_user_path(empleado.id), class:"btn bg-secondary text-white" %>
-                                                </div>
-                                            </td>
-                                        </tr>
+
+                                                        <%= render 'users/sections/modal-simulacion', empleado: empleado %>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                        <% end %>
                                     <% end %>
                                 </tbody>
                             </table>
@@ -90,3 +98,4 @@
         <!-- /row end-->
     </div>
 </div>
+
