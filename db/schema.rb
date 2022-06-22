@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_21_232847) do
+ActiveRecord::Schema[7.0].define(version: 2022_06_22_050142) do
   create_table "empresas", force: :cascade do |t|
     t.string "nombre", null: false
     t.string "direccion", null: false
@@ -20,6 +20,17 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_21_232847) do
     t.datetime "updated_at", null: false
     t.string "comuna"
     t.string "region"
+  end
+
+  create_table "encuesta_finals", force: :cascade do |t|
+    t.integer "user_id", null: false
+    t.boolean "pregunta1"
+    t.boolean "pregunta2"
+    t.boolean "pregunta3"
+    t.boolean "pregunta4"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_encuesta_finals_on_user_id"
   end
 
   create_table "encuesta_inicials", force: :cascade do |t|

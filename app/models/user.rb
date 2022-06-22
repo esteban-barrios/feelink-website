@@ -40,4 +40,17 @@ class User < ApplicationRecord
       true
     end
   end
+
+  def encuesta_final
+    EncuestaFinal.find_by(user_id: self.id)
+  end
+
+  def encuesta_final?
+    if self.encuesta_final.nil?
+      false
+    else
+      true
+    end
+  end
+
 end
