@@ -1,60 +1,107 @@
 <%= stylesheet_link_tag 'vaquero' %>
 
-<div class="container">
-
-    <h1> <%= "#{@user.nombre} #{@user.apellido}" %> </h1>
-    <% if @user.encargado %>
-        <h4> Encargado </h4>
-    <% else%>
-        <h4> Empleado </h4>
-    <% end %>
-    <br/>
-    <h2> Datos: </h2> 
-    <h4> <b> Correo:</b><%= " #{@user.email}" %> </h4>
-    <h4> <b> Telefono:</b><%= " +56#{@user.telefono}" %> </h4>
-    <br/>
-
-    <h2> Simulaciones Asignadas </h2><br/>
-    <% if !@user.simulaciones_realizadas.empty?%>
-        <h3> Realizadas<h3>
-        <% @user.simulaciones_realizadas.each do |simulacion| %>
-            <h2 class='text-success'> <%= simulacion.nombre%> </h2>
-        <% end %>
-        <br/>
-    <%end %>
-    
-    <% if !@user.simulaciones_pendientes.empty?%>
-        <h3> Pendientes<h3>
-        <% @user.simulaciones_pendientes.each do |simulacion| %>
-            <li> 
-                <span class='text-danger'> <%= simulacion.nombre%> </span> 
-                <% if can? :destroy, Simulacion %>
-                    <%= button_to "X", user_simulacion_path(simulacion.id), form: {style: 'display:inline-block;'}, :class=> 'btn btn-sm btn-danger', method: :delete %>
-                    <%= link_to "Y", user_simulacion_marcar_realizada_path(simulacion_id: simulacion.id, user_id: @user.id), form: {style: 'display:inline-block;'}, :class=> 'btn btn-sm btn-success'%>
+<section class ="perfil-usuario">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 mb-4 mb-sm-5">
+        <div class="card card-style1 border-0">
+          <div class="card-body p-1-9 p-sm-2-3 p-md-6 p-lg-7">
+            <div class="row align-items-center">
+              <div class="col-lg-6 mb-4 mb-lg-0">
+                <img src="https://bootdey.com/img/Content/avatar/avatar7.png" alt="...">
+              </div>
+              <div class="col-lg-6 px-xl-10">
+                <div class="bg-secondary d-lg-inline-block py-1-9 px-1-9 px-sm-6 mb-1-9 rounded">
+                  <h3 class="h2 text-white mb-0"><%= "#{@user.nombre} #{@user.apellido}" %></h3>
+                  <span class="text-primary">
+                    <% if @user.encargado %>
+                      Encargado
+                    <% else%>
+                      Empleado
+                    <% end %>   
+                  </span>
+                </div>
+                <ul class="list-unstyled mb-1-9">
+                  <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">Empresa:</span><%= " #{@user.empresa.nombre}" %> </li>
+                  <li class="mb-2 mb-xl-3 display-28"><span class="display-26 text-secondary me-2 font-weight-600">Email:</span><%= " #{@user.email}" %> </li>
+                  <li class="display-28"><span class="display-26 text-secondary me-2 font-weight-600">Phone:</span><%= " +56 #{@user.telefono[0]} #{@user.telefono[1,4]} #{@user.telefono[5,9]}"   %> </li>
+                </ul>
+                <% if current_user.id == @user.id%>
+                    <%= link_to "Editar Perfil", edit_user_registration_path(current_user.id), class: 'btn btn-primary' %>
                 <% end %>
-            </li>
-        <% end %> <br/>
-    <% end %>
-
-
-    <%= link_to 'Asignar Simulación', new_user_simulacion_path(@user.id), class: 'btn btn-primary'  %>
-
-    
-    <h2> Resultados </h2>
-        <div class="container2">
-            <span class="poop"></span>
+              </div>
+            </div>
+          </div>
         </div>
+      </div>
+      <div class="col-lg-12 mb-4 mb-sm-5">
 
-    <% if current_user.admin%>
-        <%= link_to "Añadir Resultado", show_user_path, class: 'btn btn-primary'%><br/><br/>
-        <%= link_to "Editar", edit_user_path, class: 'btn btn-warning' %>
+        <%if @user.admin | @user.encargado %>
+          <span class="section-title text-primary mb-3 mb-sm-4"> Empleados </span>
 
-        <div style="display:inline-block;">
-            <%= button_to "Eliminar", destroy_user_path, :class=> 'btn btn-danger', method: :delete %>
+          <ul>
+          <% if @user.empresa.empleados.empty?%>
+            <p>No hay nada aqui todavia</p>
+          <% else %>
+            <% @user.empresa.empleados.each do |empleado| %>
+              <li><%= link_to "#{empleado.nombre} #{empleado.apellido} ", show_user_path(empleado.id)%></li>
+            <% end %>
+          <% end %>
+
+          </ul>
+
+          <% if can? :new, User %>
+            <%= link_to "Añadir Trabajador", agregar_usuario_empresa_path(id:@user.empresa_id), class: 'btn btn-primary'%>
+          <% end%>
+          
+          <% if can? :manage, Empresa %>
+            <%= link_to "Volver", empresas_path, class: 'btn btn-secondary' %> 
+          <% end %>
+                    
+          <% if can? :manage, Empresa %>
+              <%= link_to "Editar", edit_empresa_path(id:@user.empresa_id), class: 'btn btn-warning' %>
+          <% end%>
+
+          <% if can? :delete, Empresa %>
+            <div style="display:inline-block;">
+                <%= button_to "Eliminar", empresa_path(id:@user.empresa_id), :class=> 'btn btn-danger', method: :delete %>
+            </div>
+          <% end%>
+
+        <% else %>        
+          <% if !@user.simulaciones_realizadas.empty?%>
+            <span class="section-title text-primary mb-3 mb-sm-4">Simulaciones Realizadas </span>
+            <% @user.simulaciones_realizadas.each do |simulacion| %>
+              <p> <%= simulacion.nombre%> </p>
+            <% end %>
+          <%end %>
+                  
+          <% if !@user.simulaciones_pendientes.empty?%>
+              <span class="section-title text-primary mb-3 mb-sm-4">Simulaciones Pendientes </span>
+              <% @user.simulaciones_pendientes.each do |simulacion| %>
+                  <li> 
+                      <span > <%= simulacion.nombre%> </span> 
+                      <% if can? :destroy, Simulacion %>
+                          <%= button_to "X", user_simulacion_path(simulacion.id), form: {style: 'display:inline-block;'}, :class=> 'btn btn-sm btn-danger', method: :delete %>
+                          <%= link_to "Y", user_simulacion_marcar_realizada_path(simulacion_id: simulacion.id, user_id: @user.id), form: {style: 'display:inline-block;'}, :class=> 'btn btn-sm btn-success'%>
+                      <% end %>
+                  </li>
+              <% end %> 
+          <% end %>
+      </div>
+      <div class="col-lg-12 mb-4 mb-sm-5">
+        <div class ="row">
+          <div class ="col-lg-6 mb-4 mb-lg-0">
+          <% if can? :manage, Simulacion%>
+            <%= link_to 'Asignar Simulación', new_user_simulacion_path(@user.id), class: 'btn btn-primary float-start'  %>
+          <% end %>
+          </div> 
+          <div class = "col-lg-6 mb-4 mb-lg-0">
+            <%= link_to "Volver", :back, class: 'btn btn-secondary float-end' %> 
+          </div>
         </div>
-    <% end%>
-    <% if current_user.id == @user.id%>
-        <%= link_to "Editar Perfil", edit_user_registration_path(current_user.id), class: 'btn btn-primary' %>
-    <% end %>
-    <%= link_to "Volver", empresa_path(@user.empresa_id), class: 'btn btn-secondary' %> <br/><br/>
-</div>
+      </div>
+      <%end%>
+    </div>
+  </div>
+</section>

@@ -24,4 +24,7 @@ class User < ApplicationRecord
     Simulacion.where(user_id: self.id).where(realizada: false).all
   end
 
+  def empresa
+    Empresa.find(self.empresa_id)
+  end
 end

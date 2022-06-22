@@ -13,6 +13,6 @@ Empresa.create(id: 1, nombre: "Feelink", direccion: "USM", oficina: "", comuna: 
 #Cuenta Admin;
 User.create(email: 'admin@feelink.cl', password: '123456', password_confirmation: '123456', telefono: '123456789', nombre: 'Admin', apellido: 'Feelink', admin: true, encargado: true, empresa_id: 1)
 #Cuenta Encargado:
-User.create(email: 'encargado@feelink.cl', password: '123456', password_confirmation: '123456', telefono: '123456789', nombre: 'Encargado', apellido: 'Feelink', admin: false, encargado: true, empresa_id: 1)
+User.create(email: 'encargado@feelink.cl', password: '123456', password_confirmation: '123456', telefono: '123456789', nombre: 'John', apellido: 'Doe', admin: false, encargado: true, empresa_id: 1)
 #Cuenta Empleado:
-User.create(email: 'empleado@feelink.cl', password: '123456', password_confirmation: '123456', telefono: '123456789', nombre: 'Empleado', apellido: 'Feelink', admin: false, encargado: false, empresa_id: 1)
+User.create(email: 'empleado@feelink.cl', password: '123456', password_confirmation: '123456', telefono: '123456789', nombre: 'Mark', apellido: 'Kyzer', admin: false, encargado: false, empresa_id: 1)

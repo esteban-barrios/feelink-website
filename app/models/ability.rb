@@ -11,7 +11,7 @@ class Ability
         can :manage, :all
       elsif user.encargado
         can [:show, :edit], Empresa, id: user.empresa_id
-        can :show, User, empresa_id: user.empresa_id
+        can [:show, :new], User, empresa_id: user.empresa_id
         can :edit, User, id: user.id
         can :manage, Simulacion, :all
       else

@@ -37,7 +37,5 @@ class ApiController < ApplicationController
                 end
             end
         end
-        require 'json'
-        render json: data.to_json
     end
 end
