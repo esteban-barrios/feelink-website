@@ -16,7 +16,18 @@
               </tr>
               <tr>
                 <td scope="col"><b>Tendencia General de Decisiones:</b></td>
-                <td scope="col" > </td>
+                <td scope="col" >
+                  <% case @user.empresa.tendencia_decisiones
+                    when 0%> 
+                    <%= "No interviene"%>
+                  <% when 1%>
+                    <%= "Intervención Pasiva"%>
+                  <% when 2 %>
+                    <%= "Intervención Activa"%>
+                  <% else%>
+                    <%= "No hay datos"%>
+                  <% end %>
+                 </td>
               </tr>
             </tbody>
           </table>

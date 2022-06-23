@@ -42,8 +42,8 @@ class Empresa < ApplicationRecord
         encuestas_finales = []
         self.empleados.each do |empleado|
             if empleado.encuesta_inicial?
-                encuestas_finales << empleado.encuesta_final
-            end
+                encuestas_finales << empleado.encuesta_final unless empleado.encuesta_final.nil?
+            end 
         end
         if !encuestas_finales.empty?
             cant_encuestas = encuestas_finales.length()
@@ -55,6 +55,32 @@ class Empresa < ApplicationRecord
         else
             -1
         end
+    end
+
+    def tendencia_decisiones
+        contador0 = 0
+        contador1 = 0
+        contador2 = 0
+
+        self.empleados.each do |empleado|
+            if empleado.has_simulacion?
+                if !empleado.simulaciones.first.decisiones.nil?
+                    case empleado.simulaciones.first.decisiones
+                    when 0
+                        contador0 += 1
+                    when 1
+                        contador1 += 1
+                    when 2
+                        contador2 += 1
+                    else
+                    end
+                end
+            end
+        end
+
+        contadores = [contador0, contador1, contador2]
+        contadores.find_index(contadores.max)
+        
     end
     
 end

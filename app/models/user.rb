@@ -14,7 +14,13 @@ class User < ApplicationRecord
   validates :admin, presence: false
 
   def has_simulacion?
-    Simulacion.where(user_id: self.id).all
+    simulacion = Simulacion.where(user_id: self.id).all
+    if simulacion.empty?
+      false
+    else
+      true
+    end
+    
   end
 
   def simulaciones

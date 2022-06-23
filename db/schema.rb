@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.0].define(version: 2022_06_22_050142) do
+ActiveRecord::Schema[7.0].define(version: 2022_06_23_032529) do
   create_table "empresas", force: :cascade do |t|
     t.string "nombre", null: false
     t.string "direccion", null: false
@@ -52,6 +52,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_06_22_050142) do
     t.boolean "realizada", default: false, null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "decisiones", default: -1
     t.index ["user_id"], name: "index_simulacions_on_user_id"
   end
 
