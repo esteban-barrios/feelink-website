@@ -2,20 +2,23 @@
 
     <% if @user.encuesta_final? %>
         <h3 class ="text-center mb-4">Resultados</h3>
-        <div class ="result-container mb-4">
-          <table class="table">
-            <tbody>
-              <tr>
-                <td><b>Conocimiento General</b></td>
-                <td><%= "#{@user.encuesta_inicial.porcentaje_bueno}% correcto"%></td>
-              </tr>
-              <tr>
-                <td><b>Aprendizaje</b></td>
-                <td> <%= "#{@user.encuesta_final.porcentaje_bueno}% correcto"%></td>
-              </tr>
-            </tbody>
-          </table>
-        </div>
+        <table class="table table-bordered result-container">
+          <tbody>
+            <tr>
+              <td scope="col"><b>Conocimiento General</b></td>
+              <td scope="col"><%= "#{@user.encuesta_inicial.porcentaje_bueno}% correcto"%></td>
+            </tr>
+            <tr>
+              <td scope="col"><b>Aprendizaje</b></td>
+              <td scope="col"> <%= "#{@user.encuesta_final.porcentaje_bueno}% correcto"%></td>
+            </tr>
+            <tr>
+              <td scope="col"><b>Tendencia de Decisiones:</b></td>
+              <td scope="col" > </td>
+            </tr>
+          </tbody>
+        </table>
+        
 
     <% elsif @user.simulaciones.empty?%>
         <h3>Espera a que tu encargado te asigne una simulación</h3>

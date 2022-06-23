@@ -1,20 +1,26 @@
 
 
-<div class='mb-4'>
+<div class='event-schedule-area-two bg-color pad100 mb-4'>
+  <div class ="container">
     <% if @user.empresa.promedio_encuesta_inicial != -1 %>
-        <h3 class ="text-center mb-4">Resultados</h3>
-          <table class="table">
+        <h3 class ="mb-3">RESULTADOS DE EMPRESA</h3>
+          <table class="table table-bordered result-container2">
             <tbody>
               <tr>
-                <td><b>Promedio Conocimiento General:</b></td>
-                <td class="float-end"><%= "#{@user.empresa.promedio_encuesta_inicial}%"%></td>
+                <td scope="col"><b>Promedio Conocimiento General:</b></td>
+                <td scope="col" ><%= "#{@user.empresa.promedio_encuesta_inicial}%"%></td>
               </tr>
               <tr>
-                <td><b>Promedio Aprendizaje:</b></td>
-                <td class="float-end"> <%= "#{@user.empresa.promedio_encuesta_final}%"%></td>
+                <td scope="col"><b>Promedio Aprendizaje:</b></td>
+                <td scope="col" > <%= "#{@user.empresa.promedio_encuesta_final}%"%></td>
+              </tr>
+              <tr>
+                <td scope="col"><b>Tendencia General de Decisiones:</b></td>
+                <td scope="col" > </td>
               </tr>
             </tbody>
           </table>
 
     <% end %>
+  </div>
 </div>
