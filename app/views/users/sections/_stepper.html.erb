@@ -61,14 +61,28 @@
         <h2>Cuestionario Final</h2>
         
         <% if @user.simulaciones.first.realizada %>
-            <% if @user.encuesta_final?%>
-                Ya completaste el cuestionario final.
-            <% else%>
-                Para finalizar, porfavor realiza el siguiente cuestionario para poner a prueba tu aprendizaje sobre las microagresiones.
-                <div>
-                    <%= link_to "Comenzar", user_encuesta_final_path(@user.id), class: 'btn btn-primary ' %>
-                </div>
+            <% if current_user.id == @user.id %>
+
+              <% if @user.encuesta_final?%>
+                  Ya completaste el cuestionario final.
+              <% else%>
+                  Para finalizar, porfavor realiza el siguiente cuestionario para poner a prueba tu aprendizaje sobre las microagresiones.
+                  <div>
+                      <%= link_to "Comenzar", user_encuesta_final_path(@user.id), class: 'btn btn-primary ' %>
+                  </div>
+              <% end %>
+
+            <% else %>
+
+              <% if @user.encuesta_final?%>
+                  Este empleado ya completo el cuestionario final.
+              <% else%>
+                  Este empleado debe realizar el cuestionario final para finalizar.
+
+              <% end %>
+
             <% end %>
+
         
         <% else %>
             <p>

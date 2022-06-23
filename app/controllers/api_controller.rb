@@ -1,5 +1,5 @@
 class ApiController < ApplicationController
-
+    protect_from_forgery with: :null_session
     def show_user
 
         @user = User.find(params[:id])
