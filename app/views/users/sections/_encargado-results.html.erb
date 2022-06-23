@@ -1,0 +1,20 @@
+
+
+<div class='mb-4'>
+    <% if @user.empresa.promedio_encuesta_inicial != -1 %>
+        <h3 class ="text-center mb-4">Resultados</h3>
+          <table class="table">
+            <tbody>
+              <tr>
+                <td><b>Promedio Conocimiento General:</b></td>
+                <td class="float-end"><%= "#{@user.empresa.promedio_encuesta_inicial}%"%></td>
+              </tr>
+              <tr>
+                <td><b>Promedio Aprendizaje:</b></td>
+                <td class="float-end"> <%= "#{@user.empresa.promedio_encuesta_final}%"%></td>
+              </tr>
+            </tbody>
+          </table>
+
+    <% end %>
+</div>

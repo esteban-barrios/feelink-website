@@ -62,13 +62,13 @@
                                                     <div class="r-no">
                                                         <span>
                                                         <% if !empleado.simulaciones.empty? %>              
-                                                            <% if empleado.simulaciones.first.realizada %>
+                                                            <% if empleado.encuesta_final? %>
                                                                 Realizada
                                                             <% else %>
                                                                 Pendiente
                                                             <% end %>
                                                         <% else %>
-                                                                
+                                                                No asignado
                                                         <% end%>
                                                         </span>              
                                                     </div>

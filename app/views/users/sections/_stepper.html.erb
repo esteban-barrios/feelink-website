@@ -1,0 +1,81 @@
+<h2 class ="text-center">EXPERIENCIA </h2>
+<div class="progress-wrapper">
+  <div id="progress-bar-container">
+    <ul>
+      <li class="step step01 active">
+        <div class="step-inner">Paso 1</div>
+      </li>
+      <li class="step step02">
+        <div class="step-inner">Paso 2</div>
+      </li>
+      <li class="step step03">
+        <div class="step-inner">Paso 3</div>
+      </li>
+    </ul>
+    <div id="line">
+      <div id="line-progress"></div>
+    </div>
+    <!-- progress-bar-container -->
+    <div id="progress-content-section">
+      <div class="section-content step1 active">
+        <h2>Cuestionario Inicial</h2>
+        <% if current_user.id == @user.id %>
+            <% if !@user.encuesta_inicial? %>
+            <p>
+                Antes de comenzar, porfavor realiza el siguiente cuestionario para poner a prueba tus conocimientos sobre las microagresiones.
+                <div>
+                    <%= link_to "Comenzar", user_encuesta_inicial_path(@user.id), class: 'btn btn-primary ' %>
+                </div>
+            </p>
+            <% else %>
+                Ya completaste el cuestionario inicial, por favor avanza al siguiente paso.
+            <% end%>
+        <% else %>
+            <% if !@user.encuesta_inicial? %>
+            <p>
+                Este empleado todavía no completa el cuestionario inicial.
+            </p>
+            <% else %>
+                Este empleado ya completo el cuestionario inicial.
+            <% end%>
+        <% end %>
+      </div>
+      <div class="section-content step2">
+        <h2>Realiza la simulación</h2>
+
+        <% if !@user.encuesta_inicial? %>
+            Todavía no realizas la encuesta inicial.
+        <% elsif @user.simulaciones.first.realizada %>
+            <p>
+            Ya completaste la simulación, porfavor avanza al siguiente paso.
+            </p>
+        <% else%>
+            <p>
+            Ahora estas preparado para comenzar, procede a experimentar nuestra simulación.
+            </p>
+        <% end %>
+      </div>
+
+
+      <div class="section-content step3">
+        <h2>Cuestionario Final</h2>
+        
+        <% if @user.simulaciones.first.realizada %>
+            <% if @user.encuesta_final?%>
+                Ya completaste el cuestionario final.
+            <% else%>
+                Para finalizar, porfavor realiza el siguiente cuestionario para poner a prueba tu aprendizaje sobre las microagresiones.
+                <div>
+                    <%= link_to "Comenzar", user_encuesta_final_path(@user.id), class: 'btn btn-primary ' %>
+                </div>
+            <% end %>
+        
+        <% else %>
+            <p>
+                Todavía no realizas la simulación.
+            </p>
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>
