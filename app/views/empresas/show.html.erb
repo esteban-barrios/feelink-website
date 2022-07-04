@@ -36,7 +36,7 @@
             <% end%>
 
             <% if can? :manage, Empresa %>
-                <%= link_to "Volver", empresas_path, class: 'btn btn-secondary' %> <br/>
+                <%= link_to "Volver", :back, class: 'btn btn-secondary' %> <br/>
             <% end %>
             
             <% if can? :edit, Empresa %>
