@@ -1,3 +1,4 @@
+
 <h2 class ="text-center">EXPERIENCIA: <%= @user.simulaciones.first.nombre.upcase%> </h2>
 <div class="progress-wrapper">
   <div id="progress-bar-container">
@@ -5,19 +6,27 @@
       <li class="step step01 active">
         <div class="step-inner">Paso 1</div>
       </li>
-      <li class="step step02">
+      <li class="step step02 <%= @count>=2 ? "active" : "" %>">
         <div class="step-inner">Paso 2</div>
       </li>
-      <li class="step step03">
+      <li class="step step03 <%=@count==3 ? "active" : "" %>">
         <div class="step-inner">Paso 3</div>
       </li>
     </ul>
     <div id="line">
-      <div id="line-progress"></div>
+      <div id="<%= 
+      if @count== 3
+        "line-progress3"
+      elsif  @count== 2
+         "line-progress2"
+      else
+        "line-progress"
+      end
+      %>"></div>
     </div>
     <!-- progress-bar-container -->
     <div id="progress-content-section">
-      <div class="section-content step1 active">
+      <div class="section-content step1 <%= @count == 1 ? "active" : "" %>">
         <h2>Cuestionario Inicial</h2>
         <% if current_user.id == @user.id %>
             <% if !@user.encuesta_inicial? %>
@@ -40,7 +49,7 @@
             <% end%>
         <% end %>
       </div>
-      <div class="section-content step2">
+      <div class="section-content step2 <%= @count == 2 ? "active" : "" %>">
         <h2>Realiza la simulación</h2>
 
         <% if !@user.encuesta_inicial? %>
@@ -50,14 +59,22 @@
             Ya completaste la simulación, porfavor avanza al siguiente paso.
             </p>
         <% else%>
-            <p>
-            Ahora estas preparado para comenzar, procede a experimentar nuestra simulación.
-            </p>
+            <div class ="container">
+              <div class = "row">
+              <p> Ahora estas preparado para comenzar, procede a experimentar nuestra simulación. </p>
+              </div>
+              <div class = "row ">
+                <div class="col">
+                  <%= link_to "Estoy listo",experience_path(user_id: @user.id),  class: "btn btn-primary"%>
+                </div>
+              </div>
+            </div>
+            
         <% end %>
       </div>
 
 
-      <div class="section-content step3">
+      <div class="section-content step3 <%= @count == 3 ? "active" : "" %>">
         <h2>Cuestionario Final</h2>
         
         <% if @user.simulaciones.first.realizada %>
@@ -66,10 +83,12 @@
               <% if @user.encuesta_final?%>
                   Ya completaste el cuestionario final.
               <% else%>
+                  <p>
                   Para finalizar, porfavor realiza el siguiente cuestionario para poner a prueba tu aprendizaje sobre las microagresiones.
                   <div>
                       <%= link_to "Comenzar", user_encuesta_final_path(@user.id), class: 'btn btn-primary ' %>
                   </div>
+                  </p>
               <% end %>
 
             <% else %>

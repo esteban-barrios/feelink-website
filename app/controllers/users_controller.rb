@@ -4,6 +4,15 @@ class UsersController < ApplicationController
 
     def show
         @user = User.find(params[:id])
+
+        if @user.simulaciones.first.realizada
+            @count = 3
+        elsif  @user.encuesta_inicial?
+            @count = 2
+        else
+            @count = 1
+        end
+        
     end
 
     def edit
@@ -40,7 +49,7 @@ class UsersController < ApplicationController
         @user = User.find(params[:user_id])
         if @user.encuesta_inicial?
             flash[:alert] = "Ya has realizado la encuesta inicial"
-            redirect_to show_user_path(@user.id)
+            redirect_to experience_path(user_id: @user.id)
         end
         @encuesta = EncuestaInicial.new()
     end
@@ -49,14 +58,14 @@ class UsersController < ApplicationController
         @user = User.find(params[:user_id])
         if @user.encuesta_inicial?
             flash[:alert] = "Ya has realizado la encuesta inicial"
-            redirect_to show_user_path(@user.id)
+            redirect_to experience_path(user_id: @user.id)
         end
         @encuesta = EncuestaInicial.new(encuesta_inicial_create_params)
         @encuesta.update(user_id: params[:user_id])
 
         if @encuesta.save
             flash[:notice] = "Encuesta completada con exito"
-            redirect_to show_user_path(params[:user_id])
+            redirect_to experience_path(user_id: @user.id)
         else
             flash[:alert] = @encuesta.errors.full_messages.join(', ')
         end
